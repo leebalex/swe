@@ -8,6 +8,7 @@ public class AsyncServerMain {
     public static void main(String[] args) throws IOException {
 
         System.out.println("AsyncServer starting");
+        System.out.println("AsyncServer starting");
         AsyncServer server = new AsyncServer();
         new Thread(() -> {
             try {
