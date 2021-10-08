@@ -13,7 +13,7 @@ public class ClientMain {
     public static void main(String[] args) throws IOException, InterruptedException {
 
         FileSafeService service = null;
-
+        System.out.println("");
         try {
             service = FileSafeService.start(SRC_DIR, DEST_DIR);
         } catch (IOException e) {
