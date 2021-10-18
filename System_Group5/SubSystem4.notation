@@ -1,2 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI"/>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:style="http://www.eclipse.org/papyrus/infra/gmfdiag/style" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_6he7MDAwEey66tZkThw3Wg" type="UseCase" name="NewUseCaseDiagram" measurementUnit="Pixel">
+  <children xmi:type="notation:Shape" xmi:id="_69BAoDAwEey66tZkThw3Wg" type="Actor_Shape">
+    <children xmi:type="notation:DecorationNode" xmi:id="_69BnsDAwEey66tZkThw3Wg" type="Actor_NameLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_69BnsTAwEey66tZkThw3Wg" y="15"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_69BnsjAwEey66tZkThw3Wg" type="Actor_StereotypeLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_69COwDAwEey66tZkThw3Wg" x="20" y="100"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_69COwTAwEey66tZkThw3Wg" type="Actor_QualifiedNameLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_69COwjAwEey66tZkThw3Wg" x="20" y="80"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_69COwzAwEey66tZkThw3Wg" type="Actor_FloatingNameLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_69COxDAwEey66tZkThw3Wg" y="15"/>
+    </children>
+    <element xmi:type="uml:Actor" href="SubSystem4.uml#_6899UDAwEey66tZkThw3Wg"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_69BAoTAwEey66tZkThw3Wg" x="160" y="180"/>
+  </children>
+  <styles xmi:type="notation:StringValueStyle" xmi:id="_6hfiQDAwEey66tZkThw3Wg" name="diagram_compatibility_version" stringValue="1.4.0"/>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_6hfiQTAwEey66tZkThw3Wg"/>
+  <styles xmi:type="style:PapyrusDiagramStyle" xmi:id="_6hfiQjAwEey66tZkThw3Wg" diagramKindId="org.eclipse.papyrus.uml.diagram.useCase">
+    <owner xmi:type="uml:Model" href="SubSystem4.uml#_QsNXkCXWEeybxdv-5Uc1kw"/>
+  </styles>
+  <element xmi:type="uml:Model" href="SubSystem4.uml#_QsNXkCXWEeybxdv-5Uc1kw"/>
+</notation:Diagram>
