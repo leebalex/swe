@@ -3,4 +3,19 @@
   <packageImport xmi:type="uml:PackageImport" xmi:id="_cRxXYCXUEeybxdv-5Uc1kw">
     <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
   </packageImport>
+  <packagedElement xmi:type="uml:Package" xmi:id="_0g9cADBYEeyBlrGWvbHA8A" name="LandsideManagementSystemPkg ">
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_M88CsDBZEeyBlrGWvbHA8A" name="Get Security Informations"/>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_RLPPIDBZEeyBlrGWvbHA8A" name="Financial Management System"/>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_fd-U8DBZEeyBlrGWvbHA8A" name="Control Management System"/>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_jzlqUDBZEeyBlrGWvbHA8A" name="Landside Workers"/>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_nOiuQDBZEeyBlrGWvbHA8A" name="Terminal Management System"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_wo5v4DBZEeyBlrGWvbHA8A" name="Get Transportation Capacity"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_0X-psDBZEeyBlrGWvbHA8A" name="Get Landside State Information"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_4NzEsDBZEeyBlrGWvbHA8A" name="Get Expenses"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NxDx0DBaEeyBlrGWvbHA8A"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_X6xMwDBaEeyBlrGWvbHA8A"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_aetwMDBaEeyBlrGWvbHA8A"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_gS4HMDBaEeyBlrGWvbHA8A"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_sSQDQDBaEeyBlrGWvbHA8A"/>
+  </packagedElement>
 </uml:Model>
