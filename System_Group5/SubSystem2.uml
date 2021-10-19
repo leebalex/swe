@@ -17,5 +17,6 @@
     <packagedElement xmi:type="uml:Association" xmi:id="_aetwMDBaEeyBlrGWvbHA8A"/>
     <packagedElement xmi:type="uml:Association" xmi:id="_gS4HMDBaEeyBlrGWvbHA8A"/>
     <packagedElement xmi:type="uml:Association" xmi:id="_sSQDQDBaEeyBlrGWvbHA8A"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_NArW8DDMEeyCi6WCWivuPQ" name="Landside Management System"/>
   </packagedElement>
 </uml:Model>
