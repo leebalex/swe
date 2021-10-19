@@ -3,6 +3,32 @@
   <packageImport xmi:type="uml:PackageImport" xmi:id="_Qsg5kCXWEeybxdv-5Uc1kw">
     <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
   </packageImport>
-  <packagedElement xmi:type="uml:Package" xmi:id="_bo1dMCXWEeybxdv-5Uc1kw" name="SubSystem4MainPkg"/>
-  <packagedElement xmi:type="uml:Actor" xmi:id="_6899UDAwEey66tZkThw3Wg" name="Actor3"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_LHsHIDDvEeyemoxuiQ3Sug" name="ControlManagementSystemPkg">
+    <packagedElement xmi:type="uml:Package" xmi:id="_ynjVADD1EeyemoxuiQ3Sug" name="Control Management System">
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_P7-4YDD2EeyemoxuiQ3Sug" name="check security information"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_oduI0DD2EeyemoxuiQ3Sug" name="check airside information"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_q4jzkDD2EeyemoxuiQ3Sug" name="check landside information"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_u97tgDD2EeyemoxuiQ3Sug" name="check maintenance "/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_8y_Y0DD2EeyemoxuiQ3Sug" name="check expenses"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_95gxcDD1EeyemoxuiQ3Sug" name="Airside Management System"/>
+    <packagedElement xmi:type="uml:Actor" xmi:id="__WlMYDD1EeyemoxuiQ3Sug" name="Landside Management System"/>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_DWvPIDD2EeyemoxuiQ3Sug" name="Terminal management System"/>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_IAm9QDD2EeyemoxuiQ3Sug" name="Control Worker"/>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_JlFnwDD2EeyemoxuiQ3Sug" name="Security Worker"/>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_3WTGoDD2EeyemoxuiQ3Sug" name="Financial Management System"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Kt4mYDD3EeyemoxuiQ3Sug"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_MLIngDD3EeyemoxuiQ3Sug"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NStTkDD3EeyemoxuiQ3Sug"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_P3xRUDD3EeyemoxuiQ3Sug"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Q-g28DD3EeyemoxuiQ3Sug"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_UXCR8DD3EeyemoxuiQ3Sug"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_cv9EsDD3EeyemoxuiQ3Sug"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_e2U7UDD3EeyemoxuiQ3Sug"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_hVCZcDD3EeyemoxuiQ3Sug"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_kA6w4DD3EeyemoxuiQ3Sug"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_mMAvcDD3EeyemoxuiQ3Sug"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_nu2bMDD3EeyemoxuiQ3Sug"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_yB2VADD3EeyemoxuiQ3Sug"/>
+  </packagedElement>
 </uml:Model>
