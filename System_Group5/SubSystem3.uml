@@ -3,5 +3,27 @@
   <packageImport xmi:type="uml:PackageImport" xmi:id="_Oat2ECXWEeybxdv-5Uc1kw">
     <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
   </packageImport>
-  <packagedElement xmi:type="uml:Package" xmi:id="_e5fVoCXWEeybxdv-5Uc1kw" name="SubSystem3MainPkg"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_3k1WEDDvEeyemoxuiQ3Sug" name="TerminalManagementSystemPkg">
+    <packagedElement xmi:type="uml:Package" xmi:id="_MmTkwDDwEeyemoxuiQ3Sug" name="Terminal Management System">
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_pe6HwDDwEeyemoxuiQ3Sug" name="check-in"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_qhrMUDDwEeyemoxuiQ3Sug" name="baggage handling"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_sz2qUDDwEeyemoxuiQ3Sug" name="boarding"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_t3LvkDDwEeyemoxuiQ3Sug" name="flight information"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_y8JeQDDwEeyemoxuiQ3Sug" name="security control"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_PgoA0DDwEeyemoxuiQ3Sug" name="Passenger"/>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_Rfb24DDwEeyemoxuiQ3Sug" name="Landside Management System"/>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_TBHsEDDwEeyemoxuiQ3Sug" name="Control Management System"/>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_UrzsQDDwEeyemoxuiQ3Sug" name="Security"/>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_Wt0AQDDwEeyemoxuiQ3Sug" name="Worker"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_CcHzQDDxEeyemoxuiQ3Sug"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_hkVBYDDxEeyemoxuiQ3Sug"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_jybQoDDxEeyemoxuiQ3Sug"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_qmbUADDxEeyemoxuiQ3Sug"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_-T6yUDDxEeyemoxuiQ3Sug"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Ah2CcDDyEeyemoxuiQ3Sug"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Cy77UDDyEeyemoxuiQ3Sug"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Fa-UkDDyEeyemoxuiQ3Sug"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_RB4GQDDyEeyemoxuiQ3Sug"/>
+  </packagedElement>
 </uml:Model>
