@@ -33,7 +33,7 @@
   </packagedElement>
   <packagedElement xmi:type="uml:Dependency" xmi:id="_QR8AoDD-EeyBY5jOGTlNyA" name="provides">
     <client xmi:type="uml:Model" href="System_Group5.uml#_Wv3OACXUEeybxdv-5Uc1kw"/>
-    <supplier xmi:type="uml:Model" href="SubSystem5.uml#_SYGRoCXWEeybxdv-5Uc1kw"/>
+    <supplier xmi:type="uml:Model" href="System_Group5.uml#_Wv3OACXUEeybxdv-5Uc1kw"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Dependency" xmi:id="_jfjFADD-EeyBY5jOGTlNyA" name="provides">
     <client xmi:type="uml:Model" href="System_Group5.uml#_Wv3OACXUEeybxdv-5Uc1kw"/>

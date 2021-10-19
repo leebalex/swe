@@ -26,7 +26,8 @@
     <packagedElement xmi:type="uml:Association" xmi:id="_Fa-UkDDyEeyemoxuiQ3Sug"/>
     <packagedElement xmi:type="uml:Association" xmi:id="_RB4GQDDyEeyemoxuiQ3Sug"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Dependency" xmi:id="_7hCIEDD-EeyBY5jOGTlNyA" name="consumes" client="_Oaa7ICXWEeybxdv-5Uc1kw">
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_7hCIEDD-EeyBY5jOGTlNyA" name="provides">
+    <client xmi:type="uml:Model" href="System_Group5.uml#_Wv3OACXUEeybxdv-5Uc1kw"/>
     <supplier xmi:type="uml:Model" href="SubSystem4.uml#_QsNXkCXWEeybxdv-5Uc1kw"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Package" xmi:id="_KrccwDD_EeyBY5jOGTlNyA" name="Airpor Management System">
@@ -50,4 +51,11 @@
   <packagedElement xmi:type="uml:Association" xmi:id="_CnFvUDEAEeyBY5jOGTlNyA"/>
   <packagedElement xmi:type="uml:Association" xmi:id="_HI9YADEAEeyBY5jOGTlNyA"/>
   <packagedElement xmi:type="uml:Association" xmi:id="_M5fMMDEAEeyBY5jOGTlNyA" name="request"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_apXVMDEDEeykZr-uc4SHdw" name="provides" client="_Oaa7ICXWEeybxdv-5Uc1kw">
+    <supplier xmi:type="uml:Model" href="SubSystem2.uml#_cRcAMCXUEeybxdv-5Uc1kw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_4kazsDEDEeykZr-uc4SHdw" name="provides">
+    <client xmi:type="uml:Model" href="System_Group5.uml#_Wv3OACXUEeybxdv-5Uc1kw"/>
+    <supplier xmi:type="uml:Model" href="SubSystem5.uml#_SYGRoCXWEeybxdv-5Uc1kw"/>
+  </packagedElement>
 </uml:Model>

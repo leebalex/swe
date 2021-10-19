@@ -26,4 +26,11 @@
   <packagedElement xmi:type="uml:Dependency" xmi:id="_3pRMUDD-EeyBY5jOGTlNyA" name="consumes" client="_SYGRoCXWEeybxdv-5Uc1kw">
     <supplier xmi:type="uml:Model" href="System_Group5.uml#_Wv3OACXUEeybxdv-5Uc1kw"/>
   </packagedElement>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_Oi2PUDEDEeykZr-uc4SHdw" name="provides">
+    <client xmi:type="uml:Model" href="System_Group5.uml#_Wv3OACXUEeybxdv-5Uc1kw"/>
+    <supplier xmi:type="uml:Model" href="SubSystem4.uml#_QsNXkCXWEeybxdv-5Uc1kw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_xbNVUDEDEeykZr-uc4SHdw" name="provides" client="_SYGRoCXWEeybxdv-5Uc1kw">
+    <supplier xmi:type="uml:Model" href="SubSystem3.uml#_Oaa7ICXWEeybxdv-5Uc1kw"/>
+  </packagedElement>
 </uml:Model>

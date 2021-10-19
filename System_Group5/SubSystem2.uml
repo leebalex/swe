@@ -19,7 +19,14 @@
     <packagedElement xmi:type="uml:Association" xmi:id="_sSQDQDBaEeyBlrGWvbHA8A"/>
     <packagedElement xmi:type="uml:Package" xmi:id="_NArW8DDMEeyCi6WCWivuPQ" name="Landside Management System"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Dependency" xmi:id="_6RUzsDD-EeyBY5jOGTlNyA" name="consumes" client="_cRcAMCXUEeybxdv-5Uc1kw">
-    <supplier xmi:type="uml:Model" href="SubSystem4.uml#_QsNXkCXWEeybxdv-5Uc1kw"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_6RUzsDD-EeyBY5jOGTlNyA" name="provides">
+    <client xmi:type="uml:Model" href="System_Group5.uml#_Wv3OACXUEeybxdv-5Uc1kw"/>
+    <supplier xmi:type="uml:Model" href="System_Group5.uml#_Wv3OACXUEeybxdv-5Uc1kw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_oUEnIDECEeykZr-uc4SHdw" name="provides" client="_cRcAMCXUEeybxdv-5Uc1kw">
+    <supplier xmi:type="uml:Model" href="SubSystem3.uml#_Oaa7ICXWEeybxdv-5Uc1kw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_sCwC4DEDEeykZr-uc4SHdw" name="provides" client="_cRcAMCXUEeybxdv-5Uc1kw">
+    <supplier xmi:type="uml:Model" href="SubSystem5.uml#_SYGRoCXWEeybxdv-5Uc1kw"/>
   </packagedElement>
 </uml:Model>
