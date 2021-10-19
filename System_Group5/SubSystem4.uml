@@ -31,4 +31,18 @@
     <packagedElement xmi:type="uml:Association" xmi:id="_nu2bMDD3EeyemoxuiQ3Sug"/>
     <packagedElement xmi:type="uml:Association" xmi:id="_yB2VADD3EeyemoxuiQ3Sug"/>
   </packagedElement>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_QR8AoDD-EeyBY5jOGTlNyA" name="provides">
+    <client xmi:type="uml:Model" href="System_Group5.uml#_Wv3OACXUEeybxdv-5Uc1kw"/>
+    <supplier xmi:type="uml:Model" href="SubSystem5.uml#_SYGRoCXWEeybxdv-5Uc1kw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_jfjFADD-EeyBY5jOGTlNyA" name="provides">
+    <client xmi:type="uml:Model" href="System_Group5.uml#_Wv3OACXUEeybxdv-5Uc1kw"/>
+    <supplier xmi:type="uml:Model" href="SubSystem2.uml#_cRcAMCXUEeybxdv-5Uc1kw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_nksVcDD-EeyBY5jOGTlNyA" name="provides" client="_QsNXkCXWEeybxdv-5Uc1kw">
+    <supplier xmi:type="uml:Model" href="SubSystem1.uml#_aLMscCXUEeybxdv-5Uc1kw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_wcNIsDD-EeyBY5jOGTlNyA" name="provides" client="_QsNXkCXWEeybxdv-5Uc1kw">
+    <supplier xmi:type="uml:Model" href="SubSystem3.uml#_Oaa7ICXWEeybxdv-5Uc1kw"/>
+  </packagedElement>
 </uml:Model>

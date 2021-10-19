@@ -26,4 +26,7 @@
     <packagedElement xmi:type="uml:Association" xmi:id="_equaMDD1EeyemoxuiQ3Sug"/>
     <packagedElement xmi:type="uml:Association" xmi:id="_lpotEDD1EeyemoxuiQ3Sug"/>
   </packagedElement>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_1UqscDD-EeyBY5jOGTlNyA" name="consumes" client="_aLMscCXUEeybxdv-5Uc1kw">
+    <supplier xmi:type="uml:Model" href="SubSystem4.uml#_QsNXkCXWEeybxdv-5Uc1kw"/>
+  </packagedElement>
 </uml:Model>
