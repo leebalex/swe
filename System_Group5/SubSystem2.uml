@@ -4,20 +4,50 @@
     <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
   </packageImport>
   <packagedElement xmi:type="uml:Package" xmi:id="_0g9cADBYEeyBlrGWvbHA8A" name="LandsideManagementSystemPkg ">
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_M88CsDBZEeyBlrGWvbHA8A" name="Get Security Informations"/>
     <packagedElement xmi:type="uml:Actor" xmi:id="_RLPPIDBZEeyBlrGWvbHA8A" name="Financial Management System"/>
     <packagedElement xmi:type="uml:Actor" xmi:id="_fd-U8DBZEeyBlrGWvbHA8A" name="Control Management System"/>
     <packagedElement xmi:type="uml:Actor" xmi:id="_jzlqUDBZEeyBlrGWvbHA8A" name="Landside Workers"/>
     <packagedElement xmi:type="uml:Actor" xmi:id="_nOiuQDBZEeyBlrGWvbHA8A" name="Terminal Management System"/>
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_wo5v4DBZEeyBlrGWvbHA8A" name="Get Transportation Capacity"/>
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_0X-psDBZEeyBlrGWvbHA8A" name="Get Landside State Information"/>
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_4NzEsDBZEeyBlrGWvbHA8A" name="Get Expenses"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_wo5v4DBZEeyBlrGWvbHA8A" name="get available transport capacity">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_d5rnsDN6EeykZ-f4w7vrQQ">
+        <body>1. Terminal Management System request the available transportation capacity&#xD;
+2. The system retrieves the data from the database and returns it as an integer, if no capacity is available it will return 0.&#xD;
+3. The Terminal Management System receives the response.</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_4NzEsDBZEeyBlrGWvbHA8A" name="get expense data">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_uEPKwDN6EeykZ-f4w7vrQQ">
+        <body>1. The Financial Management System request the data about the expenses of the landside management.&#xD;
+2. The system checks the database, if the data is available, it return a collection, otherwise it returns null. &#xD;
+3. The Financial Management System receives the data.</body>
+      </ownedComment>
+    </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_NxDx0DBaEeyBlrGWvbHA8A"/>
     <packagedElement xmi:type="uml:Association" xmi:id="_X6xMwDBaEeyBlrGWvbHA8A"/>
     <packagedElement xmi:type="uml:Association" xmi:id="_aetwMDBaEeyBlrGWvbHA8A"/>
     <packagedElement xmi:type="uml:Association" xmi:id="_gS4HMDBaEeyBlrGWvbHA8A"/>
     <packagedElement xmi:type="uml:Association" xmi:id="_sSQDQDBaEeyBlrGWvbHA8A"/>
-    <packagedElement xmi:type="uml:Package" xmi:id="_NArW8DDMEeyCi6WCWivuPQ" name="Landside Management System"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_NArW8DDMEeyCi6WCWivuPQ" name="Landside Management System">
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_M88CsDBZEeyBlrGWvbHA8A" name="get security data">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_kl1WoDN6EeykZ-f4w7vrQQ">
+          <body>1. The Control Management System requests the security information from the system.&#xD;
+2. The system checks the database for entries, if entries are available it will return them as a collection, if not it will return null.&#xD;
+3. The Control Management receives the data.&#xD;
+</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_0X-psDBZEeyBlrGWvbHA8A" name="get landside state data">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_rDR7MDN6EeykZ-f4w7vrQQ">
+          <body>1. The Control Management System requests the status information from the landside from the system.&#xD;
+2. The system checks the database, if the data is available it returns the data as a status object, otherwise it returns null.&#xD;
+3. The Control Management receives the data.&#xD;
+&#xD;
+1. The Landside Worker will request the data about the landside status.&#xD;
+2. The system will check the database, if the data is available it returns a status object, otherwise returns null.&#xD;
+3. The Landside Worker will receive the Data.</body>
+        </ownedComment>
+      </packagedElement>
+    </packagedElement>
   </packagedElement>
   <packagedElement xmi:type="uml:Dependency" xmi:id="_6RUzsDD-EeyBY5jOGTlNyA" name="provides">
     <client xmi:type="uml:Model" href="System_Group5.uml#_Wv3OACXUEeybxdv-5Uc1kw"/>
