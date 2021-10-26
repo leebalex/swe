@@ -16,35 +16,48 @@
     <packagedElement xmi:type="uml:Package" xmi:id="_NArW8DDMEeyCi6WCWivuPQ" name="Landside Management System">
       <packagedElement xmi:type="uml:UseCase" xmi:id="_M88CsDBZEeyBlrGWvbHA8A" name="get security data">
         <ownedComment xmi:type="uml:Comment" xmi:id="_kl1WoDN6EeykZ-f4w7vrQQ">
-          <body>1. The Control Management System requests the security information from the system.&#xD;
-2. The system checks the database for entries, if entries are available it will return them as a collection, if not it will return null.&#xD;
-3. The Control Management receives the data.&#xD;
+          <body>--- Control management system&#xD;
+1. The Control Management System requests the security information from the system&#xD;
+2. The system checks the database for entries &#xD;
+3a. If entries are available it will return them as a collection&#xD;
+3b. if not it will return null&#xD;
+4. The Control Management receives the data&#xD;
 </body>
         </ownedComment>
       </packagedElement>
       <packagedElement xmi:type="uml:UseCase" xmi:id="_0X-psDBZEeyBlrGWvbHA8A" name="get landside state data">
         <ownedComment xmi:type="uml:Comment" xmi:id="_rDR7MDN6EeykZ-f4w7vrQQ">
-          <body>1. The Control Management System requests the status information from the landside from the system.&#xD;
-2. The system checks the database, if the data is available it returns the data as a status object, otherwise it returns null.&#xD;
-3. The Control Management receives the data.&#xD;
+          <body>--- Control management system&#xD;
+1. The Control Management System requests the status information from the landside from the system&#xD;
+2. The system checks the database&#xD;
+3a. If the data is available it returns the data as a status object&#xD;
+3b. If the data is not available it returns null&#xD;
+4. The Control Management receives the data&#xD;
 &#xD;
-1. The Landside Worker will request the data about the landside status.&#xD;
-2. The system will check the database, if the data is available it returns a status object, otherwise returns null.&#xD;
-3. The Landside Worker will receive the Data.</body>
+--- Landside Workers&#xD;
+1. The Landside Worker will request the data about the landside status&#xD;
+2. The system will check the database&#xD;
+3a. If the data is available it returns a status object&#xD;
+3b. If the data is not available it returns null&#xD;
+4. The Landside Worker will receive the Data</body>
         </ownedComment>
       </packagedElement>
       <packagedElement xmi:type="uml:UseCase" xmi:id="_wo5v4DBZEeyBlrGWvbHA8A" name="get available transport capacity">
         <ownedComment xmi:type="uml:Comment" xmi:id="_d5rnsDN6EeykZ-f4w7vrQQ">
-          <body>1. Terminal Management System request the available transportation capacity&#xD;
-2. The system retrieves the data from the database and returns it as an integer, if no capacity is available it will return 0.&#xD;
-3. The Terminal Management System receives the response.</body>
+          <body>--- Terminal management system&#xD;
+1. Terminal Management System request the available transportation capacity&#xD;
+2. The system retrieves the data from the database and returns it as an object that contains the available seats and available baggage capacity in kg&#xD;
+3. The Terminal Management System receives the response</body>
         </ownedComment>
       </packagedElement>
       <packagedElement xmi:type="uml:UseCase" xmi:id="_4NzEsDBZEeyBlrGWvbHA8A" name="get expense data">
         <ownedComment xmi:type="uml:Comment" xmi:id="_uEPKwDN6EeykZ-f4w7vrQQ">
-          <body>1. The Financial Management System request the data about the expenses of the landside management.&#xD;
-2. The system checks the database, if the data is available, it return a collection, otherwise it returns null. &#xD;
-3. The Financial Management System receives the data.</body>
+          <body>--- Financial workers&#xD;
+1. The Financial Management System request the data about the expenses of the landside management&#xD;
+2. The system checks the database&#xD;
+3a. If the data is available, it will return the data as a collection&#xD;
+3b. If the data is not available it returns null&#xD;
+</body>
         </ownedComment>
       </packagedElement>
     </packagedElement>
