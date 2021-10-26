@@ -19,7 +19,8 @@
     <packagedElement xmi:type="uml:Package" xmi:id="_Lwz7YDZ7EeymGvEYQtMk9w" name="Airpot Management System">
       <packagedElement xmi:type="uml:UseCase" xmi:id="_igv3ADZ7EeymGvEYQtMk9w" name="book a flight">
         <ownedComment xmi:type="uml:Comment" xmi:id="_BPH98DZ-EeymGvEYQtMk9w">
-          <body>1. The passenger navigates to the booking site&#xD;
+          <body>--- Passenger&#xD;
+1. The passenger navigates to the booking site&#xD;
 
 2. The system shows a dashboard with available flights&#xD;
 
@@ -35,12 +36,77 @@
 </body>
         </ownedComment>
       </packagedElement>
-      <packagedElement xmi:type="uml:UseCase" xmi:id="_kDHosDZ7EeymGvEYQtMk9w" name="check in"/>
-      <packagedElement xmi:type="uml:UseCase" xmi:id="_o_3PgDZ7EeymGvEYQtMk9w" name="get financial data"/>
-      <packagedElement xmi:type="uml:UseCase" xmi:id="_rgCGMDZ7EeymGvEYQtMk9w" name="get airfield data"/>
-      <packagedElement xmi:type="uml:UseCase" xmi:id="_y1vvgDZ7EeymGvEYQtMk9w" name="get airplane data"/>
-      <packagedElement xmi:type="uml:UseCase" xmi:id="_1PjfgDZ7EeymGvEYQtMk9w" name="get security data"/>
-      <packagedElement xmi:type="uml:UseCase" xmi:id="_1SebMDZ8EeymGvEYQtMk9w" name="get customer support"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_kDHosDZ7EeymGvEYQtMk9w" name="check in">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_NjWx4DaNEeyo5IGu0RzeUw">
+          <body>--- Passenger&#xD;
+1. The passenger shows the ticket to the terminal worker&#xD;
+2. 
+The terminal worker enters the ticket number into the system
+&#xD;
+3. The system checks if the ticket number is valid &#xD;
+
+4a. If the ticket number is valid the system checks in the passenger and updates the database
+&#xD;
+4b. If the ticket number is not valid, the system shows an error message to the terminal worker</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_o_3PgDZ7EeymGvEYQtMk9w" name="get financial data">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_5MABwDaNEeyo5IGu0RzeUw">
+          <body>--- Management&#xD;
+1. The management worker request financial reports&#xD;&#xD;
+2. The system asks the management to choose a report from a list of different reports&#xD;&#xD;
+3. The management worker then chooses a report&#xD;
+4. The system then retrieves the needed financial data and compiles it to a report, which then is shown to the management worker.&#xD;
+&#xD;
+--- Finance Worker&#xD;
+
+1. The finance worker request access to the finance data
+&#xD;
+2. The system then retrieves the data from the database and shows the finance worker a dashboard with the data </body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_rgCGMDZ7EeymGvEYQtMk9w" name="get airfield data">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_TX9_YDaOEeyo5IGu0RzeUw">
+          <body>-- Security&#xD;
+1. The security requests data about the airfield status&#xD;
+2. The system retrieves the requested data from the database and returns it&#xD;
+&#xD;
+--- Pilot&#xD;
+1. The pilot request data about the airfield status&#xD;
+2. The system retrieves the requested data from the databsae and returns it</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_y1vvgDZ7EeymGvEYQtMk9w" name="get airplane data">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_Wl4JADaSEeyo5IGu0RzeUw">
+          <body>-- Security&#xD;
+1. The security requests data about the airfield status&#xD;
+2. The system retrieves the requested data from the database and returns it&#xD;
+&#xD;
+--- Pilot&#xD;
+1. The pilot request data about the airplane status&#xD;
+2. The system retrieves the requested data from the databsae and returns it&#xD;
+&#xD;
+--- Crew Member&#xD;
+1. The pilot request data about the airplane status&#xD;
+2. The system retrieves the requested data from the databsae and returns it</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_1PjfgDZ7EeymGvEYQtMk9w" name="get security data">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_e-wfgDaSEeyo5IGu0RzeUw">
+          <body>--- Security&#xD;
+1. The pilot request data about security incidents&#xD;
+2. The system retrieves the requested data from the databsae and returns it</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_1SebMDZ8EeymGvEYQtMk9w" name="get customer support">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_hKPR4DaNEeyo5IGu0RzeUw">
+          <body>1. The passengers request customer support&#xD;
+
+2. The system shows the customer a dashboard with different support resources
+&#xD;
+3. The passenger then can chose between the support resources</body>
+        </ownedComment>
+      </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Actor" xmi:id="_ZV2_UDZ8EeymGvEYQtMk9w" name="Passenger"/>
     <packagedElement xmi:type="uml:Actor" xmi:id="_aPjncDZ8EeymGvEYQtMk9w" name="Management"/>
