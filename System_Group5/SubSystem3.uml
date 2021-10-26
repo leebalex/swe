@@ -5,11 +5,52 @@
   </packageImport>
   <packagedElement xmi:type="uml:Package" xmi:id="_3k1WEDDvEeyemoxuiQ3Sug" name="TerminalManagementSystemPkg">
     <packagedElement xmi:type="uml:Package" xmi:id="_MmTkwDDwEeyemoxuiQ3Sug" name="Terminal Management System">
-      <packagedElement xmi:type="uml:UseCase" xmi:id="_pe6HwDDwEeyemoxuiQ3Sug" name="check-in"/>
-      <packagedElement xmi:type="uml:UseCase" xmi:id="_qhrMUDDwEeyemoxuiQ3Sug" name="baggage handling"/>
-      <packagedElement xmi:type="uml:UseCase" xmi:id="_sz2qUDDwEeyemoxuiQ3Sug" name="boarding"/>
-      <packagedElement xmi:type="uml:UseCase" xmi:id="_t3LvkDDwEeyemoxuiQ3Sug" name="flight information"/>
-      <packagedElement xmi:type="uml:UseCase" xmi:id="_y8JeQDDwEeyemoxuiQ3Sug" name="security control"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_pe6HwDDwEeyemoxuiQ3Sug" name="check-in">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_qJfnsDaUEeyo5IGu0RzeUw">
+          <body>--- Passenger / Worker&#xD;
+1. The passenger shows the passport to the worker&#xD;
+2. The worker enters the passport details into the system&#xD;
+3. The system checks the databse for the validity of the passport&#xD;
+4a. If the passport is valid the worker will receive a success message and check in the passenger&#xD;
+4b. If the passport is not valid the worker will receive an error message and he has to handle the passenger&#xD;
+5. The worker prints a ticket for the passenger&#xD;
+6 The passenger will receive a ticket</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_qhrMUDDwEeyemoxuiQ3Sug" name="baggage handling">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_x6L80DaUEeyo5IGu0RzeUw">
+          <body>--- Passenger / Landside management system&#xD;
+1. The passenger hands over the baggage&#xD;
+2. The system registers the baggage in the databsase, updates the landside management system and prints baggage tags&#xD;
+3. The passenger will reiceive tags for the baggage&#xD;
+</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_sz2qUDDwEeyemoxuiQ3Sug" name="boarding">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_4rrCQDaVEeyo5IGu0RzeUw">
+          <body>--- Passenger / Landside management system&#xD;
+1. The passenger enters the ticket&#xD;
+2. The system registers the passenger and updates the landside management system&#xD;
+3. The passenger can board the bus or plane</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_t3LvkDDwEeyemoxuiQ3Sug" name="flight information">
+        <ownedComment xmi:type="uml:Comment" xmi:id="__BPdMDaVEeyo5IGu0RzeUw">
+          <body>--- Control management system&#xD;
+1. The control management system request the flight information&#xD;
+2. The system retrieves the data from the database and returns it&#xD;
+3. The control management receives the data</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_y8JeQDDwEeyemoxuiQ3Sug" name="security control">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_bmg0gDaWEeyo5IGu0RzeUw">
+          <body>--- Passenger / Security&#xD;
+1. The passenger enters the security area&#xD;
+2. The security checks the passenger and enters data about the passenger into the system&#xD;
+3. The system stores the entered data in the database&#xD;
+</body>
+        </ownedComment>
+      </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Actor" xmi:id="_PgoA0DDwEeyemoxuiQ3Sug" name="Passenger"/>
     <packagedElement xmi:type="uml:Actor" xmi:id="_Rfb24DDwEeyemoxuiQ3Sug" name="Landside Management System"/>
