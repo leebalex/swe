@@ -15,5 +15,49 @@
   <packageImport xmi:type="uml:PackageImport" xmi:id="_k78AQCXWEeybxdv-5Uc1kw">
     <importedPackage xmi:type="uml:Model" href="SubSystem6.uml#_UjfyMCXWEeybxdv-5Uc1kw"/>
   </packageImport>
-  <packagedElement xmi:type="uml:Class" xmi:id="_cjyfACXVEeybxdv-5Uc1kw" name="SystemClass"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_5Ed8kDZwEeyoTYcW5j3CWg" name="Airpor Management System">
+    <packagedElement xmi:type="uml:Package" xmi:id="_Lwz7YDZ7EeymGvEYQtMk9w" name="Airpot Management System">
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_igv3ADZ7EeymGvEYQtMk9w" name="book a flight">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_BPH98DZ-EeymGvEYQtMk9w">
+          <body>1. The passenger navigates to the booking site&#xD;
+
+2. The system shows a dashboard with available flights&#xD;
+
+3. The passenger chooses a flight&#xD;
+
+4. The system asks the passenger for confirmation. &#xD;
+
+5. The passenger can cancel or confirm
+&#xD;
+6a. If the passenger confirms the system updates the flight database and updates the dashboard&#xD;
+
+6b. If the passenger cancels the booking, the system will show the initial dashboard
+</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_kDHosDZ7EeymGvEYQtMk9w" name="check in"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_o_3PgDZ7EeymGvEYQtMk9w" name="get financial data"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_rgCGMDZ7EeymGvEYQtMk9w" name="get airfield data"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_y1vvgDZ7EeymGvEYQtMk9w" name="get airplane data"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_1PjfgDZ7EeymGvEYQtMk9w" name="get security data"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_1SebMDZ8EeymGvEYQtMk9w" name="get customer support"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_ZV2_UDZ8EeymGvEYQtMk9w" name="Passenger"/>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_aPjncDZ8EeymGvEYQtMk9w" name="Management"/>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_cBjwkDZ8EeymGvEYQtMk9w" name="Security"/>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_duIAEDZ8EeymGvEYQtMk9w" name="Finance Worker"/>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_erHz0DZ8EeymGvEYQtMk9w" name="Pilot"/>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_fzDFMDZ8EeymGvEYQtMk9w" name="Crew Members"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_pzw8MDZ8EeymGvEYQtMk9w"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_riUIsDZ8EeymGvEYQtMk9w"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_uQZfkDZ8EeymGvEYQtMk9w"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_v89IADZ8EeymGvEYQtMk9w"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_51J8MDZ8EeymGvEYQtMk9w"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_DiztQDZ9EeymGvEYQtMk9w"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Fh7FUDZ9EeymGvEYQtMk9w"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Hygn4DZ9EeymGvEYQtMk9w"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_KIm8kDZ9EeymGvEYQtMk9w"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_MOQacDZ9EeymGvEYQtMk9w"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_OJ9SIDZ9EeymGvEYQtMk9w"/>
+  </packagedElement>
 </uml:Model>

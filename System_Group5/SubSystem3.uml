@@ -30,27 +30,6 @@
     <client xmi:type="uml:Model" href="System_Group5.uml#_Wv3OACXUEeybxdv-5Uc1kw"/>
     <supplier xmi:type="uml:Model" href="SubSystem4.uml#_QsNXkCXWEeybxdv-5Uc1kw"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Package" xmi:id="_KrccwDD_EeyBY5jOGTlNyA" name="Airpor Management System">
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_TCEwgDD_EeyBY5jOGTlNyA" name="booking/checkin"/>
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_ceUBcDD_EeyBY5jOGTlNyA" name="financial information"/>
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_y-PyMDD_EeyBY5jOGTlNyA" name="airplane/airfield information"/>
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_6cQb4DD_EeyBY5jOGTlNyA" name="security information"/>
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_EQsKYDEAEeyBY5jOGTlNyA" name="customer support"/>
-  </packagedElement>
-  <packagedElement xmi:type="uml:Actor" xmi:id="_ObMsADD_EeyBY5jOGTlNyA" name="Passengers"/>
-  <packagedElement xmi:type="uml:Association" xmi:id="_WybcsDD_EeyBY5jOGTlNyA"/>
-  <packagedElement xmi:type="uml:Actor" xmi:id="_Yqa5EDD_EeyBY5jOGTlNyA" name="Management"/>
-  <packagedElement xmi:type="uml:Actor" xmi:id="_m-bKMDD_EeyBY5jOGTlNyA" name="Security "/>
-  <packagedElement xmi:type="uml:Actor" xmi:id="_qYZWsDD_EeyBY5jOGTlNyA" name="Finance Worker"/>
-  <packagedElement xmi:type="uml:Actor" xmi:id="_sNblsDD_EeyBY5jOGTlNyA" name="Pilot"/>
-  <packagedElement xmi:type="uml:Actor" xmi:id="_uJ9j0DD_EeyBY5jOGTlNyA" name="Crew Members"/>
-  <packagedElement xmi:type="uml:Association" xmi:id="_2eSKcDD_EeyBY5jOGTlNyA"/>
-  <packagedElement xmi:type="uml:Association" xmi:id="_4ENmcDD_EeyBY5jOGTlNyA"/>
-  <packagedElement xmi:type="uml:Association" xmi:id="_55qFIDD_EeyBY5jOGTlNyA"/>
-  <packagedElement xmi:type="uml:Association" xmi:id="__sMrgDD_EeyBY5jOGTlNyA"/>
-  <packagedElement xmi:type="uml:Association" xmi:id="_CnFvUDEAEeyBY5jOGTlNyA"/>
-  <packagedElement xmi:type="uml:Association" xmi:id="_HI9YADEAEeyBY5jOGTlNyA"/>
-  <packagedElement xmi:type="uml:Association" xmi:id="_M5fMMDEAEeyBY5jOGTlNyA" name="request"/>
   <packagedElement xmi:type="uml:Dependency" xmi:id="_apXVMDEDEeykZr-uc4SHdw" name="provides" client="_Oaa7ICXWEeybxdv-5Uc1kw">
     <supplier xmi:type="uml:Model" href="SubSystem2.uml#_cRcAMCXUEeybxdv-5Uc1kw"/>
   </packagedElement>
