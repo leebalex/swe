@@ -5,11 +5,55 @@
   </packageImport>
   <packagedElement xmi:type="uml:Package" xmi:id="_RTm6ADDzEeyemoxuiQ3Sug" name="AirsideManagementSystemPkg">
     <packagedElement xmi:type="uml:Package" xmi:id="_X-GcEDDzEeyemoxuiQ3Sug" name="Airside Management System">
-      <packagedElement xmi:type="uml:UseCase" xmi:id="_MYAGMDD0EeyemoxuiQ3Sug" name="check aircraft position"/>
-      <packagedElement xmi:type="uml:UseCase" xmi:id="_e0dacDD0EeyemoxuiQ3Sug" name="check security information"/>
-      <packagedElement xmi:type="uml:UseCase" xmi:id="_ib7QYDD0EeyemoxuiQ3Sug" name="check maintenance information"/>
-      <packagedElement xmi:type="uml:UseCase" xmi:id="_qa3c4DD0EeyemoxuiQ3Sug" name="check airfield state"/>
-      <packagedElement xmi:type="uml:UseCase" xmi:id="_Q_lVUDD0EeyemoxuiQ3Sug" name="check fuel levels"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_MYAGMDD0EeyemoxuiQ3Sug" name="check aircraft position">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_3V3mwDayEeyKfImaRgAsIA">
+          <body>-- Pilot / Airside workers&#xD;
+1. The pilot or airside worker request the airaft position from the system&#xD;
+2. The system displays the position in form of coordinates inside a dashboard</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_e0dacDD0EeyemoxuiQ3Sug" name="check security information">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_pJ5a0DazEeyKfImaRgAsIA">
+          <body>---  Control management system&#xD;
+1. The control management system requests the security information from the system&#xD;
+2. The system returns the security information as a collection&#xD;
+&#xD;
+--- Airside workers&#xD;
+1. The airside worker requests the security information from the system&#xD;
+2. The system returns the security information inside a dasboard </body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_ib7QYDD0EeyemoxuiQ3Sug" name="check maintenance information">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_LHEq8Da0EeyKfImaRgAsIA">
+          <body>---  Control management system&#xD;
+1. The control management system requests the maintenance information from the system&#xD;
+2. The system returns the security information as a collection&#xD;
+&#xD;
+--- Airside workers&#xD;
+1. The airside worker requests the maintenace information from the system&#xD;
+2. The system returns the security information inside a dasboard </body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_qa3c4DD0EeyemoxuiQ3Sug" name="check airfield state">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_6L28cDayEeyKfImaRgAsIA">
+          <body>--- Pilot / Airside workers&#xD;
+1. The pilot or airside worker requests the state of the airfield from the system&#xD;
+2. The system returns the state of the airfield inside a dashboard &#xD;
+&#xD;
+--- Control management system&#xD;
+1. The control management system requests the state of the airfield from the system&#xD;
+2. The system returns the state as an object that contains the different properties of the airfield, such as free lanes, airplane positions, landside vehicle positions, etc</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_Q_lVUDD0EeyemoxuiQ3Sug" name="check fuel levels">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_lmtdYDayEeyKfImaRgAsIA">
+          <body>-- Pilot / Airside workers&#xD;
+1. The pilot or airside worker requests the fuel levels from the system&#xD;
+2. The system retrieves the fuel levels and displays them inside a dashboard&#xD;
+&#xD;
+</body>
+        </ownedComment>
+      </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Actor" xmi:id="_joC6sDDzEeyemoxuiQ3Sug" name="Pilot"/>
     <packagedElement xmi:type="uml:Actor" xmi:id="_m1UvADDzEeyemoxuiQ3Sug" name="Control Management System"/>
