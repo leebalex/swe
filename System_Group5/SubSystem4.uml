@@ -4,12 +4,82 @@
     <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
   </packageImport>
   <packagedElement xmi:type="uml:Package" xmi:id="_LHsHIDDvEeyemoxuiQ3Sug" name="ControlManagementSystemPkg">
+    <ownedComment xmi:type="uml:Comment" xmi:id="_gL6LsDctEeyKfImaRgAsIA">
+      <body>--- Security worker / Control worker&#xD;
+1. The security or control worker request the security information&#xD;
+2. The system returns the security information inside a dashboard&#xD;
+&#xD;
+--- Control worker&#xD;
+1. The control worker requests the airside information&#xD;
+2. The system returns the airside information inside a dashboard&#xD;
+&#xD;
+</body>
+    </ownedComment>
     <packagedElement xmi:type="uml:Package" xmi:id="_ynjVADD1EeyemoxuiQ3Sug" name="Control Management System">
-      <packagedElement xmi:type="uml:UseCase" xmi:id="_P7-4YDD2EeyemoxuiQ3Sug" name="check security information"/>
-      <packagedElement xmi:type="uml:UseCase" xmi:id="_oduI0DD2EeyemoxuiQ3Sug" name="check airside information"/>
-      <packagedElement xmi:type="uml:UseCase" xmi:id="_q4jzkDD2EeyemoxuiQ3Sug" name="check landside information"/>
-      <packagedElement xmi:type="uml:UseCase" xmi:id="_u97tgDD2EeyemoxuiQ3Sug" name="check maintenance "/>
-      <packagedElement xmi:type="uml:UseCase" xmi:id="_8y_Y0DD2EeyemoxuiQ3Sug" name="check expenses"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_P7-4YDD2EeyemoxuiQ3Sug" name="check security information">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_6lw0UDctEeyKfImaRgAsIA">
+          <body>--- Security Worker / Control worker&#xD;
+1. The security or control worker requests the security information from the system&#xD;
+2. The system returns the security information inside a dashboard&#xD;
+&#xD;
+--- Terminal managmeent system&#xD;
+1. The terminal management system requests the security information&#xD;
+2. The system returns the data as a collection&#xD;
+&#xD;
+--- Airside managmeent system&#xD;
+1. The ariside management system requests the security information&#xD;
+2. The system returns the data as a collection&#xD;
+&#xD;
+--- Landside management system&#xD;
+1. The aindside management system requests the security information&#xD;
+2. The system returns the data as a collection&#xD;
+&#xD;
+--- Financial management system&#xD;
+1. The financial management system requests the security information&#xD;
+2. The system returns the data as a collection&#xD;
+</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_oduI0DD2EeyemoxuiQ3Sug" name="check airside information">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_0I-sMDcvEeyKfImaRgAsIA">
+          <body>--- Control worker&#xD;
+1. The control worker requests the airside information from the system&#xD;
+2. The system returns the airside information inside a dashboard&#xD;
+&#xD;
+--- Landside management system&#xD;
+1. The landside management system requests the airside information&#xD;
+2. The system returns the data as an object with different properties such as plane positions, free lanes, etc</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_q4jzkDD2EeyemoxuiQ3Sug" name="check landside information">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_1tWB8DcvEeyKfImaRgAsIA">
+          <body>--- Control worker&#xD;
+1. The control worker requests the landside information from the system&#xD;
+2. The system returns the landside information inside a dashboard&#xD;
+&#xD;
+--- Airside managmeent system&#xD;
+1. The ariside management system requests the landside information&#xD;
+2. The system returns the data as an object with different properties such as landside vehicle positions, free parking spots, etc</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_u97tgDD2EeyemoxuiQ3Sug" name="check maintenance ">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_3BSWEDcvEeyKfImaRgAsIA">
+          <body>--- Control worker&#xD;
+1. Control worker requests the maintenance data from the system&#xD;
+2. The system returns the maintenance data inside a dashboard</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_8y_Y0DD2EeyemoxuiQ3Sug" name="check expenses">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_4Onr4DcvEeyKfImaRgAsIA">
+          <body>--- Control worker&#xD;
+1. Control worker requests the data about the expenses from the system&#xD;
+2. The system returns the data about the expenses inside a dashboard&#xD;
+&#xD;
+--- Financial management system&#xD;
+1. The financial management system requests the data about the expense&#xD;
+2. The system returns the data as a collection of different reports</body>
+        </ownedComment>
+      </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Actor" xmi:id="_95gxcDD1EeyemoxuiQ3Sug" name="Airside Management System"/>
     <packagedElement xmi:type="uml:Actor" xmi:id="__WlMYDD1EeyemoxuiQ3Sug" name="Landside Management System"/>

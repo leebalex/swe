@@ -56,7 +56,7 @@ The terminal worker enters the ticket number into the system
 1. The management worker request financial reports&#xD;&#xD;
 2. The system asks the management to choose a report from a list of different reports&#xD;&#xD;
 3. The management worker then chooses a report&#xD;
-4. The system then retrieves the needed financial data and compiles it to a report, which then is shown to the management worker.&#xD;
+4. The system then retrieves the needed financial data and compiles it to a report, which then is shown to the management worker inside a dashboard.&#xD;
 &#xD;
 --- Finance Worker&#xD;
 
@@ -69,33 +69,33 @@ The terminal worker enters the ticket number into the system
         <ownedComment xmi:type="uml:Comment" xmi:id="_TX9_YDaOEeyo5IGu0RzeUw">
           <body>-- Security&#xD;
 1. The security requests data about the airfield status&#xD;
-2. The system retrieves the requested data from the database and returns it&#xD;
+2. The system retrieves the requested data from the database and returns it inside a dashboard&#xD;
 &#xD;
 --- Pilot&#xD;
 1. The pilot request data about the airfield status&#xD;
-2. The system retrieves the requested data from the databsae and returns it</body>
+2. The system retrieves the requested data from the databsae and returns it inside a dashboard</body>
         </ownedComment>
       </packagedElement>
       <packagedElement xmi:type="uml:UseCase" xmi:id="_y1vvgDZ7EeymGvEYQtMk9w" name="get airplane data">
         <ownedComment xmi:type="uml:Comment" xmi:id="_Wl4JADaSEeyo5IGu0RzeUw">
           <body>-- Security&#xD;
 1. The security requests data about the airfield status&#xD;
-2. The system retrieves the requested data from the database and returns it&#xD;
+2. The system retrieves the requested data from the database and returns it inside a dashboard&#xD;
 &#xD;
 --- Pilot&#xD;
 1. The pilot request data about the airplane status&#xD;
-2. The system retrieves the requested data from the databsae and returns it&#xD;
+2. The system retrieves the requested data from the databsae and returns it inside a dashboard&#xD;
 &#xD;
 --- Crew Member&#xD;
 1. The pilot request data about the airplane status&#xD;
-2. The system retrieves the requested data from the databsae and returns it</body>
+2. The system retrieves the requested data from the databsae and returns it inside a dashboard</body>
         </ownedComment>
       </packagedElement>
       <packagedElement xmi:type="uml:UseCase" xmi:id="_1PjfgDZ7EeymGvEYQtMk9w" name="get security data">
         <ownedComment xmi:type="uml:Comment" xmi:id="_e-wfgDaSEeyo5IGu0RzeUw">
           <body>--- Security&#xD;
 1. The pilot request data about security incidents&#xD;
-2. The system retrieves the requested data from the databsae and returns it</body>
+2. The system retrieves the requested data from the databsae and returns it inside a dashboard</body>
         </ownedComment>
       </packagedElement>
       <packagedElement xmi:type="uml:UseCase" xmi:id="_1SebMDZ8EeymGvEYQtMk9w" name="get customer support">
@@ -104,7 +104,7 @@ The terminal worker enters the ticket number into the system
 
 2. The system shows the customer a dashboard with different support resources
 &#xD;
-3. The passenger then can chose between the support resources</body>
+3. The passenger then can chose between the available support resources</body>
         </ownedComment>
       </packagedElement>
     </packagedElement>

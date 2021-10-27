@@ -7,55 +7,55 @@
     <packagedElement xmi:type="uml:Package" xmi:id="_cCpdUDD4EeyemoxuiQ3Sug" name="Financial Management System">
       <packagedElement xmi:type="uml:UseCase" xmi:id="__6gRcDD4EeyemoxuiQ3Sug" name="check security information">
         <ownedComment xmi:type="uml:Comment" xmi:id="_qg7BUDZ1Eey3Hpl2FatJrg">
-          <body>The financial management provides security information to the control management system.&#xD;
-Step 1: User logs into the system. Since this is sensitive information only specific user can access the system&#xD;
-Step 2: System shows dashboard &#xD;
-Step 3: User accesses the data and provides it to the specific department&#xD;
-Step 4: Control management system uses retrieved data for managing delays, security problems and emergencies</body>
+          <body>--- The financial management provides security information to the control management system.&#xD;
+1. User logs into the system. Since this is sensitive information only specific user can access the system&#xD;
+2. System shows dashboard &#xD;
+3. User accesses the data and provides it to the specific department&#xD;
+4. Control management system uses retrieved data for managing delays, security problems and emergencies</body>
         </ownedComment>
       </packagedElement>
       <packagedElement xmi:type="uml:UseCase" xmi:id="_B_XFIDD5EeyemoxuiQ3Sug" name="check facility reports">
         <ownedComment xmi:type="uml:Comment" xmi:id="_-eJkwDZ1Eey3Hpl2FatJrg">
-          <body>Step 1: User logs into the system. Since this is sensitive information only specific user can access the system&#xD;
-Step 2: System shows dashboard &#xD;
-Step 3: User accesses the data and provides it to the specific department&#xD;
-Step 4: Management uses retrieved data for managing facilities currently in use, possible renovations, future construction projects</body>
+          <body>--- 1. User logs into the system. Since this is sensitive information only specific user can access the system&#xD;
+2. System shows dashboard &#xD;
+3. User accesses the data and provides it to the specific department&#xD;
+3. Management uses retrieved data for managing facilities currently in use, possible renovations, future construction projects</body>
         </ownedComment>
       </packagedElement>
       <packagedElement xmi:type="uml:UseCase" xmi:id="_D7PjADD5EeyemoxuiQ3Sug" name="check invoice information">
         <ownedComment xmi:type="uml:Comment" xmi:id="_J19KgDZ2Eey3Hpl2FatJrg">
-          <body>The Customer Service checks invoice information per customer.&#xD;
-Step 1: User logs into the system. Since this is sensitive information only specific user can access the system&#xD;
-Step 2: System shows dashboard &#xD;
-Step 3: Customer Service retrieves data about customers like booking history, boarding dates&#xD;
-Step 4: Customer Service handles inquiries from customers</body>
+          <body>--- The Customer Service checks invoice information per customer.&#xD;
+1. User logs into the system. Since this is sensitive information only specific user can access the system&#xD;
+2. System shows dashboard &#xD;
+3. Customer Service retrieves data about customers like booking history, boarding dates&#xD;
+4. Customer Service handles inquiries from customers</body>
         </ownedComment>
       </packagedElement>
       <packagedElement xmi:type="uml:UseCase" xmi:id="_MGqsUDD5EeyemoxuiQ3Sug" name="check financial reports">
         <ownedComment xmi:type="uml:Comment" xmi:id="_6W-UADZ1Eey3Hpl2FatJrg">
-          <body>The financial management system provides financial reports about possible costs like maintenance, facilities, employees etc.&#xD;
-Step 1: User logs into the system. Since this is sensitive information only specific user can access the system&#xD;
-Step 2: System shows dashboard &#xD;
-Step 3: User accesses the data and provides it to the specific department&#xD;
-Step 4: Management uses retrieved data for reporting to others</body>
+          <body>--- The financial management system provides financial reports about possible costs like maintenance, facilities, employees etc.&#xD;
+1. User logs into the system. Since this is sensitive information only specific user can access the system&#xD;
+2. System shows dashboard &#xD;
+3. User accesses the data and provides it to the specific department&#xD;
+4. Management uses retrieved data for reporting to others</body>
         </ownedComment>
       </packagedElement>
       <packagedElement xmi:type="uml:UseCase" xmi:id="_tEbKwDZzEey3Hpl2FatJrg" name="check aircraft information">
         <ownedComment xmi:type="uml:Comment" xmi:id="_jkA5kDZ1Eey3Hpl2FatJrg">
-          <body>The financial management provides data about registered and ready-to use aircrafts to the control management system.&#xD;
-Step 1: User logs into the system. Since this is sensitive information only specific user can access the system&#xD;
-Step 2: System shows dashboard &#xD;
-Step 3: User accesses the data and provides it to the specific department&#xD;
-Step 4: Control management system uses retrieved data for monitoring flights and manage airport maintenance</body>
+          <body>--- The financial management provides data about registered and ready-to use aircrafts to the control management system.&#xD;
+1. User logs into the system. Since this is sensitive information only specific user can access the system&#xD;
+2. System shows dashboard &#xD;
+3. User accesses the data and provides it to the specific department&#xD;
+4. Control management system uses retrieved data for monitoring flights and manage airport maintenance</body>
         </ownedComment>
       </packagedElement>
       <packagedElement xmi:type="uml:UseCase" xmi:id="_UhkqkDZ0Eey3Hpl2FatJrg" name="check flight data">
         <ownedComment xmi:type="uml:Comment" xmi:id="_XbkhEDZ1Eey3Hpl2FatJrg">
-          <body>Terminal Management gets data about flights like departure- and landing time/gate and flight prices.&#xD;
-Step 1: User logs into the system. Since this is sensitive information only specific user can access the system&#xD;
-Step 2: System shows dashboard &#xD;
-Step 3: User accesses the flight data provided by the financial management&#xD;
-Step 4: Terminal Management System manages passengers check-in, security unites and flight information</body>
+          <body>--- Terminal Management gets data about flights like departure- and landing time/gate and flight prices.&#xD;
+1. User logs into the system. Since this is sensitive information only specific user can access the system&#xD;
+2. System shows dashboard &#xD;
+3. User accesses the flight data provided by the financial management&#xD;
+4. Terminal Management System manages passengers check-in, security unites and flight information</body>
         </ownedComment>
       </packagedElement>
     </packagedElement>

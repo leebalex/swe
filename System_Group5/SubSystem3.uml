@@ -29,9 +29,11 @@
       <packagedElement xmi:type="uml:UseCase" xmi:id="_sz2qUDDwEeyemoxuiQ3Sug" name="boarding">
         <ownedComment xmi:type="uml:Comment" xmi:id="_4rrCQDaVEeyo5IGu0RzeUw">
           <body>--- Passenger / Landside management system&#xD;
-1. The passenger enters the ticket&#xD;
-2. The system registers the passenger and updates the landside management system&#xD;
-3. The passenger can board the bus or plane</body>
+1. The passenger enters the ticket number&#xD;
+2. The system checks if the ticket number is valid&#xD;
+3a. If the ticket number is valid the system registers the passenger and updates the landside management&#xD;
+3b. If the ticket number is not valid the system shows an error message&#xD;
+4. The passenger can board the bus or plane</body>
         </ownedComment>
       </packagedElement>
       <packagedElement xmi:type="uml:UseCase" xmi:id="_t3LvkDDwEeyemoxuiQ3Sug" name="flight information">
