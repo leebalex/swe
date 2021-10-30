@@ -21,18 +21,20 @@
         <ownedComment xmi:type="uml:Comment" xmi:id="_BPH98DZ-EeymGvEYQtMk9w">
           <body>--- Passenger&#xD;
 1. The passenger navigates to the booking site&#xD;
+2. The system shows the passenger a login window&#xD;
+3. The passenger enters his/her/etc credentials&#xD;
+4a. If the entered credentials are valid the system shows a dashboard with available flights&#xD;
+4b. If the entered credentials are invalid the system shows an error message&#xD;
 
-2. The system shows a dashboard with available flights&#xD;
+5. The passenger chooses a flight&#xD;
 
-3. The passenger chooses a flight&#xD;
+6. The system asks the passenger for confirmation. &#xD;
 
-4. The system asks the passenger for confirmation. &#xD;
-
-5. The passenger can cancel or confirm
+7. The passenger can cancel or confirm
 &#xD;
-6a. If the passenger confirms the system updates the flight database and updates the dashboard&#xD;
+8a. If the passenger confirms the system updates the flight database and updates the dashboard&#xD;
 
-6b. If the passenger cancels the booking, the system will show the initial dashboard
+8b. If the passenger cancels the booking, the system will show the initial dashboard
 </body>
         </ownedComment>
       </packagedElement>
@@ -52,55 +54,51 @@ The terminal worker enters the ticket number into the system
       </packagedElement>
       <packagedElement xmi:type="uml:UseCase" xmi:id="_o_3PgDZ7EeymGvEYQtMk9w" name="get financial data">
         <ownedComment xmi:type="uml:Comment" xmi:id="_5MABwDaNEeyo5IGu0RzeUw">
-          <body>--- Management&#xD;
-1. The management worker request financial reports&#xD;&#xD;
-2. The system asks the management to choose a report from a list of different reports&#xD;&#xD;
-3. The management worker then chooses a report&#xD;
-4. The system then retrieves the needed financial data and compiles it to a report, which then is shown to the management worker inside a dashboard.&#xD;
-&#xD;
---- Finance Worker&#xD;
-
-1. The finance worker request access to the finance data
-&#xD;
-2. The system then retrieves the data from the database and shows the finance worker a dashboard with the data </body>
+          <body>--- Management / Finance Worker:&#xD;
+1. The management worker/finance worker request financial reports&#xD;
+2. The system shows the management worker/finance worker a login window&#xD;
+3. The management worker/finance worker enters his/her/etc credentials&#xD;
+4a. If the management worker/finance worker enters valid credentials the system shows a dashboard from where the management worker/ finance worker is able to choose a report from a list of different reports&#xD;
+4b. If the management worker/finance worker enters invalid credentials the system shows an error message&#xD;
+5. The management worker/finance worker then chooses a report&#xD;
+</body>
         </ownedComment>
       </packagedElement>
       <packagedElement xmi:type="uml:UseCase" xmi:id="_rgCGMDZ7EeymGvEYQtMk9w" name="get airfield data">
         <ownedComment xmi:type="uml:Comment" xmi:id="_TX9_YDaOEeyo5IGu0RzeUw">
-          <body>-- Security&#xD;
-1. The security requests data about the airfield status&#xD;
-2. The system retrieves the requested data from the database and returns it inside a dashboard&#xD;
-&#xD;
---- Pilot&#xD;
-1. The pilot request data about the airfield status&#xD;
-2. The system retrieves the requested data from the databsae and returns it inside a dashboard</body>
+          <body>-- Security / Pilot&#xD;
+1. The security or pilot requests data about the airfield status&#xD;
+2. The systems shows the security/pilot a login window&#xD;
+3. The security/pilot enters his/her/etc login credentials&#xD;
+4a. If the credentials are valid the system retrieves the data from the database and returns it inside a dashboard&#xD;
+4b. If the credentials are invalid the system returns an error message&#xD;
+</body>
         </ownedComment>
       </packagedElement>
       <packagedElement xmi:type="uml:UseCase" xmi:id="_y1vvgDZ7EeymGvEYQtMk9w" name="get airplane data">
         <ownedComment xmi:type="uml:Comment" xmi:id="_Wl4JADaSEeyo5IGu0RzeUw">
-          <body>-- Security&#xD;
-1. The security requests data about the airfield status&#xD;
-2. The system retrieves the requested data from the database and returns it inside a dashboard&#xD;
-&#xD;
---- Pilot&#xD;
-1. The pilot request data about the airplane status&#xD;
-2. The system retrieves the requested data from the databsae and returns it inside a dashboard&#xD;
-&#xD;
---- Crew Member&#xD;
-1. The pilot request data about the airplane status&#xD;
-2. The system retrieves the requested data from the databsae and returns it inside a dashboard</body>
+          <body>-- Security / Pilot / Crew Member&#xD;
+1. The security/pilot/crew member requests data about the airplane status&#xD;
+2. The systems shows the security/pilot/crew member a login window&#xD;
+3. The security/pilot/crew member enters his/her/etc login credentials&#xD;
+4a. If the credentials are valid the system retrieves the data from the database and returns it inside a dashboard&#xD;
+4b. If the credentials are invalid the system returns an error message</body>
         </ownedComment>
       </packagedElement>
       <packagedElement xmi:type="uml:UseCase" xmi:id="_1PjfgDZ7EeymGvEYQtMk9w" name="get security data">
         <ownedComment xmi:type="uml:Comment" xmi:id="_e-wfgDaSEeyo5IGu0RzeUw">
           <body>--- Security&#xD;
-1. The pilot request data about security incidents&#xD;
-2. The system retrieves the requested data from the databsae and returns it inside a dashboard</body>
+1. The security requests data about the airfield status&#xD;
+2. The systems shows the security person a login window&#xD;
+3. The security person enters his/her/etc login credentials&#xD;
+4a. If the credentials are valid the system retrieves the data from the database and returns it inside a dashboard&#xD;
+4b. If the credentials are invalid the system returns an error message</body>
         </ownedComment>
       </packagedElement>
       <packagedElement xmi:type="uml:UseCase" xmi:id="_1SebMDZ8EeymGvEYQtMk9w" name="get customer support">
         <ownedComment xmi:type="uml:Comment" xmi:id="_hKPR4DaNEeyo5IGu0RzeUw">
-          <body>1. The passengers request customer support&#xD;
+          <body>--- Passenger&#xD;
+1. The passengers request customer support&#xD;
 
 2. The system shows the customer a dashboard with different support resources
 &#xD;
