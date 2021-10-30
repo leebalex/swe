@@ -7,7 +7,7 @@
     <packagedElement xmi:type="uml:Package" xmi:id="_cCpdUDD4EeyemoxuiQ3Sug" name="Financial Management System">
       <packagedElement xmi:type="uml:UseCase" xmi:id="__6gRcDD4EeyemoxuiQ3Sug" name="check security information">
         <ownedComment xmi:type="uml:Comment" xmi:id="_qg7BUDZ1Eey3Hpl2FatJrg">
-          <body>--- The financial management provides security information to the control management system.&#xD;
+          <body>--- The financial management provides security information to the control management system. &#xD;
 1. User logs into the system. Since this is sensitive information only specific user can access the system&#xD;
 2. System shows dashboard &#xD;
 3. User accesses the data and provides it to the specific department&#xD;
@@ -16,7 +16,8 @@
       </packagedElement>
       <packagedElement xmi:type="uml:UseCase" xmi:id="_B_XFIDD5EeyemoxuiQ3Sug" name="check facility reports">
         <ownedComment xmi:type="uml:Comment" xmi:id="_-eJkwDZ1Eey3Hpl2FatJrg">
-          <body>--- 1. User logs into the system. Since this is sensitive information only specific user can access the system&#xD;
+          <body>--- Finance Worker logs in first, since this is sensitive information only specific user can access the system.&#xD;
+1. User logs into the system&#xD;
 2. System shows dashboard &#xD;
 3. User accesses the data and provides it to the specific department&#xD;
 3. Management uses retrieved data for managing facilities currently in use, possible renovations, future construction projects</body>
@@ -33,7 +34,7 @@
       </packagedElement>
       <packagedElement xmi:type="uml:UseCase" xmi:id="_MGqsUDD5EeyemoxuiQ3Sug" name="check financial reports">
         <ownedComment xmi:type="uml:Comment" xmi:id="_6W-UADZ1Eey3Hpl2FatJrg">
-          <body>--- The financial management system provides financial reports about possible costs like maintenance, facilities, employees etc.&#xD;
+          <body>--- The financial management system provides financial reports about possible costs like maintenance, facilities, employees etc. &#xD;
 1. User logs into the system. Since this is sensitive information only specific user can access the system&#xD;
 2. System shows dashboard &#xD;
 3. User accesses the data and provides it to the specific department&#xD;
@@ -42,7 +43,7 @@
       </packagedElement>
       <packagedElement xmi:type="uml:UseCase" xmi:id="_tEbKwDZzEey3Hpl2FatJrg" name="check aircraft information">
         <ownedComment xmi:type="uml:Comment" xmi:id="_jkA5kDZ1Eey3Hpl2FatJrg">
-          <body>--- The financial management provides data about registered and ready-to use aircrafts to the control management system.&#xD;
+          <body>--- The financial management provides data about registered and ready-to use aircrafts to the control management system. &#xD;
 1. User logs into the system. Since this is sensitive information only specific user can access the system&#xD;
 2. System shows dashboard &#xD;
 3. User accesses the data and provides it to the specific department&#xD;
