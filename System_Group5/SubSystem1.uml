@@ -9,7 +9,10 @@
         <ownedComment xmi:type="uml:Comment" xmi:id="_3V3mwDayEeyKfImaRgAsIA">
           <body>-- Pilot / Airside workers&#xD;
 1. The pilot or airside worker request the aircraft position from the system&#xD;
-2. The system displays the position in form of coordinates inside a dashboard</body>
+2. The system shows a login windows&#xD;
+3. The pilot/airside worker provides his/her/etc credentials&#xD;
+4a. If the provided credentials are valid the system displays the position in form of coordinates inside a dashboard&#xD;
+4b. If the provided credentials are invalid the system shows an error message</body>
         </ownedComment>
       </packagedElement>
       <packagedElement xmi:type="uml:UseCase" xmi:id="_e0dacDD0EeyemoxuiQ3Sug" name="check security information">
@@ -19,8 +22,12 @@
 2. The system returns the security information as a collection&#xD;
 &#xD;
 --- Airside workers&#xD;
-1. The airside worker requests the security information from the system&#xD;
-2. The system returns the security information inside a dasboard </body>
+1. The airside worker request the security information from the system&#xD;
+2. The system shows a login windows&#xD;
+3. The airside worker provides his/her/etc credentials&#xD;
+4a. If the provided credentials are valid the system displays the security information inside a dasboard &#xD;
+4b. If the provided credentials are invalid the system shows an error message&#xD;
+</body>
         </ownedComment>
       </packagedElement>
       <packagedElement xmi:type="uml:UseCase" xmi:id="_ib7QYDD0EeyemoxuiQ3Sug" name="check maintenance information">
@@ -30,15 +37,21 @@
 2. The system returns the security information as a collection&#xD;
 &#xD;
 --- Airside workers&#xD;
-1. The airside worker requests the maintenace information from the system&#xD;
-2. The system returns the security information inside a dasboard </body>
+1. The airside worker request the maintenance information from the system&#xD;
+2. The system shows a login windows&#xD;
+3. The airside worker provides his/her/etc credentials&#xD;
+4a. If the provided credentials are valid the system displays the maintenance information inside a dasboard &#xD;
+4b. If the provided credentials are invalid the system shows an error message</body>
         </ownedComment>
       </packagedElement>
       <packagedElement xmi:type="uml:UseCase" xmi:id="_qa3c4DD0EeyemoxuiQ3Sug" name="check airfield state">
         <ownedComment xmi:type="uml:Comment" xmi:id="_6L28cDayEeyKfImaRgAsIA">
           <body>--- Pilot / Airside workers&#xD;
-1. The pilot or airside worker requests the state of the airfield from the system&#xD;
-2. The system returns the state of the airfield inside a dashboard &#xD;
+1. The pilot or airside worker request the airfield state from the system&#xD;
+2. The system shows a login windows&#xD;
+3. The pilot/airside worker provides his/her/etc credentials&#xD;
+4a. If the provided credentials are valid the system displays the airfield state inside a dashboard&#xD;
+4b. If the provided credentials are invalid the system shows an error message&#xD;
 &#xD;
 --- Control management system&#xD;
 1. The control management system requests the state of the airfield from the system&#xD;
@@ -49,7 +62,10 @@
         <ownedComment xmi:type="uml:Comment" xmi:id="_lmtdYDayEeyKfImaRgAsIA">
           <body>-- Pilot / Airside workers&#xD;
 1. The pilot or airside worker requests the fuel levels from the system&#xD;
-2. The system retrieves the fuel levels and displays them inside a dashboard&#xD;
+2. The system shows a login windows&#xD;
+3. The pilot/airside worker provides his/her/etc credentials&#xD;
+4a. If the provided credentials are valid the system retrieves the fuel levels and displays them inside a dashboard&#xD;
+4b. If the provided credentials are invalid the system shows an error message&#xD;
 &#xD;
 </body>
         </ownedComment>
