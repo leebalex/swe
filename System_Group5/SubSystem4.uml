@@ -40,26 +40,15 @@
 </body>
         </ownedComment>
       </packagedElement>
-      <packagedElement xmi:type="uml:UseCase" xmi:id="_oduI0DD2EeyemoxuiQ3Sug" name="check airside information">
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_oduI0DD2EeyemoxuiQ3Sug" name="check airside/landside information">
         <ownedComment xmi:type="uml:Comment" xmi:id="_0I-sMDcvEeyKfImaRgAsIA">
           <body>--- Control worker&#xD;
-1. The control worker requests the airside information from the system&#xD;
-2. The system returns the airside information inside a dashboard&#xD;
-&#xD;
---- Landside management system&#xD;
-1. The landside management system requests the airside information&#xD;
-2. The system returns the data as an object with different properties such as plane positions, free lanes, etc</body>
-        </ownedComment>
-      </packagedElement>
-      <packagedElement xmi:type="uml:UseCase" xmi:id="_q4jzkDD2EeyemoxuiQ3Sug" name="check landside information">
-        <ownedComment xmi:type="uml:Comment" xmi:id="_1tWB8DcvEeyKfImaRgAsIA">
-          <body>--- Control worker&#xD;
-1. The control worker requests the landside information from the system&#xD;
-2. The system returns the landside information inside a dashboard&#xD;
-&#xD;
---- Airside managmeent system&#xD;
-1. The ariside management system requests the landside information&#xD;
-2. The system returns the data as an object with different properties such as landside vehicle positions, free parking spots, etc</body>
+1. The control worker requests the airside or/and landside information from the system&#xD;
+2. There are different permissions for each group of control worker that determine which data can be retrieved&#xD;
+3. If the permission is granted, the system returns the information inside a dashboard&#xD;
+4. Different properties can be retrieved more in detail such as plane positions, free lanes,  landside vehicle positions, free parking spots,...&#xD;
+5. If there were no requests of airside or/and landside information in a certain time period, the control worker will be reminded to perform a check&#xD;
+</body>
         </ownedComment>
       </packagedElement>
       <packagedElement xmi:type="uml:UseCase" xmi:id="_u97tgDD2EeyemoxuiQ3Sug" name="check maintenance ">
@@ -79,6 +68,51 @@
 1. The financial management system requests the data about the expense&#xD;
 2. The system returns the data as a collection of different reports</body>
         </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_Qj7c8DvdEeyx34brDfaWcw" name="get/set health status of entire airport system">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_7y1XIDvdEeyx34brDfaWcw">
+          <body>--- Control worker&#xD;
+1. Control worker requests the health status of entire system&#xD;
+2. The system returns the data &#xD;
+3. A general health status level is assessed through the gathered data of all subsystems&#xD;
+4. The health status can be categorized in smaller units and further data can be retrieved in more detail&#xD;
+5. If necessary, the control worker can set a new health status &#xD;
+</body>
+        </ownedComment>
+        <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_sDYbsDvdEeyx34brDfaWcw" name="ExtensionPoint1"/>
+        <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_tytrUTvdEeyx34brDfaWcw" name="ExtensionPoint2"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_XKRe0DvdEeyx34brDfaWcw" name="reconfigure component">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_8QT9UDvdEeyx34brDfaWcw">
+          <body>Control worker&#xD;
+1. If necessary, the control worker can prompt to change or reconfigure a certain component of the system&#xD;
+2. The system returns the permission or a constraint&#xD;
+3. If permitted, the component gets replaced/reconfigured&#xD;
+4. If replacement/reconfiguration was successful, the system sends a confirmation to the control worker&#xD;
+&#xD;
+Component&#xD;
+1. Each component has different permissions for replacement/reconfiguration &#xD;
+2. Before the possible replacement/reconfiguration, the data of the state of component is sent to the system&#xD;
+3. If replacement/reconfiguration was permitted and successful, the new state of the component should be saved in the system&#xD;
+</body>
+        </ownedComment>
+        <extend xmi:type="uml:Extend" xmi:id="_sDWmgDvdEeyx34brDfaWcw" extendedCase="_Qj7c8DvdEeyx34brDfaWcw" extensionLocation="_sDYbsDvdEeyx34brDfaWcw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_j7nqYDvdEeyx34brDfaWcw" name="replace component">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_8z06EDvdEeyx34brDfaWcw">
+          <body>Control worker&#xD;
+1. If necessary, the control worker can prompt to change or reconfigure a certain component of the system&#xD;
+2. The system returns the permission or a constraint&#xD;
+3. If permitted, the component gets replaced/reconfigured&#xD;
+4. If replacement/reconfiguration was successful, the system sends a confirmation to the control worker&#xD;
+&#xD;
+Component&#xD;
+1. Each component has different permissions for replacement/reconfiguration &#xD;
+2. Before the possible replacement/reconfiguration, the data of the state of component is sent to the system&#xD;
+3. If replacement/reconfiguration was permitted and successful, the new state of the component should be saved in the system&#xD;
+</body>
+        </ownedComment>
+        <extend xmi:type="uml:Extend" xmi:id="_tytrUDvdEeyx34brDfaWcw" extendedCase="_Qj7c8DvdEeyx34brDfaWcw" extensionLocation="_tytrUTvdEeyx34brDfaWcw"/>
       </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Actor" xmi:id="_95gxcDD1EeyemoxuiQ3Sug" name="Airside Management System"/>
