@@ -6,7 +6,7 @@
   <packagedElement xmi:type="uml:Package" xmi:id="_0g9cADBYEeyBlrGWvbHA8A" name="LandsideManagementSystemPkg ">
     <packagedElement xmi:type="uml:Actor" xmi:id="_RLPPIDBZEeyBlrGWvbHA8A" name="Financial Management System"/>
     <packagedElement xmi:type="uml:Actor" xmi:id="_fd-U8DBZEeyBlrGWvbHA8A" name="Control Management System"/>
-    <packagedElement xmi:type="uml:Actor" xmi:id="_jzlqUDBZEeyBlrGWvbHA8A" name="Landside Workers"/>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_jzlqUDBZEeyBlrGWvbHA8A" name="Landside Worker"/>
     <packagedElement xmi:type="uml:Actor" xmi:id="_nOiuQDBZEeyBlrGWvbHA8A" name="Terminal Management System"/>
     <packagedElement xmi:type="uml:Association" xmi:id="_NxDx0DBaEeyBlrGWvbHA8A"/>
     <packagedElement xmi:type="uml:Association" xmi:id="_X6xMwDBaEeyBlrGWvbHA8A"/>
@@ -14,52 +14,68 @@
     <packagedElement xmi:type="uml:Association" xmi:id="_gS4HMDBaEeyBlrGWvbHA8A"/>
     <packagedElement xmi:type="uml:Association" xmi:id="_sSQDQDBaEeyBlrGWvbHA8A"/>
     <packagedElement xmi:type="uml:Package" xmi:id="_NArW8DDMEeyCi6WCWivuPQ" name="Landside Management System">
-      <packagedElement xmi:type="uml:UseCase" xmi:id="_M88CsDBZEeyBlrGWvbHA8A" name="get security data">
-        <ownedComment xmi:type="uml:Comment" xmi:id="_kl1WoDN6EeykZ-f4w7vrQQ">
-          <body>--- Control management system&#xD;
-1. The Control Management System requests the security information from the system&#xD;
-2. The system checks the database for entries &#xD;
-3a. If entries are available it will return them&#xD;
-3b. if not it will return an error&#xD;
-&#xD;
-</body>
-        </ownedComment>
-      </packagedElement>
-      <packagedElement xmi:type="uml:UseCase" xmi:id="_0X-psDBZEeyBlrGWvbHA8A" name="get landside state data">
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_0X-psDBZEeyBlrGWvbHA8A" name="get landside data">
         <ownedComment xmi:type="uml:Comment" xmi:id="_rDR7MDN6EeykZ-f4w7vrQQ">
-          <body>--- Control management system&#xD;
-1. The Control Management System requests the status information from the landside from the system&#xD;
+          <body>--- Management Systems (non-human actors)&#xD;
+1. The Control Management System requests the landside data&#xD;
 2. The system checks the database&#xD;
 3a. If the data is available it returns the data with all the properties about the landing side&#xD;
 3b. If the data is not available it returns an error&#xD;
-&#xD;
 &#xD;
 --- Landside Workers&#xD;
 1. The Landside Worker will request the data about the landside status&#xD;
 2. The system shows a login window&#xD;
 3. The landside worker enters his/her/etc credentials&#xD;
 4a. If the entered credentials are valid the system checks the databse and returns the data&#xD;
-4b. If the entered credentials are invalid the system shows an error message</body>
+4b. If the entered credentials are invalid the system shows an error message and goes back to step 3.</body>
         </ownedComment>
       </packagedElement>
-      <packagedElement xmi:type="uml:UseCase" xmi:id="_wo5v4DBZEeyBlrGWvbHA8A" name="get available transport capacity">
-        <ownedComment xmi:type="uml:Comment" xmi:id="_d5rnsDN6EeykZ-f4w7vrQQ">
-          <body>--- Terminal management system&#xD;
-1. Terminal Management System request the available transportation capacity&#xD;
-2. The system retrieves the data from the database and returns it as an object that contains the available seats and available baggage capacity in kg</body>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_ycaAEEALEey0P5PvvB84ug" name="manage landisde vehicles">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_V01DwECcEeyVntC6OcwbOw">
+          <body>--- Landside Wroker&#xD;
+1. The Landside worker wants to access the system&#xD;
+2. The system shows the landside worker a login window&#xD;
+3. The landside worker enters the credentials&#xD;
+4a. If the credentials are valid the system goes to step 5.&#xD;
+4b. If the credentials are not valid the system shows an error and goes to step 3.&#xD;
+5. The system lets the landside worker chose between different options to manage landside vehicles&#xD;
+6. The landside worker chooses an option&#xD;
+7. The system executes the task</body>
         </ownedComment>
       </packagedElement>
-      <packagedElement xmi:type="uml:UseCase" xmi:id="_4NzEsDBZEeyBlrGWvbHA8A" name="get expense data">
-        <ownedComment xmi:type="uml:Comment" xmi:id="_uEPKwDN6EeykZ-f4w7vrQQ">
-          <body>--- Financial workers&#xD;
-1. The Financial Management System request the data about the expenses of the landside management&#xD;
-2. The system checks the database&#xD;
-3a. If the data is available, it will return the data&#xD;
-3b. If the data is not available it returns an error&#xD;
-</body>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_ih85EEAMEey0P5PvvB84ug" name="transport cargo/passenger">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_CXxYsECdEeyVntC6OcwbOw">
+          <body>--- Terminal management System / Landside Worker&#xD;
+The landside worker has to login first over a standard procedure &#xD;
+1. The terminal management system sends the number of cargo/passengers, the source and destination location&#xD;
+2. The system looks up available capacities&#xD;
+3a. If there is enough transport capacity available the system goes to step 4&#xD;
+3b. If there is not enough transport capacity availble the system sends an error message back&#xD;
+4. The system assigns one or multiple transport vehicles to the task&#xD;
+5. The system returns a success message</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_ZVfUEEANEey0P5PvvB84ug" name="fuel airplanes">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_cvFgIECcEeyVntC6OcwbOw">
+          <body>--- Landside Worker&#xD;
+1. The Landside worker wants to access the system&#xD;
+2. The system shows the landside worker a login window&#xD;
+3. The landside worker enters the credentials&#xD;
+4a. If the credentials are valid the system goes to step 5.&#xD;
+4b. If the credentials are not valid the system shows an error and goes to step 3.&#xD;
+5. The system shows the landside worker a window with all current available fuel trucks&#xD;
+6. The landside worker picks a fuel truck and enters the airplane number that needs to be refueled &#xD;
+7. The system lets the worker confirm his choice&#xD;
+8. The landside worker confirms his choice</body>
         </ownedComment>
       </packagedElement>
     </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_wOKxcEAMEey0P5PvvB84ug"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_y0EcsEAMEey0P5PvvB84ug"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_0UJIUEAMEey0P5PvvB84ug"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="__CndMEAMEey0P5PvvB84ug"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_HADN0EANEey0P5PvvB84ug"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_j8NbIEANEey0P5PvvB84ug"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Dependency" xmi:id="_6RUzsDD-EeyBY5jOGTlNyA" name="provides">
     <client xmi:type="uml:Model" href="System_Group5.uml#_Wv3OACXUEeybxdv-5Uc1kw"/>
