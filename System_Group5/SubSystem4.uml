@@ -82,6 +82,29 @@
         <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_sDYbsDvdEeyx34brDfaWcw" name="ExtensionPoint1"/>
         <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_tytrUTvdEeyx34brDfaWcw" name="ExtensionPoint2"/>
       </packagedElement>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_7a_pUEJIEeyhcIxBcHdH1Q" name="retrieve relevant security information">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_cO5kQEJJEeyhcIxBcHdH1Q">
+          <body>--- Terminal Management System&#xD;
+1. The Terminal Management System requests its relevant security information&#xD;
+2. The system returns the data &#xD;
+3. security worker/control worker can request additional confidential information about passengers in case they pose a risk&#xD;
+&#xD;
+--- Airside Management System&#xD;
+1. The Airside Management System requests its relevant security information&#xD;
+2. The system returns the data &#xD;
+3. Security data can be split into flight navigation of landing or takeoffs&#xD;
+&#xD;
+--- Landside management System&#xD;
+1. The Airside Management System requests its relevant security information&#xD;
+2. The system returns the data &#xD;
+3. Data should contain a special GPS map of all security information that might pose a threat (fuel leaks, damaged fuel trucks, …)&#xD;
+&#xD;
+--- Financial Management system&#xD;
+1. The financial Management system requests its relevant security information&#xD;
+2. The system returns the financial data &#xD;
+3. Since the data contains confidential financial information, an additional encryption is added to the data</body>
+        </ownedComment>
+      </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Actor" xmi:id="_95gxcDD1EeyemoxuiQ3Sug" name="Airside Management System"/>
     <packagedElement xmi:type="uml:Actor" xmi:id="__WlMYDD1EeyemoxuiQ3Sug" name="Landside Management System"/>
@@ -97,12 +120,12 @@
     <packagedElement xmi:type="uml:Association" xmi:id="_UXCR8DD3EeyemoxuiQ3Sug"/>
     <packagedElement xmi:type="uml:Association" xmi:id="_cv9EsDD3EeyemoxuiQ3Sug"/>
     <packagedElement xmi:type="uml:Association" xmi:id="_e2U7UDD3EeyemoxuiQ3Sug"/>
-    <packagedElement xmi:type="uml:Association" xmi:id="_hVCZcDD3EeyemoxuiQ3Sug"/>
-    <packagedElement xmi:type="uml:Association" xmi:id="_kA6w4DD3EeyemoxuiQ3Sug"/>
-    <packagedElement xmi:type="uml:Association" xmi:id="_mMAvcDD3EeyemoxuiQ3Sug"/>
-    <packagedElement xmi:type="uml:Association" xmi:id="_nu2bMDD3EeyemoxuiQ3Sug"/>
     <packagedElement xmi:type="uml:Association" xmi:id="_yB2VADD3EeyemoxuiQ3Sug"/>
     <packagedElement xmi:type="uml:Association" xmi:id="_G_GLoDzYEeyIs-4Q24wEXQ"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_j220IEJJEeyhcIxBcHdH1Q"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_liYh0EJJEeyhcIxBcHdH1Q"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_nLkGIEJJEeyhcIxBcHdH1Q"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_pBLj8EJJEeyhcIxBcHdH1Q"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Dependency" xmi:id="_QR8AoDD-EeyBY5jOGTlNyA" name="provides">
     <client xmi:type="uml:Model" href="System_Group5.uml#_Wv3OACXUEeybxdv-5Uc1kw"/>
