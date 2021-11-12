@@ -142,7 +142,9 @@ The landside worker has to login first over a standard procedure &#xD;
     </nestedClassifier>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_G8P1YENOEeyQjpEoNWRqhA" name="Worker">
-    <ownedAttribute xmi:type="uml:Property" xmi:id="__6TaoENjEeyQjpEoNWRqhA" name="active"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="__6TaoENjEeyQjpEoNWRqhA" name="active">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+    </ownedAttribute>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_eC1RoEOqEeyF5O4uVGTNDA" name="id">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
     </ownedAttribute>
