@@ -288,4 +288,5 @@ The landside worker has to login first over a standard procedure &#xD;
     </ownedEnd>
     <ownedEnd xmi:type="uml:Property" xmi:id="_PeIM4kO8EeyF5O4uVGTNDA" type="_LcvtAEO6EeyF5O4uVGTNDA" association="_PeG-wEO8EeyF5O4uVGTNDA"/>
   </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_uxrdcEO-EeyF5O4uVGTNDA"/>
 </uml:Model>
