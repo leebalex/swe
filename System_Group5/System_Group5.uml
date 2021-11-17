@@ -124,9 +124,44 @@ The terminal worker enters the ticket number into the system
     <packagedElement xmi:type="uml:Association" xmi:id="_MOQacDZ9EeymGvEYQtMk9w"/>
     <packagedElement xmi:type="uml:Association" xmi:id="_OJ9SIDZ9EeymGvEYQtMk9w"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Class" xmi:id="_9v1rcEfHEey_BuMwIf_5MQ" name="ControlManagement"/>
-  <packagedElement xmi:type="uml:Class" xmi:id="_AZDJYEfIEey_BuMwIf_5MQ" name="AirsideManagement"/>
-  <packagedElement xmi:type="uml:Class" xmi:id="_BwPl0EfIEey_BuMwIf_5MQ" name="LandsideManagement"/>
-  <packagedElement xmi:type="uml:Class" xmi:id="_C_cj4EfIEey_BuMwIf_5MQ" name="FinancialManagement"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_9v1rcEfHEey_BuMwIf_5MQ" name="ControlManagement">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_BxVvAEfpEey_BuMwIf_5MQ" name="InformationId">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_FoKPkEfpEey_BuMwIf_5MQ" name="riskLevel">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_HpP9kEfpEey_BuMwIf_5MQ" name="generalHealthStatus">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_AZDJYEfIEey_BuMwIf_5MQ" name="AirsideManagement">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_0NCcgEfoEey_BuMwIf_5MQ" name="runwayId">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_2vZrkEfoEey_BuMwIf_5MQ" name="runwayInformation">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_5VinYEfoEey_BuMwIf_5MQ" name="aircraftId">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_BwPl0EfIEey_BuMwIf_5MQ" name="LandsideManagement">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_Z_Z1gEfpEey_BuMwIf_5MQ" name="availableFuel">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDouble"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_h8_XIEfpEey_BuMwIf_5MQ" name="workers" type="_hq_BIEfpEey_BuMwIf_5MQ"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_oWTCkEfpEey_BuMwIf_5MQ" name="vehicles" type="_oK8uMEfpEey_BuMwIf_5MQ"/>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_hq_BIEfpEey_BuMwIf_5MQ" name="Worker"/>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_oK8uMEfpEey_BuMwIf_5MQ" name="Vehicle"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_C_cj4EfIEey_BuMwIf_5MQ" name="FinancialManagement">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_24cdYEfpEey_BuMwIf_5MQ" name="facilities">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EEList"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_5iclgEfpEey_BuMwIf_5MQ" name="employees">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EEList"/>
+    </ownedAttribute>
+  </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_D-0WMEfIEey_BuMwIf_5MQ" name="TerminalManagement"/>
 </uml:Model>
