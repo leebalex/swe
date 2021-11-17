@@ -183,4 +183,7 @@ The terminal worker enters the ticket number into the system
   <packagedElement xmi:type="uml:InformationFlow" xmi:id="_vcTmgEfqEey_BuMwIf_5MQ" name="updates" informationSource="_AZDJYEfIEey_BuMwIf_5MQ" informationTarget="_9v1rcEfHEey_BuMwIf_5MQ"/>
   <packagedElement xmi:type="uml:InformationFlow" xmi:id="_yICM8EfqEey_BuMwIf_5MQ" name="updates" informationSource="_BwPl0EfIEey_BuMwIf_5MQ" informationTarget="_9v1rcEfHEey_BuMwIf_5MQ"/>
   <packagedElement xmi:type="uml:Association" xmi:id="_2XG1cEfqEey_BuMwIf_5MQ" name="inderacts"/>
+  <packagedElement xmi:type="uml:InformationFlow" xmi:id="_-xzJ0EfqEey_BuMwIf_5MQ" name="updates" informationSource="_AZDJYEfIEey_BuMwIf_5MQ" informationTarget="_C_cj4EfIEey_BuMwIf_5MQ"/>
+  <packagedElement xmi:type="uml:InformationFlow" xmi:id="_Dtqm4EfrEey_BuMwIf_5MQ" name="updates" informationSource="_D-0WMEfIEey_BuMwIf_5MQ" informationTarget="_9v1rcEfHEey_BuMwIf_5MQ"/>
+  <packagedElement xmi:type="uml:InformationFlow" xmi:id="_GzVXUEfrEey_BuMwIf_5MQ" name="updates" informationSource="_C_cj4EfIEey_BuMwIf_5MQ" informationTarget="_9v1rcEfHEey_BuMwIf_5MQ"/>
 </uml:Model>
