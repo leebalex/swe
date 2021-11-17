@@ -163,5 +163,24 @@ The terminal worker enters the ticket number into the system
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EEList"/>
     </ownedAttribute>
   </packagedElement>
-  <packagedElement xmi:type="uml:Class" xmi:id="_D-0WMEfIEey_BuMwIf_5MQ" name="TerminalManagement"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_D-0WMEfIEey_BuMwIf_5MQ" name="TerminalManagement">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_DK_0IEfqEey_BuMwIf_5MQ" name="passengers">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EEList"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_EV4S4EfqEey_BuMwIf_5MQ" name="passportId">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EEList"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_Os_3sEfqEey_BuMwIf_5MQ" name="baggage">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EEList"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:InformationFlow" xmi:id="_R6DCgEfqEey_BuMwIf_5MQ" name="provides" informationSource="_9v1rcEfHEey_BuMwIf_5MQ" informationTarget="_BwPl0EfIEey_BuMwIf_5MQ"/>
+  <packagedElement xmi:type="uml:InformationFlow" xmi:id="_TTMmwEfqEey_BuMwIf_5MQ" name="provides" informationSource="_9v1rcEfHEey_BuMwIf_5MQ" informationTarget="_AZDJYEfIEey_BuMwIf_5MQ"/>
+  <packagedElement xmi:type="uml:InformationFlow" xmi:id="_UXFssEfqEey_BuMwIf_5MQ" name="provides" informationSource="_9v1rcEfHEey_BuMwIf_5MQ _Wv3OACXUEeybxdv-5Uc1kw" informationTarget="_D-0WMEfIEey_BuMwIf_5MQ"/>
+  <packagedElement xmi:type="uml:InformationFlow" xmi:id="_V3csMEfqEey_BuMwIf_5MQ" name="provides" informationSource="_9v1rcEfHEey_BuMwIf_5MQ" informationTarget="_C_cj4EfIEey_BuMwIf_5MQ"/>
+  <packagedElement xmi:type="uml:InformationFlow" xmi:id="_YQhcYEfqEey_BuMwIf_5MQ" name="provides" informationSource="_BwPl0EfIEey_BuMwIf_5MQ" informationTarget="_AZDJYEfIEey_BuMwIf_5MQ"/>
+  <packagedElement xmi:type="uml:InformationFlow" xmi:id="_q9TroEfqEey_BuMwIf_5MQ" name="provides" informationSource="_C_cj4EfIEey_BuMwIf_5MQ" informationTarget="_D-0WMEfIEey_BuMwIf_5MQ"/>
+  <packagedElement xmi:type="uml:InformationFlow" xmi:id="_vcTmgEfqEey_BuMwIf_5MQ" name="updates" informationSource="_AZDJYEfIEey_BuMwIf_5MQ" informationTarget="_9v1rcEfHEey_BuMwIf_5MQ"/>
+  <packagedElement xmi:type="uml:InformationFlow" xmi:id="_yICM8EfqEey_BuMwIf_5MQ" name="updates" informationSource="_BwPl0EfIEey_BuMwIf_5MQ" informationTarget="_9v1rcEfHEey_BuMwIf_5MQ"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_2XG1cEfqEey_BuMwIf_5MQ" name="inderacts"/>
 </uml:Model>
