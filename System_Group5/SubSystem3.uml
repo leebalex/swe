@@ -99,7 +99,7 @@
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_Bt9d8Ee0EeyXgr2oMmhtqg" name="Flight Handling">
     <ownedAttribute xmi:type="uml:Property" xmi:id="_87o3EEe2EeyXgr2oMmhtqg" name="ControlManagement"/>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_OQcxUke4EeyXgr2oMmhtqg" type="_1GYSYEezEeyXgr2oMmhtqg" association="_OQcKQEe4EeyXgr2oMmhtqg"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_nsr28Ue_EeyXgr2oMmhtqg" type="_1GYSYEezEeyXgr2oMmhtqg" association="_nsrP4Ee_EeyXgr2oMmhtqg"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_ELURMEe0EeyXgr2oMmhtqg" name="Boarding">
     <ownedAttribute xmi:type="uml:Property" xmi:id="_w7gGAEe2EeyXgr2oMmhtqg" name="Passenger"/>
@@ -158,11 +158,11 @@
     </ownedEnd>
     <ownedEnd xmi:type="uml:Property" xmi:id="_75aIkke3EeyXgr2oMmhtqg" type="_ELURMEe0EeyXgr2oMmhtqg" aggregation="shared" association="_75ZhgEe3EeyXgr2oMmhtqg"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_OQcKQEe4EeyXgr2oMmhtqg" memberEnd="_OQcxUke4EeyXgr2oMmhtqg _OQcxVUe4EeyXgr2oMmhtqg">
-    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_OQcxUEe4EeyXgr2oMmhtqg" source="org.eclipse.papyrus">
-      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_OQcxUUe4EeyXgr2oMmhtqg" key="nature" value="UML_Nature"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_nsrP4Ee_EeyXgr2oMmhtqg" name="provides to" visibility="package" memberEnd="_nsr28Ue_EeyXgr2oMmhtqg _nsr29Ee_EeyXgr2oMmhtqg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_nsrP4Ue_EeyXgr2oMmhtqg" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_nsr28Ee_EeyXgr2oMmhtqg" key="nature" value="UML_Nature"/>
     </eAnnotations>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_OQcxVUe4EeyXgr2oMmhtqg" type="_Bt9d8Ee0EeyXgr2oMmhtqg" association="_OQcKQEe4EeyXgr2oMmhtqg"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_nsr29Ee_EeyXgr2oMmhtqg" type="_Bt9d8Ee0EeyXgr2oMmhtqg" association="_nsrP4Ee_EeyXgr2oMmhtqg"/>
   </packagedElement>
   <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_C5GwgEe2EeyXgr2oMmhtqg">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_C5H-oEe2EeyXgr2oMmhtqg" source="http://www.eclipse.org/uml2/2.0.0/UML">
