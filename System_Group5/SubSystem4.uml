@@ -141,4 +141,127 @@
   <packagedElement xmi:type="uml:Dependency" xmi:id="_wcNIsDD-EeyBY5jOGTlNyA" name="provides" client="_QsNXkCXWEeybxdv-5Uc1kw">
     <supplier xmi:type="uml:Model" href="SubSystem3.uml#_Oaa7ICXWEeybxdv-5Uc1kw"/>
   </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_ZzNJMEfAEeyXgr2oMmhtqg" name="Worker">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_ZpjBcEfBEeyXgr2oMmhtqg" name="id">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_dE6VEEfBEeyXgr2oMmhtqg" name="name">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_fafsYEfBEeyXgr2oMmhtqg" name="surname">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_imnDEEfBEeyXgr2oMmhtqg" name="rank">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_oYp6MEfBEeyXgr2oMmhtqg" name="permissions">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_bAjtIEfAEeyXgr2oMmhtqg" name="SecurityWorker">
+    <generalization xmi:type="uml:Generalization" xmi:id="_mHZh4EfEEeyXgr2oMmhtqg" general="_ZzNJMEfAEeyXgr2oMmhtqg"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_wJW2YEfBEeyXgr2oMmhtqg" name="securityPermision">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_0db6sEfBEeyXgr2oMmhtqg" name="securityTaskArea">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_eVjTAEfAEeyXgr2oMmhtqg" name="Maintenance">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_Sdb4sEfEEeyXgr2oMmhtqg" name="information">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_VHm_8EfEEeyXgr2oMmhtqg" name="maintenanceLevel">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_XMdzoEfEEeyXgr2oMmhtqg" name="maintenanceHistory">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_hKI6gEfAEeyXgr2oMmhtqg" name="MaintenancePrognosis">
+    <generalization xmi:type="uml:Generalization" xmi:id="_o0JcAEfEEeyXgr2oMmhtqg" general="_eVjTAEfAEeyXgr2oMmhtqg"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_c1eDgEfEEeyXgr2oMmhtqg" name="prognosisReport">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_hilS4EfEEeyXgr2oMmhtqg" name="renovationRequired">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_j_5msEfAEeyXgr2oMmhtqg" name="ControlWorker">
+    <generalization xmi:type="uml:Generalization" xmi:id="_uNthsEfEEeyXgr2oMmhtqg" general="_ZzNJMEfAEeyXgr2oMmhtqg"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_INvKgEfEEeyXgr2oMmhtqg" name="controlPermissions">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_mU3S8EfAEeyXgr2oMmhtqg" name="Expense">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_7n_yAEfDEeyXgr2oMmhtqg" name="totalExpense">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDouble"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_-l34YEfDEeyXgr2oMmhtqg" name="hiddenCosts">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDouble"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_BMTIEEfEEeyXgr2oMmhtqg" name="additionalDescription">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_D2pOcEfEEeyXgr2oMmhtqg" name="financialReport">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_nJi4MEfAEeyXgr2oMmhtqg" name="AirAndLandsideInformation">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_rKlkYEfDEeyXgr2oMmhtqg" name="airsideInformation">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_tvWAIEfDEeyXgr2oMmhtqg" name="landsideInformation">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_xrQcEEfDEeyXgr2oMmhtqg" name="permissions">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_sRqokEfAEeyXgr2oMmhtqg" name="HealthStatus">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_wT9ucEfCEeyXgr2oMmhtqg" name="generalHealthStatus">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_Id3tsEfDEeyXgr2oMmhtqg" name="detailedHealthStatus">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_MGwf8EfDEeyXgr2oMmhtqg" name="alarmStatusOn">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_Qv7qgEfDEeyXgr2oMmhtqg" name="timestamp" type="_VntHMEfCEeyXgr2oMmhtqg"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_gxaxIEfDEeyXgr2oMmhtqg" name="healthStatusCategory">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_twZ3cEfAEeyXgr2oMmhtqg" name="SecurityInformation">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_6pAFEEfBEeyXgr2oMmhtqg" name="InformationId">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_89Iq4EfBEeyXgr2oMmhtqg" name="title">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_AqRrAEfCEeyXgr2oMmhtqg" name="description">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_E0RmQEfCEeyXgr2oMmhtqg" name="subsystemCategory">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_I5cr4EfCEeyXgr2oMmhtqg" name="riskLevel">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_WjeL4EfCEeyXgr2oMmhtqg" name="timestamp" type="_VntHMEfCEeyXgr2oMmhtqg"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_hyK48EfCEeyXgr2oMmhtqg" name="securityProtokoll">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_lL0VUEfCEeyXgr2oMmhtqg" name="alarmOn">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+    </ownedAttribute>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_VntHMEfCEeyXgr2oMmhtqg" name="Timestamp"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:InformationFlow" xmi:id="_2eAj8EfEEeyXgr2oMmhtqg" name="retrieved by" informationSource="_bAjtIEfAEeyXgr2oMmhtqg" informationTarget="_twZ3cEfAEeyXgr2oMmhtqg"/>
+  <packagedElement xmi:type="uml:InformationFlow" xmi:id="_9OcV8EfEEeyXgr2oMmhtqg" name="is checked" informationSource="_j_5msEfAEeyXgr2oMmhtqg" informationTarget="_nJi4MEfAEeyXgr2oMmhtqg"/>
+  <packagedElement xmi:type="uml:InformationFlow" xmi:id="_BK4WUEfFEeyXgr2oMmhtqg" name="get status" informationSource="_j_5msEfAEeyXgr2oMmhtqg" informationTarget="_sRqokEfAEeyXgr2oMmhtqg"/>
+  <packagedElement xmi:type="uml:InformationFlow" xmi:id="_HUicMEfFEeyXgr2oMmhtqg" name="is retrieved by" informationSource="_j_5msEfAEeyXgr2oMmhtqg _QsNXkCXWEeybxdv-5Uc1kw _INvKgEfEEeyXgr2oMmhtqg" informationTarget="_twZ3cEfAEeyXgr2oMmhtqg"/>
+  <packagedElement xmi:type="uml:InformationFlow" xmi:id="_Rnn1kEfFEeyXgr2oMmhtqg" name="is checked" informationSource="_j_5msEfAEeyXgr2oMmhtqg" informationTarget="_mU3S8EfAEeyXgr2oMmhtqg"/>
+  <packagedElement xmi:type="uml:InformationFlow" xmi:id="_XW_zMEfFEeyXgr2oMmhtqg" name="is checked" informationSource="_j_5msEfAEeyXgr2oMmhtqg" informationTarget="_eVjTAEfAEeyXgr2oMmhtqg"/>
 </uml:Model>
