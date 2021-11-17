@@ -124,4 +124,9 @@ The terminal worker enters the ticket number into the system
     <packagedElement xmi:type="uml:Association" xmi:id="_MOQacDZ9EeymGvEYQtMk9w"/>
     <packagedElement xmi:type="uml:Association" xmi:id="_OJ9SIDZ9EeymGvEYQtMk9w"/>
   </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_9v1rcEfHEey_BuMwIf_5MQ" name="ControlManagement"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_AZDJYEfIEey_BuMwIf_5MQ" name="AirsideManagement"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_BwPl0EfIEey_BuMwIf_5MQ" name="LandsideManagement"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_C_cj4EfIEey_BuMwIf_5MQ" name="FinancialManagement"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_D-0WMEfIEey_BuMwIf_5MQ" name="TerminalManagement"/>
 </uml:Model>
