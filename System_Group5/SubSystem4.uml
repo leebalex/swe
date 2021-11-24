@@ -341,4 +341,19 @@
     <message xmi:type="uml:Message" xmi:id="_5T36kE1mEeyuUKdxlVCWbA" name="get statistics data" receiveEvent="_5T4hoU1mEeyuUKdxlVCWbA" sendEvent="_5T4hoE1mEeyuUKdxlVCWbA"/>
     <message xmi:type="uml:Message" xmi:id="_5UPG8E1mEeyuUKdxlVCWbA" name="return data" messageSort="reply" receiveEvent="_5UPuAU1mEeyuUKdxlVCWbA" sendEvent="_5UPuAE1mEeyuUKdxlVCWbA"/>
   </packagedElement>
+  <packagedElement xmi:type="uml:Interaction" xmi:id="_GhiOsE1nEeyuUKdxlVCWbA" name="Check Expenses">
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_NghaEE1nEeyuUKdxlVCWbA" name="ControlWorker" coveredBy="_VD7hIU1nEeyuUKdxlVCWbA _XgkisU1nEeyuUKdxlVCWbA"/>
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_NzLQUE1nEeyuUKdxlVCWbA" name="SpecialSecurityCheck" coveredBy="_VD8IME1nEeyuUKdxlVCWbA _XgTc8E1nEeyuUKdxlVCWbA"/>
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_OHALQE1nEeyuUKdxlVCWbA" name="ExpensesInformation" coveredBy="_XgUEAE1nEeyuUKdxlVCWbA _XgkisE1nEeyuUKdxlVCWbA _XgitgE1nEeyuUKdxlVCWbA"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_VD7hIU1nEeyuUKdxlVCWbA" name="Message4SendEvent" covered="_NghaEE1nEeyuUKdxlVCWbA" message="_VD7hIE1nEeyuUKdxlVCWbA"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_VD8IME1nEeyuUKdxlVCWbA" name="Message4ReceiveEvent" covered="_NzLQUE1nEeyuUKdxlVCWbA" message="_VD7hIE1nEeyuUKdxlVCWbA"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_XgTc8E1nEeyuUKdxlVCWbA" name="Message7SendEvent" covered="_NzLQUE1nEeyuUKdxlVCWbA" message="_XgS14E1nEeyuUKdxlVCWbA"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_XgUEAE1nEeyuUKdxlVCWbA" name="Message7ReceiveEvent" covered="_OHALQE1nEeyuUKdxlVCWbA" message="_XgS14E1nEeyuUKdxlVCWbA"/>
+    <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_XgitgE1nEeyuUKdxlVCWbA" name="BehaviorExecutionSpecification10" covered="_OHALQE1nEeyuUKdxlVCWbA" finish="_XgkisE1nEeyuUKdxlVCWbA" start="_XgUEAE1nEeyuUKdxlVCWbA"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_XgkisE1nEeyuUKdxlVCWbA" name="Message12SendEvent" covered="_OHALQE1nEeyuUKdxlVCWbA" message="_Xgj7oE1nEeyuUKdxlVCWbA"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_XgkisU1nEeyuUKdxlVCWbA" name="Message12ReceiveEvent" covered="_NghaEE1nEeyuUKdxlVCWbA" message="_Xgj7oE1nEeyuUKdxlVCWbA"/>
+    <message xmi:type="uml:Message" xmi:id="_VD7hIE1nEeyuUKdxlVCWbA" name="request data" receiveEvent="_VD8IME1nEeyuUKdxlVCWbA" sendEvent="_VD7hIU1nEeyuUKdxlVCWbA"/>
+    <message xmi:type="uml:Message" xmi:id="_XgS14E1nEeyuUKdxlVCWbA" name="request data if check was successful" receiveEvent="_XgUEAE1nEeyuUKdxlVCWbA" sendEvent="_XgTc8E1nEeyuUKdxlVCWbA"/>
+    <message xmi:type="uml:Message" xmi:id="_Xgj7oE1nEeyuUKdxlVCWbA" name="return data if successful" messageSort="reply" receiveEvent="_XgkisU1nEeyuUKdxlVCWbA" sendEvent="_XgkisE1nEeyuUKdxlVCWbA"/>
+  </packagedElement>
 </uml:Model>
