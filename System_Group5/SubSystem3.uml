@@ -243,6 +243,17 @@
     <message xmi:type="uml:Message" xmi:id="_fC9IUE1iEeyuUKdxlVCWbA" name="prints baggage tag" messageSort="reply" receiveEvent="_fC9vYE1iEeyuUKdxlVCWbA" sendEvent="_fC9IUU1iEeyuUKdxlVCWbA"/>
     <message xmi:type="uml:Message" xmi:id="_jehUsE1iEeyuUKdxlVCWbA" name="updates data" receiveEvent="_jeh7wU1iEeyuUKdxlVCWbA" sendEvent="_jeh7wE1iEeyuUKdxlVCWbA"/>
   </packagedElement>
+  <packagedElement xmi:type="uml:Interaction" xmi:id="_wxeYgE1iEeyuUKdxlVCWbA" name="Flight Information">
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_3zXt8E1iEeyuUKdxlVCWbA" name="ControlManagement" coveredBy="__Uq8ME1iEeyuUKdxlVCWbA __U6z0k1iEeyuUKdxlVCWbA"/>
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_5JU0QE1iEeyuUKdxlVCWbA" name="FlightInformation" coveredBy="__Uq8MU1iEeyuUKdxlVCWbA __U6z0U1iEeyuUKdxlVCWbA __U4-oE1iEeyuUKdxlVCWbA"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="__Uq8ME1iEeyuUKdxlVCWbA" name="Message3SendEvent" covered="_3zXt8E1iEeyuUKdxlVCWbA" message="__UqVIE1iEeyuUKdxlVCWbA"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="__Uq8MU1iEeyuUKdxlVCWbA" name="Message3ReceiveEvent" covered="_5JU0QE1iEeyuUKdxlVCWbA" message="__UqVIE1iEeyuUKdxlVCWbA"/>
+    <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="__U4-oE1iEeyuUKdxlVCWbA" name="BehaviorExecutionSpecification6" covered="_5JU0QE1iEeyuUKdxlVCWbA" finish="__U6z0U1iEeyuUKdxlVCWbA" start="__Uq8MU1iEeyuUKdxlVCWbA"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="__U6z0U1iEeyuUKdxlVCWbA" name="Message8SendEvent" covered="_5JU0QE1iEeyuUKdxlVCWbA" message="__U6z0E1iEeyuUKdxlVCWbA"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="__U6z0k1iEeyuUKdxlVCWbA" name="Message8ReceiveEvent" covered="_3zXt8E1iEeyuUKdxlVCWbA" message="__U6z0E1iEeyuUKdxlVCWbA"/>
+    <message xmi:type="uml:Message" xmi:id="__UqVIE1iEeyuUKdxlVCWbA" name="provides requested data" receiveEvent="__Uq8MU1iEeyuUKdxlVCWbA" sendEvent="__Uq8ME1iEeyuUKdxlVCWbA"/>
+    <message xmi:type="uml:Message" xmi:id="__U6z0E1iEeyuUKdxlVCWbA" name="displays data" messageSort="reply" receiveEvent="__U6z0k1iEeyuUKdxlVCWbA" sendEvent="__U6z0U1iEeyuUKdxlVCWbA"/>
+  </packagedElement>
   <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_C5GwgEe2EeyXgr2oMmhtqg">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_C5H-oEe2EeyXgr2oMmhtqg" source="http://www.eclipse.org/uml2/2.0.0/UML">
       <references xmi:type="ecore:EPackage" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ"/>
