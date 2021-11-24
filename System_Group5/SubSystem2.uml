@@ -96,6 +96,8 @@ The landside worker has to login first over a standard procedure &#xD;
     <ownedAttribute xmi:type="uml:Property" xmi:id="_JCOJIEOrEeyF5O4uVGTNDA" name="active">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
     </ownedAttribute>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_6lUPYEzZEeynzawPxJz7DQ" name="moveToPosition"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_Lj4CQEzaEeynzawPxJz7DQ" name="setState"/>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_Il1E4EOnEeycyuek66wkIQ" name="Position">
       <ownedAttribute xmi:type="uml:Property" xmi:id="_Il1E4UOnEeycyuek66wkIQ" name="latitude">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
@@ -113,6 +115,8 @@ The landside worker has to login first over a standard procedure &#xD;
     <ownedAttribute xmi:type="uml:Property" xmi:id="_kKIUIEO3EeyF5O4uVGTNDA" name="availableFuel">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDouble"/>
     </ownedAttribute>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_jFWAUE0NEeynzawPxJz7DQ" name="updateFuelLevels"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_k7JEUE0NEeynzawPxJz7DQ" name="getAvailableFuel"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_w-cWwENMEeyQjpEoNWRqhA" name="StaircaseVehicle">
     <generalization xmi:type="uml:Generalization" xmi:id="_I1BxYENNEeyQjpEoNWRqhA" general="_uHRVUENMEeyQjpEoNWRqhA"/>
@@ -123,7 +127,7 @@ The landside worker has to login first over a standard procedure &#xD;
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
     </ownedAttribute>
   </packagedElement>
-  <packagedElement xmi:type="uml:Class" xmi:id="_y_zKgENMEeyQjpEoNWRqhA" name="PassengerTransport">
+  <packagedElement xmi:type="uml:Class" xmi:id="_y_zKgENMEeyQjpEoNWRqhA" name="PassengerTransport" visibility="package">
     <generalization xmi:type="uml:Generalization" xmi:id="_FzWJEENNEeyQjpEoNWRqhA" general="_uHRVUENMEeyQjpEoNWRqhA"/>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_D6gK8EO3EeyF5O4uVGTNDA" name="numOfSeats">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
@@ -131,17 +135,21 @@ The landside worker has to login first over a standard procedure &#xD;
     <ownedAttribute xmi:type="uml:Property" xmi:id="_KfHugEO3EeyF5O4uVGTNDA" name="takenSeats">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
     </ownedAttribute>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_QXCuIE0NEeynzawPxJz7DQ" name="getAvailableSeats"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_TgwREE0NEeynzawPxJz7DQ" name="takeSeats"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_lXYXkENNEeyQjpEoNWRqhA" name="VehicleDriver">
     <generalization xmi:type="uml:Generalization" xmi:id="_UGdz8ENOEeyQjpEoNWRqhA" general="_G8P1YENOEeyQjpEoNWRqhA"/>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_2EPJQEO3EeyF5O4uVGTNDA" name="license" type="_12mV4EO3EeyF5O4uVGTNDA"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_u3lfUE0NEeynzawPxJz7DQ" name="updateLicense"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_3b1_YE0NEeynzawPxJz7DQ" name="getLicense"/>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_12mV4EO3EeyF5O4uVGTNDA" name="License">
       <ownedAttribute xmi:type="uml:Property" xmi:id="_12mV4UO3EeyF5O4uVGTNDA" name="licenseType">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
       </ownedAttribute>
     </nestedClassifier>
   </packagedElement>
-  <packagedElement xmi:type="uml:Class" xmi:id="_G8P1YENOEeyQjpEoNWRqhA" name="Worker">
+  <packagedElement xmi:type="uml:Class" xmi:id="_G8P1YENOEeyQjpEoNWRqhA" name="Worker" visibility="package">
     <ownedAttribute xmi:type="uml:Property" xmi:id="__6TaoENjEeyQjpEoNWRqhA" name="active">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
     </ownedAttribute>
@@ -154,6 +162,7 @@ The landside worker has to login first over a standard procedure &#xD;
     <ownedAttribute xmi:type="uml:Property" xmi:id="_cHGkwEOqEeyF5O4uVGTNDA" name="surname">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
     </ownedAttribute>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_G7EtgE0OEeynzawPxJz7DQ" name="setActiveStatus"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_PecqgENPEeyQjpEoNWRqhA" name="Location" visibility="package">
     <ownedAttribute xmi:type="uml:Property" xmi:id="_gTHusEOpEeyF5O4uVGTNDA" name="latitude">
@@ -172,6 +181,8 @@ The landside worker has to login first over a standard procedure &#xD;
     <ownedAttribute xmi:type="uml:Property" xmi:id="_Z6_moEO3EeyF5O4uVGTNDA" name="usedCapacity">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDouble"/>
     </ownedAttribute>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_AGFoIE0NEeynzawPxJz7DQ" name="updateCapacity"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_XJNlgE0NEeynzawPxJz7DQ" name="getAvailableCapacity"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Association" xmi:id="_9rgAIEO4EeyF5O4uVGTNDA" memberEnd="_9rgnMkO4EeyF5O4uVGTNDA _9rhOQkO4EeyF5O4uVGTNDA">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_9rgnMEO4EeyF5O4uVGTNDA" source="org.eclipse.papyrus">
@@ -184,7 +195,7 @@ The landside worker has to login first over a standard procedure &#xD;
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9rhOQUO4EeyF5O4uVGTNDA" value="*"/>
     </ownedEnd>
   </packagedElement>
-  <packagedElement xmi:type="uml:Class" xmi:id="_aD8cYEO5EeyF5O4uVGTNDA" name="SecurityInformation">
+  <packagedElement xmi:type="uml:Class" xmi:id="_aD8cYEO5EeyF5O4uVGTNDA" name="SecurityInformation" visibility="protected">
     <ownedAttribute xmi:type="uml:Property" xmi:id="_sRwQoEO5EeyF5O4uVGTNDA" name="title">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
     </ownedAttribute>
@@ -200,6 +211,8 @@ The landside worker has to login first over a standard procedure &#xD;
     <ownedAttribute xmi:type="uml:Property" xmi:id="_OmKVAkO6EeyF5O4uVGTNDA" type="_LcvtAEO6EeyF5O4uVGTNDA" association="_OmJt8EO6EeyF5O4uVGTNDA">
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZGPzIEO7EeyF5O4uVGTNDA" value="*"/>
     </ownedAttribute>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_UzAtsE0OEeynzawPxJz7DQ" name="getSecurityInformation"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_goIhkE0OEeynzawPxJz7DQ" name="updateSecurityInformation"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_LcvtAEO6EeyF5O4uVGTNDA" name="Landside Management System">
     <ownedAttribute xmi:type="uml:Property" xmi:id="_v3-egEO7EeyF5O4uVGTNDA" name="vehicles">
@@ -260,7 +273,7 @@ The landside worker has to login first over a standard procedure &#xD;
     </ownedEnd>
     <ownedEnd xmi:type="uml:Property" xmi:id="_UVFmsEO6EeyF5O4uVGTNDA" type="_LcvtAEO6EeyF5O4uVGTNDA" association="_UVDxgEO6EeyF5O4uVGTNDA"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Class" xmi:id="_-FtvkEO7EeyF5O4uVGTNDA" name="ParkingSpot">
+  <packagedElement xmi:type="uml:Class" xmi:id="_-FtvkEO7EeyF5O4uVGTNDA" name="ParkingSpot" visibility="package">
     <ownedAttribute xmi:type="uml:Property" xmi:id="_EFI7YEO8EeyF5O4uVGTNDA" name="location" type="_PecqgENPEeyQjpEoNWRqhA"/>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_GdnOoEO8EeyF5O4uVGTNDA" name="id">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
@@ -269,6 +282,7 @@ The landside worker has to login first over a standard procedure &#xD;
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
     </ownedAttribute>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_pjucwEO8EeyF5O4uVGTNDA" name="size" type="_o-bXUEO8EeyF5O4uVGTNDA"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_wY8H4E0OEeynzawPxJz7DQ" name="getParkingSpots"/>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_o-bXUEO8EeyF5O4uVGTNDA" name="Size">
       <ownedAttribute xmi:type="uml:Property" xmi:id="_o-bXUUO8EeyF5O4uVGTNDA" name="length">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
