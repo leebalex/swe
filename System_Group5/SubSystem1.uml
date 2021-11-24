@@ -124,6 +124,8 @@
     <ownedAttribute xmi:type="uml:Property" xmi:id="_3k7swEflEey_BuMwIf_5MQ" name="generalHealthStatus">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
     </ownedAttribute>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_ilaq0E1UEeyOK4IM0cNgww" name="getMaintenacneInformation"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_kKM3UE1UEeyOK4IM0cNgww" name="updateMaintenanceInformation"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_Jp1SEEflEey_BuMwIf_5MQ" name="SecurityInformation">
     <ownedAttribute xmi:type="uml:Property" xmi:id="_HCNTEEfmEey_BuMwIf_5MQ" name="securityInformationId">
@@ -138,10 +140,15 @@
     <ownedAttribute xmi:type="uml:Property" xmi:id="_O_JUcEfmEey_BuMwIf_5MQ" name="requiredAction">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
     </ownedAttribute>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_UwW_gE1UEeyOK4IM0cNgww" name="getSecurityInformation"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_Xbxc4E1UEeyOK4IM0cNgww" name="updateSecurityInformation"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_L2O4MEflEey_BuMwIf_5MQ" name="ControlManagementSystem">
     <ownedAttribute xmi:type="uml:Property" xmi:id="_-oRMoEflEey_BuMwIf_5MQ" name="landingProcedureInformation"/>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_AToiQEfmEey_BuMwIf_5MQ" name="takeoffProcedureInformation"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_sPjqUE1TEeyOK4IM0cNgww" name="getAirfieldData"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_uItkUE1TEeyOK4IM0cNgww" name="requestrSecurityInformation"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_fBGPgE1UEeyOK4IM0cNgww" name="requestMaintenanceInformation"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_Pa4DoEflEey_BuMwIf_5MQ" name="AircraftPosition">
     <generalization xmi:type="uml:Generalization" xmi:id="_hkgQkEfnEey_BuMwIf_5MQ" general="_Ubqc8EflEey_BuMwIf_5MQ"/>
@@ -151,6 +158,8 @@
     <ownedAttribute xmi:type="uml:Property" xmi:id="_XBbv4EfmEey_BuMwIf_5MQ" name="longitude">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
     </ownedAttribute>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_PQk9EE1UEeyOK4IM0cNgww" name="sendAircrtaftPosition"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_RUpGkE1UEeyOK4IM0cNgww" name="updateAircraftPosition"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_RRzJAEflEey_BuMwIf_5MQ" name="FuelLevels">
     <generalization xmi:type="uml:Generalization" xmi:id="_eqaeAEfnEey_BuMwIf_5MQ" general="_Ubqc8EflEey_BuMwIf_5MQ"/>
@@ -163,6 +172,8 @@
     <ownedAttribute xmi:type="uml:Property" xmi:id="_1ULVoEfmEey_BuMwIf_5MQ" name="requiredFuelForFlight">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
     </ownedAttribute>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_2geggE1TEeyOK4IM0cNgww" name="getRequiredFuel"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_31hA0E1TEeyOK4IM0cNgww" name="updateCurrentFuel"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_S2KewEflEey_BuMwIf_5MQ" name="AirsideWorker">
     <ownedAttribute xmi:type="uml:Property" xmi:id="_kSFtoEfmEey_BuMwIf_5MQ" name="airsideWorkerId">
@@ -174,6 +185,8 @@
     <ownedAttribute xmi:type="uml:Property" xmi:id="_olMhkEfmEey_BuMwIf_5MQ" name="task">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
     </ownedAttribute>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="__n2UsE1TEeyOK4IM0cNgww" name="getAircaftPosition" concurrency="concurrent"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_BprCgE1UEeyOK4IM0cNgww" name="getMaintenanceInfo"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_Ubqc8EflEey_BuMwIf_5MQ" name="Aircraft">
     <ownedAttribute xmi:type="uml:Property" xmi:id="_6HPcAEfmEey_BuMwIf_5MQ" name="aircraftId">
@@ -182,6 +195,7 @@
     <ownedAttribute xmi:type="uml:Property" xmi:id="_8dPqEEfmEey_BuMwIf_5MQ" name="aircraftModel">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
     </ownedAttribute>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_ye8kwE1TEeyOK4IM0cNgww" name="sendAircraftData"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_VzWooEflEey_BuMwIf_5MQ" name="AirfieldState">
     <ownedAttribute xmi:type="uml:Property" xmi:id="_cqWgMEfmEey_BuMwIf_5MQ" name="runwayId">
@@ -190,6 +204,8 @@
     <ownedAttribute xmi:type="uml:Property" xmi:id="_fAAI8EfmEey_BuMwIf_5MQ" name="runwayFree">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
     </ownedAttribute>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_IMZvsE1UEeyOK4IM0cNgww" name="getAirfieldState"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_Ker7YE1UEeyOK4IM0cNgww" name="updateAirfieldState"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Association" xmi:id="_Mi6tIEfnEey_BuMwIf_5MQ" memberEnd="_Mi9wcEfnEey_BuMwIf_5MQ _Mi9wc0fnEey_BuMwIf_5MQ">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Mi8iUEfnEey_BuMwIf_5MQ" source="org.eclipse.papyrus">
@@ -211,4 +227,112 @@
   <packagedElement xmi:type="uml:InformationFlow" xmi:id="_7DM4gEfnEey_BuMwIf_5MQ" name="checks" informationSource="_GrJ6cEflEey_BuMwIf_5MQ _aLMscCXUEeybxdv-5Uc1kw" informationTarget="_Pa4DoEflEey_BuMwIf_5MQ"/>
   <packagedElement xmi:type="uml:InformationFlow" xmi:id="_DT3uMEfoEey_BuMwIf_5MQ" name="checks" informationSource="_GrJ6cEflEey_BuMwIf_5MQ" informationTarget="_VzWooEflEey_BuMwIf_5MQ"/>
   <packagedElement xmi:type="uml:InformationFlow" xmi:id="_LUYA8EfoEey_BuMwIf_5MQ" name="retrieved by" informationSource="_Jp1SEEflEey_BuMwIf_5MQ" informationTarget="_L2O4MEflEey_BuMwIf_5MQ"/>
+  <packagedElement xmi:type="uml:Interaction" xmi:id="_znd2kE1UEeyOK4IM0cNgww" name="checkSecurityInformation">
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_5yLsYE1UEeyOK4IM0cNgww" name="ContollManagementSystem" coveredBy="_FakEwE1VEeyOK4IM0cNgww _JWbdYU1VEeyOK4IM0cNgww"/>
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_6Gl2IE1UEeyOK4IM0cNgww" name="Controll Manager" coveredBy="_LKZ8cE1VEeyOK4IM0cNgww _FakEwU1VEeyOK4IM0cNgww _JWbdYE1VEeyOK4IM0cNgww _SGfk0E1VEeyOK4IM0cNgww _DoecEU1VEeyOK4IM0cNgww _DodN8E1VEeyOK4IM0cNgww"/>
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_6cd_gE1UEeyOK4IM0cNgww" name="SecurityInformationStorrage" coveredBy="_EBs0YE1VEeyOK4IM0cNgww _EBsNUE1VEeyOK4IM0cNgww _LKZ8cU1VEeyOK4IM0cNgww _SGe9wE1VEeyOK4IM0cNgww"/>
+    <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_EBs0YE1VEeyOK4IM0cNgww" name="ActionExecutionSpecification7Start" covered="_6cd_gE1UEeyOK4IM0cNgww" execution="_EBsNUE1VEeyOK4IM0cNgww"/>
+    <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_EBsNUE1VEeyOK4IM0cNgww" name="ActionExecutionSpecification7" covered="_6cd_gE1UEeyOK4IM0cNgww" finish="_SGe9wE1VEeyOK4IM0cNgww" start="_EBs0YE1VEeyOK4IM0cNgww"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_FakEwE1VEeyOK4IM0cNgww" name="Message10SendEvent" covered="_5yLsYE1UEeyOK4IM0cNgww" message="_FahBcE1VEeyOK4IM0cNgww"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_LKZ8cE1VEeyOK4IM0cNgww" name="Message16SendEvent" covered="_6Gl2IE1UEeyOK4IM0cNgww" message="_LKZVYE1VEeyOK4IM0cNgww"/>
+    <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_DodN8E1VEeyOK4IM0cNgww" name="ActionExecutionSpecification4" covered="_6Gl2IE1UEeyOK4IM0cNgww" finish="_DoecEU1VEeyOK4IM0cNgww" start="_LKZ8cE1VEeyOK4IM0cNgww"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_FakEwU1VEeyOK4IM0cNgww" name="Message10ReceiveEvent" covered="_6Gl2IE1UEeyOK4IM0cNgww" message="_FahBcE1VEeyOK4IM0cNgww"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_LKZ8cU1VEeyOK4IM0cNgww" name="Message16ReceiveEvent" covered="_6cd_gE1UEeyOK4IM0cNgww" message="_LKZVYE1VEeyOK4IM0cNgww"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_JWbdYE1VEeyOK4IM0cNgww" name="Message13SendEvent" covered="_6Gl2IE1UEeyOK4IM0cNgww" message="_JWa2UE1VEeyOK4IM0cNgww"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_SGe9wE1VEeyOK4IM0cNgww" name="Message18SendEvent" covered="_6cd_gE1UEeyOK4IM0cNgww" message="_SGeWsE1VEeyOK4IM0cNgww"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_JWbdYU1VEeyOK4IM0cNgww" name="Message13ReceiveEvent" covered="_5yLsYE1UEeyOK4IM0cNgww" message="_JWa2UE1VEeyOK4IM0cNgww"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_SGfk0E1VEeyOK4IM0cNgww" name="Message18ReceiveEvent" covered="_6Gl2IE1UEeyOK4IM0cNgww" message="_SGeWsE1VEeyOK4IM0cNgww"/>
+    <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_DoecEU1VEeyOK4IM0cNgww" name="ActionExecutionSpecification4Finish" covered="_6Gl2IE1UEeyOK4IM0cNgww" execution="_DodN8E1VEeyOK4IM0cNgww"/>
+    <message xmi:type="uml:Message" xmi:id="_FahBcE1VEeyOK4IM0cNgww" name="requestSecurityInfomration(Data Type)" messageSort="asynchCall" receiveEvent="_FakEwU1VEeyOK4IM0cNgww" sendEvent="_FakEwE1VEeyOK4IM0cNgww"/>
+    <message xmi:type="uml:Message" xmi:id="_JWa2UE1VEeyOK4IM0cNgww" name="return Data" messageSort="reply" receiveEvent="_JWbdYU1VEeyOK4IM0cNgww" sendEvent="_JWbdYE1VEeyOK4IM0cNgww"/>
+    <message xmi:type="uml:Message" xmi:id="_LKZVYE1VEeyOK4IM0cNgww" name="getSecurityInformation(securityInformationId,title,description,requiredAction)" receiveEvent="_LKZ8cU1VEeyOK4IM0cNgww" sendEvent="_LKZ8cE1VEeyOK4IM0cNgww"/>
+    <message xmi:type="uml:Message" xmi:id="_SGeWsE1VEeyOK4IM0cNgww" name="return Data" messageSort="reply" receiveEvent="_SGfk0E1VEeyOK4IM0cNgww" sendEvent="_SGe9wE1VEeyOK4IM0cNgww"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interaction" xmi:id="_UplzsE1VEeyOK4IM0cNgww" name="checkMaintenanceInformation">
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_Z94-4E1VEeyOK4IM0cNgww" name="Airside Worker" coveredBy="_1ZO5sE1VEeyOK4IM0cNgww _5YNQsU1VEeyOK4IM0cNgww"/>
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_bLs10E1VEeyOK4IM0cNgww" name="Manage Controller" coveredBy="_i5MF8U1VEeyOK4IM0cNgww _1ZO5sU1VEeyOK4IM0cNgww _5YNQsE1VEeyOK4IM0cNgww _h3LPUU1VEeyOK4IM0cNgww _h3KoQE1VEeyOK4IM0cNgww _i5m8sU1VEeyOK4IM0cNgww"/>
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_dUwNAE1VEeyOK4IM0cNgww" name="MaintenanceInformationStorrage" coveredBy="_iMvPoE1VEeyOK4IM0cNgww _iMuokE1VEeyOK4IM0cNgww _i5MtAE1VEeyOK4IM0cNgww _i5m8sE1VEeyOK4IM0cNgww _i5hdIE1VEeyOK4IM0cNgww"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_i5MF8U1VEeyOK4IM0cNgww" name="Message10SendEvent" covered="_bLs10E1VEeyOK4IM0cNgww" message="_i5MF8E1VEeyOK4IM0cNgww"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_1ZO5sE1VEeyOK4IM0cNgww" name="Message17SendEvent" covered="_Z94-4E1VEeyOK4IM0cNgww" message="_1ZOSoE1VEeyOK4IM0cNgww"/>
+    <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_iMvPoE1VEeyOK4IM0cNgww" name="ActionExecutionSpecification7Start" covered="_dUwNAE1VEeyOK4IM0cNgww" execution="_iMuokE1VEeyOK4IM0cNgww"/>
+    <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_iMuokE1VEeyOK4IM0cNgww" name="ActionExecutionSpecification7" covered="_dUwNAE1VEeyOK4IM0cNgww" finish="_1ZO5sE1VEeyOK4IM0cNgww" start="_iMvPoE1VEeyOK4IM0cNgww"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_i5MtAE1VEeyOK4IM0cNgww" name="Message10ReceiveEvent" covered="_dUwNAE1VEeyOK4IM0cNgww" message="_i5MF8E1VEeyOK4IM0cNgww"/>
+    <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_i5hdIE1VEeyOK4IM0cNgww" name="BehaviorExecutionSpecification13" covered="_dUwNAE1VEeyOK4IM0cNgww" finish="_i5m8sE1VEeyOK4IM0cNgww" start="_i5MtAE1VEeyOK4IM0cNgww"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_1ZO5sU1VEeyOK4IM0cNgww" name="Message17ReceiveEvent" covered="_bLs10E1VEeyOK4IM0cNgww" message="_1ZOSoE1VEeyOK4IM0cNgww"/>
+    <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_h3KoQE1VEeyOK4IM0cNgww" name="ActionExecutionSpecification4" covered="_bLs10E1VEeyOK4IM0cNgww" finish="_h3LPUU1VEeyOK4IM0cNgww" start="_1ZO5sU1VEeyOK4IM0cNgww"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_5YNQsE1VEeyOK4IM0cNgww" name="Message18SendEvent" covered="_bLs10E1VEeyOK4IM0cNgww" message="_5YMpoE1VEeyOK4IM0cNgww"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_5YNQsU1VEeyOK4IM0cNgww" name="Message18ReceiveEvent" covered="_Z94-4E1VEeyOK4IM0cNgww" message="_5YMpoE1VEeyOK4IM0cNgww"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_i5m8sE1VEeyOK4IM0cNgww" name="Message15SendEvent" covered="_dUwNAE1VEeyOK4IM0cNgww" message="_i5mVoE1VEeyOK4IM0cNgww"/>
+    <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_h3LPUU1VEeyOK4IM0cNgww" name="ActionExecutionSpecification4Finish" covered="_bLs10E1VEeyOK4IM0cNgww" execution="_h3KoQE1VEeyOK4IM0cNgww"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_i5m8sU1VEeyOK4IM0cNgww" name="Message15ReceiveEvent" covered="_bLs10E1VEeyOK4IM0cNgww" message="_i5mVoE1VEeyOK4IM0cNgww"/>
+    <message xmi:type="uml:Message" xmi:id="_i5MF8E1VEeyOK4IM0cNgww" name="getMaintananceInfo(routineCheckDone,repairsDone,generalHealthStatus)" receiveEvent="_i5MtAE1VEeyOK4IM0cNgww" sendEvent="_i5MF8U1VEeyOK4IM0cNgww"/>
+    <message xmi:type="uml:Message" xmi:id="_i5mVoE1VEeyOK4IM0cNgww" name="return Data" messageSort="reply" receiveEvent="_i5m8sU1VEeyOK4IM0cNgww" sendEvent="_i5m8sE1VEeyOK4IM0cNgww"/>
+    <message xmi:type="uml:Message" xmi:id="_1ZOSoE1VEeyOK4IM0cNgww" name="requestMaintenanceInfo(Data Type)" messageSort="asynchCall" receiveEvent="_1ZO5sU1VEeyOK4IM0cNgww" sendEvent="_1ZO5sE1VEeyOK4IM0cNgww"/>
+    <message xmi:type="uml:Message" xmi:id="_5YMpoE1VEeyOK4IM0cNgww" name="return Data" messageSort="reply" receiveEvent="_5YNQsU1VEeyOK4IM0cNgww" sendEvent="_5YNQsE1VEeyOK4IM0cNgww"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interaction" xmi:id="_8CE18E1VEeyOK4IM0cNgww" name="checkFuelLevels">
+    <lifeline xmi:type="uml:Lifeline" xmi:id="__vwBkE1VEeyOK4IM0cNgww" name="Aircraft" coveredBy="_HLXekE1WEeyOK4IM0cNgww _bGizkU1WEeyOK4IM0cNgww"/>
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_AqLCcE1WEeyOK4IM0cNgww" name="FuelControlBoard" coveredBy="_LjKlQE1WEeyOK4IM0cNgww _E1VbUE1WEeyOK4IM0cNgww _E1U0QE1WEeyOK4IM0cNgww _HLXekU1WEeyOK4IM0cNgww _bGizkE1WEeyOK4IM0cNgww _Ljf8cU1WEeyOK4IM0cNgww"/>
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_C2kokE1WEeyOK4IM0cNgww" name="Airside Worker" coveredBy="_LjKlQU1WEeyOK4IM0cNgww _FR4NYE1WEeyOK4IM0cNgww _FR3mUE1WEeyOK4IM0cNgww _Ljf8cE1WEeyOK4IM0cNgww _FR4NYU1WEeyOK4IM0cNgww"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_LjKlQU1WEeyOK4IM0cNgww" name="Message13ReceiveEvent" covered="_C2kokE1WEeyOK4IM0cNgww" message="_LjJ-ME1WEeyOK4IM0cNgww"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_LjKlQE1WEeyOK4IM0cNgww" name="Message13SendEvent" covered="_AqLCcE1WEeyOK4IM0cNgww" message="_LjJ-ME1WEeyOK4IM0cNgww"/>
+    <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_E1VbUE1WEeyOK4IM0cNgww" name="ActionExecutionSpecification4Start" covered="_AqLCcE1WEeyOK4IM0cNgww" execution="_E1U0QE1WEeyOK4IM0cNgww"/>
+    <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_E1U0QE1WEeyOK4IM0cNgww" name="ActionExecutionSpecification4" covered="_AqLCcE1WEeyOK4IM0cNgww" finish="_bGizkE1WEeyOK4IM0cNgww" start="_E1VbUE1WEeyOK4IM0cNgww"/>
+    <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_FR4NYE1WEeyOK4IM0cNgww" name="ActionExecutionSpecification7Start" covered="_C2kokE1WEeyOK4IM0cNgww" execution="_FR3mUE1WEeyOK4IM0cNgww"/>
+    <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_FR3mUE1WEeyOK4IM0cNgww" name="ActionExecutionSpecification7" covered="_C2kokE1WEeyOK4IM0cNgww" finish="_FR4NYU1WEeyOK4IM0cNgww" start="_FR4NYE1WEeyOK4IM0cNgww"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_HLXekE1WEeyOK4IM0cNgww" name="Message10SendEvent" covered="__vwBkE1VEeyOK4IM0cNgww" message="_HLW3gE1WEeyOK4IM0cNgww"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_HLXekU1WEeyOK4IM0cNgww" name="Message10ReceiveEvent" covered="_AqLCcE1WEeyOK4IM0cNgww" message="_HLW3gE1WEeyOK4IM0cNgww"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ljf8cE1WEeyOK4IM0cNgww" name="Message18SendEvent" covered="_C2kokE1WEeyOK4IM0cNgww" message="_LjfVYE1WEeyOK4IM0cNgww"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_bGizkE1WEeyOK4IM0cNgww" name="Message19SendEvent" covered="_AqLCcE1WEeyOK4IM0cNgww" message="_bGiMgE1WEeyOK4IM0cNgww"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_bGizkU1WEeyOK4IM0cNgww" name="Message19ReceiveEvent" covered="__vwBkE1VEeyOK4IM0cNgww" message="_bGiMgE1WEeyOK4IM0cNgww"/>
+    <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_FR4NYU1WEeyOK4IM0cNgww" name="ActionExecutionSpecification7Finish" covered="_C2kokE1WEeyOK4IM0cNgww" execution="_FR3mUE1WEeyOK4IM0cNgww"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ljf8cU1WEeyOK4IM0cNgww" name="Message18ReceiveEvent" covered="_AqLCcE1WEeyOK4IM0cNgww" message="_LjfVYE1WEeyOK4IM0cNgww"/>
+    <message xmi:type="uml:Message" xmi:id="_HLW3gE1WEeyOK4IM0cNgww" name="sendAircraftData(aircraftId,aircraftModel)" messageSort="asynchCall" receiveEvent="_HLXekU1WEeyOK4IM0cNgww" sendEvent="_HLXekE1WEeyOK4IM0cNgww"/>
+    <message xmi:type="uml:Message" xmi:id="_LjJ-ME1WEeyOK4IM0cNgww" name="getRequiredFuel(requiredFuelForFlight,currentFuel)" receiveEvent="_LjKlQU1WEeyOK4IM0cNgww" sendEvent="_LjKlQE1WEeyOK4IM0cNgww"/>
+    <message xmi:type="uml:Message" xmi:id="_LjfVYE1WEeyOK4IM0cNgww" name="updafeCurrentFuel(currentFuel)" messageSort="reply" receiveEvent="_Ljf8cU1WEeyOK4IM0cNgww" sendEvent="_Ljf8cE1WEeyOK4IM0cNgww"/>
+    <message xmi:type="uml:Message" xmi:id="_bGiMgE1WEeyOK4IM0cNgww" name="return if successful" messageSort="reply" receiveEvent="_bGizkU1WEeyOK4IM0cNgww" sendEvent="_bGizkE1WEeyOK4IM0cNgww"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interaction" xmi:id="_e_e0AE1WEeyOK4IM0cNgww" name="checkAirfieldState">
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_hzoWoE1WEeyOK4IM0cNgww" name="Control System" coveredBy="_spg7EU1WEeyOK4IM0cNgww _4MyxAU1WEeyOK4IM0cNgww"/>
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_iIhokE1WEeyOK4IM0cNgww" name="Controller" coveredBy="_pbVH0E1WEeyOK4IM0cNgww _ohANkE1WEeyOK4IM0cNgww _og_mgE1WEeyOK4IM0cNgww _spg7Ek1WEeyOK4IM0cNgww _4MyxAE1WEeyOK4IM0cNgww _vc620U1WEeyOK4IM0cNgww _ohANkU1WEeyOK4IM0cNgww"/>
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_iawBAE1WEeyOK4IM0cNgww" name="AirfieldDataStorrage" coveredBy="_pbVH0U1WEeyOK4IM0cNgww _vc620E1WEeyOK4IM0cNgww _1-MLcE1WEeyOK4IM0cNgww"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_pbVH0E1WEeyOK4IM0cNgww" name="Message10SendEvent" covered="_iIhokE1WEeyOK4IM0cNgww" message="_pbUgwE1WEeyOK4IM0cNgww"/>
+    <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_ohANkE1WEeyOK4IM0cNgww" name="ActionExecutionSpecification4Start" covered="_iIhokE1WEeyOK4IM0cNgww" execution="_og_mgE1WEeyOK4IM0cNgww"/>
+    <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_og_mgE1WEeyOK4IM0cNgww" name="ActionExecutionSpecification4" covered="_iIhokE1WEeyOK4IM0cNgww" finish="_ohANkU1WEeyOK4IM0cNgww" start="_ohANkE1WEeyOK4IM0cNgww"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_pbVH0U1WEeyOK4IM0cNgww" name="Message10ReceiveEvent" covered="_iawBAE1WEeyOK4IM0cNgww" message="_pbUgwE1WEeyOK4IM0cNgww"/>
+    <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_1-MLcE1WEeyOK4IM0cNgww" name="ActionExecutionSpecification16" covered="_iawBAE1WEeyOK4IM0cNgww" finish="_4MyxAE1WEeyOK4IM0cNgww" start="_pbVH0U1WEeyOK4IM0cNgww"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_spg7EU1WEeyOK4IM0cNgww" name="Message13SendEvent" covered="_hzoWoE1WEeyOK4IM0cNgww" message="_spg7EE1WEeyOK4IM0cNgww"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_spg7Ek1WEeyOK4IM0cNgww" name="Message13ReceiveEvent" covered="_iIhokE1WEeyOK4IM0cNgww" message="_spg7EE1WEeyOK4IM0cNgww"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_4MyxAE1WEeyOK4IM0cNgww" name="Message18SendEvent" covered="_iIhokE1WEeyOK4IM0cNgww" message="_4MyJ8E1WEeyOK4IM0cNgww"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_4MyxAU1WEeyOK4IM0cNgww" name="Message18ReceiveEvent" covered="_hzoWoE1WEeyOK4IM0cNgww" message="_4MyJ8E1WEeyOK4IM0cNgww"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_vc620E1WEeyOK4IM0cNgww" name="Message16SendEvent" covered="_iawBAE1WEeyOK4IM0cNgww" message="_vc6PwE1WEeyOK4IM0cNgww"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_vc620U1WEeyOK4IM0cNgww" name="Message16ReceiveEvent" covered="_iIhokE1WEeyOK4IM0cNgww" message="_vc6PwE1WEeyOK4IM0cNgww"/>
+    <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_ohANkU1WEeyOK4IM0cNgww" name="ActionExecutionSpecification4Finish" covered="_iIhokE1WEeyOK4IM0cNgww" execution="_og_mgE1WEeyOK4IM0cNgww"/>
+    <message xmi:type="uml:Message" xmi:id="_pbUgwE1WEeyOK4IM0cNgww" name="obtainAirfieldData(Data Type)" receiveEvent="_pbVH0U1WEeyOK4IM0cNgww" sendEvent="_pbVH0E1WEeyOK4IM0cNgww"/>
+    <message xmi:type="uml:Message" xmi:id="_spg7EE1WEeyOK4IM0cNgww" name="getAirfieldData(Data Type)" messageSort="asynchCall" receiveEvent="_spg7Ek1WEeyOK4IM0cNgww" sendEvent="_spg7EU1WEeyOK4IM0cNgww"/>
+    <message xmi:type="uml:Message" xmi:id="_vc6PwE1WEeyOK4IM0cNgww" name="Airfield Data" messageSort="reply" receiveEvent="_vc620U1WEeyOK4IM0cNgww" sendEvent="_vc620E1WEeyOK4IM0cNgww"/>
+    <message xmi:type="uml:Message" xmi:id="_4MyJ8E1WEeyOK4IM0cNgww" name="Retuen Airfield Data" messageSort="reply" receiveEvent="_4MyxAU1WEeyOK4IM0cNgww" sendEvent="_4MyxAE1WEeyOK4IM0cNgww"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interaction" xmi:id="_7EQtYE1WEeyOK4IM0cNgww" name="checkAircraftPosition">
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_-lgmkE1WEeyOK4IM0cNgww" name="Pilot" coveredBy="_D5wucE1XEeyOK4IM0cNgww _MqQTsU1XEeyOK4IM0cNgww"/>
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_-2nksE1WEeyOK4IM0cNgww" name="Position" coveredBy="_HCNtIE1XEeyOK4IM0cNgww _D5wucU1XEeyOK4IM0cNgww _Ka9xoE1XEeyOK4IM0cNgww _MqQTsE1XEeyOK4IM0cNgww _CGuDgU1XEeyOK4IM0cNgww _CGtccE1XEeyOK4IM0cNgww"/>
+    <lifeline xmi:type="uml:Lifeline" xmi:id="__HRP0E1WEeyOK4IM0cNgww" name="Airside Worker" coveredBy="_CmmdcE1XEeyOK4IM0cNgww _Cml2YE1XEeyOK4IM0cNgww _HCNtIU1XEeyOK4IM0cNgww _Ka9KkU1XEeyOK4IM0cNgww _CmnEgE1XEeyOK4IM0cNgww"/>
+    <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_CmmdcE1XEeyOK4IM0cNgww" name="ActionExecutionSpecification7Start" covered="__HRP0E1WEeyOK4IM0cNgww" execution="_Cml2YE1XEeyOK4IM0cNgww"/>
+    <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_Cml2YE1XEeyOK4IM0cNgww" name="ActionExecutionSpecification7" covered="__HRP0E1WEeyOK4IM0cNgww" finish="_CmnEgE1XEeyOK4IM0cNgww" start="_CmmdcE1XEeyOK4IM0cNgww"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_D5wucE1XEeyOK4IM0cNgww" name="Message10SendEvent" covered="_-lgmkE1WEeyOK4IM0cNgww" message="_D5wHYE1XEeyOK4IM0cNgww"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_HCNtIE1XEeyOK4IM0cNgww" name="Message13SendEvent" covered="_-2nksE1WEeyOK4IM0cNgww" message="_HCNGEE1XEeyOK4IM0cNgww"/>
+    <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_CGtccE1XEeyOK4IM0cNgww" name="ActionExecutionSpecification4" covered="_-2nksE1WEeyOK4IM0cNgww" finish="_CGuDgU1XEeyOK4IM0cNgww" start="_HCNtIE1XEeyOK4IM0cNgww"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_D5wucU1XEeyOK4IM0cNgww" name="Message10ReceiveEvent" covered="_-2nksE1WEeyOK4IM0cNgww" message="_D5wHYE1XEeyOK4IM0cNgww"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_HCNtIU1XEeyOK4IM0cNgww" name="Message13ReceiveEvent" covered="__HRP0E1WEeyOK4IM0cNgww" message="_HCNGEE1XEeyOK4IM0cNgww"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ka9KkU1XEeyOK4IM0cNgww" name="Message15SendEvent" covered="__HRP0E1WEeyOK4IM0cNgww" message="_Ka9KkE1XEeyOK4IM0cNgww"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Ka9xoE1XEeyOK4IM0cNgww" name="Message15ReceiveEvent" covered="_-2nksE1WEeyOK4IM0cNgww" message="_Ka9KkE1XEeyOK4IM0cNgww"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_MqQTsE1XEeyOK4IM0cNgww" name="Message18SendEvent" covered="_-2nksE1WEeyOK4IM0cNgww" message="_MqPsoE1XEeyOK4IM0cNgww"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_MqQTsU1XEeyOK4IM0cNgww" name="Message18ReceiveEvent" covered="_-lgmkE1WEeyOK4IM0cNgww" message="_MqPsoE1XEeyOK4IM0cNgww"/>
+    <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_CGuDgU1XEeyOK4IM0cNgww" name="ActionExecutionSpecification4Finish" covered="_-2nksE1WEeyOK4IM0cNgww" execution="_CGtccE1XEeyOK4IM0cNgww"/>
+    <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_CmnEgE1XEeyOK4IM0cNgww" name="ActionExecutionSpecification7Finish" covered="__HRP0E1WEeyOK4IM0cNgww" execution="_Cml2YE1XEeyOK4IM0cNgww"/>
+    <message xmi:type="uml:Message" xmi:id="_D5wHYE1XEeyOK4IM0cNgww" name="sendAircraftPosition(Latitude,Longitude)" messageSort="asynchCall" receiveEvent="_D5wucU1XEeyOK4IM0cNgww" sendEvent="_D5wucE1XEeyOK4IM0cNgww"/>
+    <message xmi:type="uml:Message" xmi:id="_HCNGEE1XEeyOK4IM0cNgww" name="getAircraftPosition(Latitude,Longitude)" receiveEvent="_HCNtIU1XEeyOK4IM0cNgww" sendEvent="_HCNtIE1XEeyOK4IM0cNgww"/>
+    <message xmi:type="uml:Message" xmi:id="_Ka9KkE1XEeyOK4IM0cNgww" name="return if successful" messageSort="reply" receiveEvent="_Ka9xoE1XEeyOK4IM0cNgww" sendEvent="_Ka9KkU1XEeyOK4IM0cNgww"/>
+    <message xmi:type="uml:Message" xmi:id="_MqPsoE1XEeyOK4IM0cNgww" name="return if successful" messageSort="reply" receiveEvent="_MqQTsU1XEeyOK4IM0cNgww" sendEvent="_MqQTsE1XEeyOK4IM0cNgww"/>
+  </packagedElement>
 </uml:Model>
