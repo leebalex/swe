@@ -160,7 +160,17 @@ The terminal worker enters the ticket number into the system
       <message xmi:type="uml:Message" xmi:id="_ZrX3QE1wEeyO7YzLcd32NQ" name="check validity of ticket and passport" receiveEvent="_ZrYeUE1wEeyO7YzLcd32NQ" sendEvent="_ZrX3QU1wEeyO7YzLcd32NQ"/>
       <message xmi:type="uml:Message" xmi:id="_ZrsnYE1wEeyO7YzLcd32NQ" name="return validated ticket and passport" messageSort="reply" receiveEvent="_ZrtOcU1wEeyO7YzLcd32NQ" sendEvent="_ZrtOcE1wEeyO7YzLcd32NQ"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Interaction" xmi:id="_CnRw4E1tEeyuUKdxlVCWbA" name="Get customer Support"/>
+    <packagedElement xmi:type="uml:Interaction" xmi:id="_CnRw4E1tEeyuUKdxlVCWbA" name="Get customer Support">
+      <lifeline xmi:type="uml:Lifeline" xmi:id="_k7JiYE1wEeyO7YzLcd32NQ" name="Passenger" coveredBy="_pBnBcE1wEeyO7YzLcd32NQ _pB1D4U1wEeyO7YzLcd32NQ"/>
+      <lifeline xmi:type="uml:Lifeline" xmi:id="_lxAzYE1wEeyO7YzLcd32NQ" name="Financial Worker" coveredBy="_pBnBcU1wEeyO7YzLcd32NQ _pB1D4E1wEeyO7YzLcd32NQ _pBynoE1wEeyO7YzLcd32NQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_pBnBcE1wEeyO7YzLcd32NQ" name="Message3SendEvent" covered="_k7JiYE1wEeyO7YzLcd32NQ" message="_pBmaYE1wEeyO7YzLcd32NQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_pBnBcU1wEeyO7YzLcd32NQ" name="Message3ReceiveEvent" covered="_lxAzYE1wEeyO7YzLcd32NQ" message="_pBmaYE1wEeyO7YzLcd32NQ"/>
+      <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_pBynoE1wEeyO7YzLcd32NQ" name="BehaviorExecutionSpecification6" covered="_lxAzYE1wEeyO7YzLcd32NQ" finish="_pB1D4E1wEeyO7YzLcd32NQ" start="_pBnBcU1wEeyO7YzLcd32NQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_pB1D4E1wEeyO7YzLcd32NQ" name="Message8SendEvent" covered="_lxAzYE1wEeyO7YzLcd32NQ" message="_pB0c0E1wEeyO7YzLcd32NQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_pB1D4U1wEeyO7YzLcd32NQ" name="Message8ReceiveEvent" covered="_k7JiYE1wEeyO7YzLcd32NQ" message="_pB0c0E1wEeyO7YzLcd32NQ"/>
+      <message xmi:type="uml:Message" xmi:id="_pBmaYE1wEeyO7YzLcd32NQ" name="request support" receiveEvent="_pBnBcU1wEeyO7YzLcd32NQ" sendEvent="_pBnBcE1wEeyO7YzLcd32NQ"/>
+      <message xmi:type="uml:Message" xmi:id="_pB0c0E1wEeyO7YzLcd32NQ" name="return recipe " messageSort="reply" receiveEvent="_pB1D4U1wEeyO7YzLcd32NQ" sendEvent="_pB1D4E1wEeyO7YzLcd32NQ"/>
+    </packagedElement>
     <packagedElement xmi:type="uml:Interaction" xmi:id="_vWFXkE1tEeyuUKdxlVCWbA" name="Interaction22"/>
     <packagedElement xmi:type="uml:Interaction" xmi:id="_IKcpEE1uEeyuUKdxlVCWbA" name="Get financial data"/>
     <packagedElement xmi:type="uml:Interaction" xmi:id="_NvSKoE1uEeyuUKdxlVCWbA" name="Get Airplane Data"/>
