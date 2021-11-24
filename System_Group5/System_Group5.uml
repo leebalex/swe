@@ -209,7 +209,17 @@ The terminal worker enters the ticket number into the system
       <message xmi:type="uml:Message" xmi:id="_lGrAcE1xEeyO7YzLcd32NQ" name="request data" receiveEvent="_lGrngU1xEeyO7YzLcd32NQ" sendEvent="_lGrngE1xEeyO7YzLcd32NQ"/>
       <message xmi:type="uml:Message" xmi:id="_lG6RAE1xEeyO7YzLcd32NQ" name="return data" messageSort="reply" receiveEvent="_lG64EU1xEeyO7YzLcd32NQ" sendEvent="_lG64EE1xEeyO7YzLcd32NQ"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Interaction" xmi:id="_YycWEE1uEeyuUKdxlVCWbA" name="Get security data"/>
+    <packagedElement xmi:type="uml:Interaction" xmi:id="_YycWEE1uEeyuUKdxlVCWbA" name="Get security data">
+      <lifeline xmi:type="uml:Lifeline" xmi:id="_r9V9UE1xEeyO7YzLcd32NQ" name="Security" coveredBy="_wOmXIE1xEeyO7YzLcd32NQ _wO1Aok1xEeyO7YzLcd32NQ"/>
+      <lifeline xmi:type="uml:Lifeline" xmi:id="_sRKRME1xEeyO7YzLcd32NQ" name="ControlManagement" coveredBy="_wOmXIU1xEeyO7YzLcd32NQ _wO1AoU1xEeyO7YzLcd32NQ _wOzLcE1xEeyO7YzLcd32NQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_wOmXIE1xEeyO7YzLcd32NQ" name="Message3SendEvent" covered="_r9V9UE1xEeyO7YzLcd32NQ" message="_wOlwEE1xEeyO7YzLcd32NQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_wOmXIU1xEeyO7YzLcd32NQ" name="Message3ReceiveEvent" covered="_sRKRME1xEeyO7YzLcd32NQ" message="_wOlwEE1xEeyO7YzLcd32NQ"/>
+      <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_wOzLcE1xEeyO7YzLcd32NQ" name="BehaviorExecutionSpecification6" covered="_sRKRME1xEeyO7YzLcd32NQ" finish="_wO1AoU1xEeyO7YzLcd32NQ" start="_wOmXIU1xEeyO7YzLcd32NQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_wO1AoU1xEeyO7YzLcd32NQ" name="Message8SendEvent" covered="_sRKRME1xEeyO7YzLcd32NQ" message="_wO1AoE1xEeyO7YzLcd32NQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_wO1Aok1xEeyO7YzLcd32NQ" name="Message8ReceiveEvent" covered="_r9V9UE1xEeyO7YzLcd32NQ" message="_wO1AoE1xEeyO7YzLcd32NQ"/>
+      <message xmi:type="uml:Message" xmi:id="_wOlwEE1xEeyO7YzLcd32NQ" name="request data" receiveEvent="_wOmXIU1xEeyO7YzLcd32NQ" sendEvent="_wOmXIE1xEeyO7YzLcd32NQ"/>
+      <message xmi:type="uml:Message" xmi:id="_wO1AoE1xEeyO7YzLcd32NQ" name="return data" messageSort="reply" receiveEvent="_wO1Aok1xEeyO7YzLcd32NQ" sendEvent="_wO1AoU1xEeyO7YzLcd32NQ"/>
+    </packagedElement>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_9v1rcEfHEey_BuMwIf_5MQ" name="ControlManagement" visibility="protected">
     <ownedAttribute xmi:type="uml:Property" xmi:id="_BxVvAEfpEey_BuMwIf_5MQ" name="InformationId">
