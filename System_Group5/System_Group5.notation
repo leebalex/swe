@@ -1142,4 +1142,116 @@
       <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_GznrMUfrEey_BuMwIf_5MQ" id="(0.1606425702811245,1.0)"/>
     </edges>
   </notation:Diagram>
+  <notation:Diagram xmi:id="_7EjmUE1sEeyuUKdxlVCWbA" type="PapyrusUMLSequenceDiagram" name="BookAFlightSequenceDiagram" measurementUnit="Pixel">
+    <children xmi:type="notation:Shape" xmi:id="_7EjmUU1sEeyuUKdxlVCWbA" type="Interaction_Shape">
+      <children xmi:type="notation:DecorationNode" xmi:id="_7EjmUk1sEeyuUKdxlVCWbA" type="Interaction_NameLabel"/>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_7EjmU01sEeyuUKdxlVCWbA" type="Interaction_SubfragmentCompartment">
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_7EjmVE1sEeyuUKdxlVCWbA"/>
+      </children>
+      <element xmi:type="uml:Interaction" href="System_Group5.uml#_5SRJUE1sEeyuUKdxlVCWbA"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_7EjmVU1sEeyuUKdxlVCWbA"/>
+    </children>
+    <styles xmi:type="notation:StringValueStyle" xmi:id="_7EjmVk1sEeyuUKdxlVCWbA" name="diagram_compatibility_version" stringValue="1.4.0"/>
+    <styles xmi:type="notation:DiagramStyle" xmi:id="_7EjmV01sEeyuUKdxlVCWbA"/>
+    <styles xmi:type="style:PapyrusDiagramStyle" xmi:id="_7EjmWE1sEeyuUKdxlVCWbA" diagramKindId="org.eclipse.papyrus.uml.diagram.sequence">
+      <owner xmi:type="uml:Package" href="System_Group5.uml#_5Ed8kDZwEeyoTYcW5j3CWg"/>
+    </styles>
+    <element xmi:type="uml:Interaction" href="System_Group5.uml#_5SRJUE1sEeyuUKdxlVCWbA"/>
+  </notation:Diagram>
+  <notation:Diagram xmi:id="_Bk1ccE1tEeyuUKdxlVCWbA" type="PapyrusUMLSequenceDiagram" name="CheckInSequenceDiagram" measurementUnit="Pixel">
+    <children xmi:type="notation:Shape" xmi:id="_Bk1ccU1tEeyuUKdxlVCWbA" type="Interaction_Shape">
+      <children xmi:type="notation:DecorationNode" xmi:id="_Bk1cck1tEeyuUKdxlVCWbA" type="Interaction_NameLabel"/>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_Bk1cc01tEeyuUKdxlVCWbA" type="Interaction_SubfragmentCompartment">
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Bk1cdE1tEeyuUKdxlVCWbA"/>
+      </children>
+      <element xmi:type="uml:Interaction" href="System_Group5.uml#_ARzHQE1tEeyuUKdxlVCWbA"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Bk1cdU1tEeyuUKdxlVCWbA"/>
+    </children>
+    <styles xmi:type="notation:StringValueStyle" xmi:id="_Bk1cdk1tEeyuUKdxlVCWbA" name="diagram_compatibility_version" stringValue="1.4.0"/>
+    <styles xmi:type="notation:DiagramStyle" xmi:id="_Bk1cd01tEeyuUKdxlVCWbA"/>
+    <styles xmi:type="style:PapyrusDiagramStyle" xmi:id="_Bk1ceE1tEeyuUKdxlVCWbA" diagramKindId="org.eclipse.papyrus.uml.diagram.sequence">
+      <owner xmi:type="uml:Package" href="System_Group5.uml#_5Ed8kDZwEeyoTYcW5j3CWg"/>
+    </styles>
+    <element xmi:type="uml:Interaction" href="System_Group5.uml#_ARzHQE1tEeyuUKdxlVCWbA"/>
+  </notation:Diagram>
+  <notation:Diagram xmi:id="_EYYiIE1tEeyuUKdxlVCWbA" type="PapyrusUMLSequenceDiagram" name="GetCustomerSupportSequenceDiagram" measurementUnit="Pixel">
+    <children xmi:type="notation:Shape" xmi:id="_EYYiIU1tEeyuUKdxlVCWbA" type="Interaction_Shape">
+      <children xmi:type="notation:DecorationNode" xmi:id="_EYYiIk1tEeyuUKdxlVCWbA" type="Interaction_NameLabel"/>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_EYYiI01tEeyuUKdxlVCWbA" type="Interaction_SubfragmentCompartment">
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_EYYiJE1tEeyuUKdxlVCWbA"/>
+      </children>
+      <element xmi:type="uml:Interaction" href="System_Group5.uml#_CnRw4E1tEeyuUKdxlVCWbA"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_EYYiJU1tEeyuUKdxlVCWbA"/>
+    </children>
+    <styles xmi:type="notation:StringValueStyle" xmi:id="_EYYiJk1tEeyuUKdxlVCWbA" name="diagram_compatibility_version" stringValue="1.4.0"/>
+    <styles xmi:type="notation:DiagramStyle" xmi:id="_EYYiJ01tEeyuUKdxlVCWbA"/>
+    <styles xmi:type="style:PapyrusDiagramStyle" xmi:id="_EYYiKE1tEeyuUKdxlVCWbA" diagramKindId="org.eclipse.papyrus.uml.diagram.sequence">
+      <owner xmi:type="uml:Package" href="System_Group5.uml#_5Ed8kDZwEeyoTYcW5j3CWg"/>
+    </styles>
+    <element xmi:type="uml:Interaction" href="System_Group5.uml#_CnRw4E1tEeyuUKdxlVCWbA"/>
+  </notation:Diagram>
+  <notation:Diagram xmi:id="_KZNmsE1uEeyuUKdxlVCWbA" type="PapyrusUMLSequenceDiagram" name="GetFinancialDataSequenceDiagram" measurementUnit="Pixel">
+    <children xmi:type="notation:Shape" xmi:id="_KZNmsU1uEeyuUKdxlVCWbA" type="Interaction_Shape">
+      <children xmi:type="notation:DecorationNode" xmi:id="_KZNmsk1uEeyuUKdxlVCWbA" type="Interaction_NameLabel"/>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_KZNms01uEeyuUKdxlVCWbA" type="Interaction_SubfragmentCompartment">
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_KZNmtE1uEeyuUKdxlVCWbA"/>
+      </children>
+      <element xmi:type="uml:Interaction" href="System_Group5.uml#_IKcpEE1uEeyuUKdxlVCWbA"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_KZNmtU1uEeyuUKdxlVCWbA"/>
+    </children>
+    <styles xmi:type="notation:StringValueStyle" xmi:id="_KZNmtk1uEeyuUKdxlVCWbA" name="diagram_compatibility_version" stringValue="1.4.0"/>
+    <styles xmi:type="notation:DiagramStyle" xmi:id="_KZNmt01uEeyuUKdxlVCWbA"/>
+    <styles xmi:type="style:PapyrusDiagramStyle" xmi:id="_KZNmuE1uEeyuUKdxlVCWbA" diagramKindId="org.eclipse.papyrus.uml.diagram.sequence">
+      <owner xmi:type="uml:Package" href="System_Group5.uml#_5Ed8kDZwEeyoTYcW5j3CWg"/>
+    </styles>
+    <element xmi:type="uml:Interaction" href="System_Group5.uml#_IKcpEE1uEeyuUKdxlVCWbA"/>
+  </notation:Diagram>
+  <notation:Diagram xmi:id="_PJthQE1uEeyuUKdxlVCWbA" type="PapyrusUMLSequenceDiagram" name="GetAirplaneDataSequenceDiagram" measurementUnit="Pixel">
+    <children xmi:type="notation:Shape" xmi:id="_PJthQU1uEeyuUKdxlVCWbA" type="Interaction_Shape">
+      <children xmi:type="notation:DecorationNode" xmi:id="_PJthQk1uEeyuUKdxlVCWbA" type="Interaction_NameLabel"/>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_PJthQ01uEeyuUKdxlVCWbA" type="Interaction_SubfragmentCompartment">
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_PJthRE1uEeyuUKdxlVCWbA"/>
+      </children>
+      <element xmi:type="uml:Interaction" href="System_Group5.uml#_NvSKoE1uEeyuUKdxlVCWbA"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_PJthRU1uEeyuUKdxlVCWbA"/>
+    </children>
+    <styles xmi:type="notation:StringValueStyle" xmi:id="_PJthRk1uEeyuUKdxlVCWbA" name="diagram_compatibility_version" stringValue="1.4.0"/>
+    <styles xmi:type="notation:DiagramStyle" xmi:id="_PJthR01uEeyuUKdxlVCWbA"/>
+    <styles xmi:type="style:PapyrusDiagramStyle" xmi:id="_PJthSE1uEeyuUKdxlVCWbA" diagramKindId="org.eclipse.papyrus.uml.diagram.sequence">
+      <owner xmi:type="uml:Package" href="System_Group5.uml#_5Ed8kDZwEeyoTYcW5j3CWg"/>
+    </styles>
+    <element xmi:type="uml:Interaction" href="System_Group5.uml#_NvSKoE1uEeyuUKdxlVCWbA"/>
+  </notation:Diagram>
+  <notation:Diagram xmi:id="_WUvkkE1uEeyuUKdxlVCWbA" type="PapyrusUMLSequenceDiagram" name="GetAirfieldDataSequenceDiagram" measurementUnit="Pixel">
+    <children xmi:type="notation:Shape" xmi:id="_WUvkkU1uEeyuUKdxlVCWbA" type="Interaction_Shape">
+      <children xmi:type="notation:DecorationNode" xmi:id="_WUvkkk1uEeyuUKdxlVCWbA" type="Interaction_NameLabel"/>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_WUvkk01uEeyuUKdxlVCWbA" type="Interaction_SubfragmentCompartment">
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WUvklE1uEeyuUKdxlVCWbA"/>
+      </children>
+      <element xmi:type="uml:Interaction" href="System_Group5.uml#_TBGpkE1uEeyuUKdxlVCWbA"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WUvklU1uEeyuUKdxlVCWbA"/>
+    </children>
+    <styles xmi:type="notation:StringValueStyle" xmi:id="_WUvklk1uEeyuUKdxlVCWbA" name="diagram_compatibility_version" stringValue="1.4.0"/>
+    <styles xmi:type="notation:DiagramStyle" xmi:id="_WUvkl01uEeyuUKdxlVCWbA"/>
+    <styles xmi:type="style:PapyrusDiagramStyle" xmi:id="_WUvkmE1uEeyuUKdxlVCWbA" diagramKindId="org.eclipse.papyrus.uml.diagram.sequence">
+      <owner xmi:type="uml:Package" href="System_Group5.uml#_5Ed8kDZwEeyoTYcW5j3CWg"/>
+    </styles>
+    <element xmi:type="uml:Interaction" href="System_Group5.uml#_TBGpkE1uEeyuUKdxlVCWbA"/>
+  </notation:Diagram>
+  <notation:Diagram xmi:id="_aVI34E1uEeyuUKdxlVCWbA" type="PapyrusUMLSequenceDiagram" name="GetSecurityDataSequenceDiagram" measurementUnit="Pixel">
+    <children xmi:type="notation:Shape" xmi:id="_aVI34U1uEeyuUKdxlVCWbA" type="Interaction_Shape">
+      <children xmi:type="notation:DecorationNode" xmi:id="_aVI34k1uEeyuUKdxlVCWbA" type="Interaction_NameLabel"/>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_aVI3401uEeyuUKdxlVCWbA" type="Interaction_SubfragmentCompartment">
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_aVI35E1uEeyuUKdxlVCWbA"/>
+      </children>
+      <element xmi:type="uml:Interaction" href="System_Group5.uml#_YycWEE1uEeyuUKdxlVCWbA"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_aVI35U1uEeyuUKdxlVCWbA"/>
+    </children>
+    <styles xmi:type="notation:StringValueStyle" xmi:id="_aVI35k1uEeyuUKdxlVCWbA" name="diagram_compatibility_version" stringValue="1.4.0"/>
+    <styles xmi:type="notation:DiagramStyle" xmi:id="_aVI3501uEeyuUKdxlVCWbA"/>
+    <styles xmi:type="style:PapyrusDiagramStyle" xmi:id="_aVI36E1uEeyuUKdxlVCWbA" diagramKindId="org.eclipse.papyrus.uml.diagram.sequence">
+      <owner xmi:type="uml:Package" href="System_Group5.uml#_5Ed8kDZwEeyoTYcW5j3CWg"/>
+    </styles>
+    <element xmi:type="uml:Interaction" href="System_Group5.uml#_YycWEE1uEeyuUKdxlVCWbA"/>
+  </notation:Diagram>
 </xmi:XMI>
