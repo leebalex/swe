@@ -602,6 +602,10 @@
           <element xmi:type="uml:Property" href="SubSystem5.uml#_zz_pMEfOEeywuKMtWPoySw"/>
           <layoutConstraint xmi:type="notation:Location" xmi:id="_z0HlAUfOEeywuKMtWPoySw"/>
         </children>
+        <children xmi:type="notation:Shape" xmi:id="_wDE3IEfgEeyRoPsTl90T3g" type="Property_ClassAttributeLabel">
+          <element xmi:type="uml:Property" href="SubSystem5.uml#_wCBHMEfgEeyRoPsTl90T3g"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_wDE3IUfgEeyRoPsTl90T3g"/>
+        </children>
         <styles xmi:type="notation:TitleStyle" xmi:id="_py9CFkfOEeywuKMtWPoySw"/>
         <styles xmi:type="notation:SortingStyle" xmi:id="_py9CF0fOEeywuKMtWPoySw"/>
         <styles xmi:type="notation:FilteringStyle" xmi:id="_py9CGEfOEeywuKMtWPoySw"/>
@@ -643,6 +647,10 @@
         <children xmi:type="notation:Shape" xmi:id="_GchDgEfPEeywuKMtWPoySw" type="Property_ClassAttributeLabel">
           <element xmi:type="uml:Property" href="SubSystem5.uml#_GcWrcEfPEeywuKMtWPoySw"/>
           <layoutConstraint xmi:type="notation:Location" xmi:id="_GchDgUfPEeywuKMtWPoySw"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_2DF40EfgEeyRoPsTl90T3g" type="Property_ClassAttributeLabel">
+          <element xmi:type="uml:Property" href="SubSystem5.uml#_2Col0EfgEeyRoPsTl90T3g"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_2DGf4EfgEeyRoPsTl90T3g"/>
         </children>
         <styles xmi:type="notation:TitleStyle" xmi:id="_83K55kfOEeywuKMtWPoySw"/>
         <styles xmi:type="notation:SortingStyle" xmi:id="_83K550fOEeywuKMtWPoySw"/>
@@ -773,6 +781,10 @@
         <children xmi:type="notation:Shape" xmi:id="_62b7wEfPEeywuKMtWPoySw" type="Property_ClassAttributeLabel">
           <element xmi:type="uml:Property" href="SubSystem5.uml#_62RjsEfPEeywuKMtWPoySw"/>
           <layoutConstraint xmi:type="notation:Location" xmi:id="_62b7wUfPEeywuKMtWPoySw"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_6LX80EfgEeyRoPsTl90T3g" type="Property_ClassAttributeLabel">
+          <element xmi:type="uml:Property" href="SubSystem5.uml#_6K-7QEfgEeyRoPsTl90T3g"/>
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_6LX80UfgEeyRoPsTl90T3g"/>
         </children>
         <styles xmi:type="notation:TitleStyle" xmi:id="_xgYyYUfPEeywuKMtWPoySw"/>
         <styles xmi:type="notation:SortingStyle" xmi:id="_xgYyYkfPEeywuKMtWPoySw"/>

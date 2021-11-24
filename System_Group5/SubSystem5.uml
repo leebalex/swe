@@ -157,6 +157,9 @@
       <ownedAttribute xmi:type="uml:Property" xmi:id="_zz_pMEfOEeywuKMtWPoySw" name="stock">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
       </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_wCBHMEfgEeyRoPsTl90T3g" name="price">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
+      </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_83JrwEfOEeywuKMtWPoySw" name="Equipment">
       <ownedAttribute xmi:type="uml:Property" xmi:id="_AzlFEEfPEeywuKMtWPoySw" name="id">
@@ -170,6 +173,9 @@
       </ownedAttribute>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_GcWrcEfPEeywuKMtWPoySw" name="supplier">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_2Col0EfgEeyRoPsTl90T3g" name="price">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_QMnroEfPEeywuKMtWPoySw" name="Aircraft">
@@ -215,6 +221,9 @@
       </ownedAttribute>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_62RjsEfPEeywuKMtWPoySw" name="passportId">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_6K-7QEfgEeyRoPsTl90T3g" name="price">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_85mGUEfPEeywuKMtWPoySw" name="Flight">
