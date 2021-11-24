@@ -145,7 +145,21 @@ The terminal worker enters the ticket number into the system
       <message xmi:type="uml:Message" xmi:id="_5qqT0E1vEeyO7YzLcd32NQ" name="return true if successful" messageSort="reply" receiveEvent="_5qq64E1vEeyO7YzLcd32NQ" sendEvent="_5qqT0U1vEeyO7YzLcd32NQ"/>
       <message xmi:type="uml:Message" xmi:id="_B-LCIE1wEeyO7YzLcd32NQ" name="check availability" receiveEvent="_B-LpMU1wEeyO7YzLcd32NQ" sendEvent="_B-LpME1wEeyO7YzLcd32NQ"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Interaction" xmi:id="_ARzHQE1tEeyuUKdxlVCWbA" name="Check In"/>
+    <packagedElement xmi:type="uml:Interaction" xmi:id="_ARzHQE1tEeyuUKdxlVCWbA" name="Check In">
+      <lifeline xmi:type="uml:Lifeline" xmi:id="_RBAvME1wEeyO7YzLcd32NQ" name="Passenger" coveredBy="_YPtxkE1wEeyO7YzLcd32NQ _ZrtOcU1wEeyO7YzLcd32NQ"/>
+      <lifeline xmi:type="uml:Lifeline" xmi:id="_RfFyUE1wEeyO7YzLcd32NQ" name="TerminalWorker" coveredBy="_ZrX3QU1wEeyO7YzLcd32NQ _YPtxkU1wEeyO7YzLcd32NQ"/>
+      <lifeline xmi:type="uml:Lifeline" xmi:id="_U379cE1wEeyO7YzLcd32NQ" name="Database" coveredBy="_ZrYeUE1wEeyO7YzLcd32NQ _ZrtOcE1wEeyO7YzLcd32NQ _ZrqyME1wEeyO7YzLcd32NQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ZrX3QU1wEeyO7YzLcd32NQ" name="Message11SendEvent" covered="_RfFyUE1wEeyO7YzLcd32NQ" message="_ZrX3QE1wEeyO7YzLcd32NQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ZrYeUE1wEeyO7YzLcd32NQ" name="Message11ReceiveEvent" covered="_U379cE1wEeyO7YzLcd32NQ" message="_ZrX3QE1wEeyO7YzLcd32NQ"/>
+      <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_ZrqyME1wEeyO7YzLcd32NQ" name="BehaviorExecutionSpecification14" covered="_U379cE1wEeyO7YzLcd32NQ" finish="_ZrtOcE1wEeyO7YzLcd32NQ" start="_ZrYeUE1wEeyO7YzLcd32NQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_YPtxkE1wEeyO7YzLcd32NQ" name="Message4SendEvent" covered="_RBAvME1wEeyO7YzLcd32NQ" message="_YPtKgE1wEeyO7YzLcd32NQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_YPtxkU1wEeyO7YzLcd32NQ" name="Message4ReceiveEvent" covered="_RfFyUE1wEeyO7YzLcd32NQ" message="_YPtKgE1wEeyO7YzLcd32NQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ZrtOcE1wEeyO7YzLcd32NQ" name="Message16SendEvent" covered="_U379cE1wEeyO7YzLcd32NQ" message="_ZrsnYE1wEeyO7YzLcd32NQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ZrtOcU1wEeyO7YzLcd32NQ" name="Message16ReceiveEvent" covered="_RBAvME1wEeyO7YzLcd32NQ" message="_ZrsnYE1wEeyO7YzLcd32NQ"/>
+      <message xmi:type="uml:Message" xmi:id="_YPtKgE1wEeyO7YzLcd32NQ" name="hand over ticket and passport" receiveEvent="_YPtxkU1wEeyO7YzLcd32NQ" sendEvent="_YPtxkE1wEeyO7YzLcd32NQ"/>
+      <message xmi:type="uml:Message" xmi:id="_ZrX3QE1wEeyO7YzLcd32NQ" name="check validity of ticket and passport" receiveEvent="_ZrYeUE1wEeyO7YzLcd32NQ" sendEvent="_ZrX3QU1wEeyO7YzLcd32NQ"/>
+      <message xmi:type="uml:Message" xmi:id="_ZrsnYE1wEeyO7YzLcd32NQ" name="return validated ticket and passport" messageSort="reply" receiveEvent="_ZrtOcU1wEeyO7YzLcd32NQ" sendEvent="_ZrtOcE1wEeyO7YzLcd32NQ"/>
+    </packagedElement>
     <packagedElement xmi:type="uml:Interaction" xmi:id="_CnRw4E1tEeyuUKdxlVCWbA" name="Get customer Support"/>
     <packagedElement xmi:type="uml:Interaction" xmi:id="_vWFXkE1tEeyuUKdxlVCWbA" name="Interaction22"/>
     <packagedElement xmi:type="uml:Interaction" xmi:id="_IKcpEE1uEeyuUKdxlVCWbA" name="Get financial data"/>
