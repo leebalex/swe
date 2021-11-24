@@ -264,4 +264,24 @@
   <packagedElement xmi:type="uml:InformationFlow" xmi:id="_HUicMEfFEeyXgr2oMmhtqg" name="is retrieved by" informationSource="_j_5msEfAEeyXgr2oMmhtqg _QsNXkCXWEeybxdv-5Uc1kw _INvKgEfEEeyXgr2oMmhtqg" informationTarget="_twZ3cEfAEeyXgr2oMmhtqg"/>
   <packagedElement xmi:type="uml:InformationFlow" xmi:id="_Rnn1kEfFEeyXgr2oMmhtqg" name="is checked" informationSource="_j_5msEfAEeyXgr2oMmhtqg" informationTarget="_mU3S8EfAEeyXgr2oMmhtqg"/>
   <packagedElement xmi:type="uml:InformationFlow" xmi:id="_XW_zMEfFEeyXgr2oMmhtqg" name="is checked" informationSource="_j_5msEfAEeyXgr2oMmhtqg" informationTarget="_eVjTAEfAEeyXgr2oMmhtqg"/>
+  <packagedElement xmi:type="uml:Interaction" xmi:id="_2Ww7IE1kEeyuUKdxlVCWbA" name="Interaction22"/>
+  <packagedElement xmi:type="uml:Interaction" xmi:id="_6jy8QE1kEeyuUKdxlVCWbA" name="Check Security Information">
+    <lifeline xmi:type="uml:Lifeline" xmi:id="__VRuQE1kEeyuUKdxlVCWbA" name="SecurityWorker" coveredBy="_HWHYMU1lEeyuUKdxlVCWbA _HWX24U1lEeyuUKdxlVCWbA"/>
+    <lifeline xmi:type="uml:Lifeline" xmi:id="__rFmME1kEeyuUKdxlVCWbA" name="SecurityInformation" coveredBy="_HWH_QE1lEeyuUKdxlVCWbA _HWX24E1lEeyuUKdxlVCWbA _NjLXYU1lEeyuUKdxlVCWbA _NjL-cE1lEeyuUKdxlVCWbA _TDtAsE1lEeyuUKdxlVCWbA _TDtnwE1lEeyuUKdxlVCWbA _RE2uYE1lEeyuUKdxlVCWbA _MMhtgE1lEeyuUKdxlVCWbA _HWVaoE1lEeyuUKdxlVCWbA"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_HWHYMU1lEeyuUKdxlVCWbA" name="Message3SendEvent" covered="__VRuQE1kEeyuUKdxlVCWbA" message="_HWHYME1lEeyuUKdxlVCWbA"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_HWH_QE1lEeyuUKdxlVCWbA" name="Message3ReceiveEvent" covered="__rFmME1kEeyuUKdxlVCWbA" message="_HWHYME1lEeyuUKdxlVCWbA"/>
+    <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_HWVaoE1lEeyuUKdxlVCWbA" name="BehaviorExecutionSpecification6" covered="__rFmME1kEeyuUKdxlVCWbA" finish="_HWX24E1lEeyuUKdxlVCWbA" start="_HWH_QE1lEeyuUKdxlVCWbA"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_HWX24E1lEeyuUKdxlVCWbA" name="Message8SendEvent" covered="__rFmME1kEeyuUKdxlVCWbA" message="_HWXP0E1lEeyuUKdxlVCWbA"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_HWX24U1lEeyuUKdxlVCWbA" name="Message8ReceiveEvent" covered="__VRuQE1kEeyuUKdxlVCWbA" message="_HWXP0E1lEeyuUKdxlVCWbA"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NjLXYU1lEeyuUKdxlVCWbA" name="Message13SendEvent" covered="__rFmME1kEeyuUKdxlVCWbA" message="_NjLXYE1lEeyuUKdxlVCWbA"/>
+    <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_MMhtgE1lEeyuUKdxlVCWbA" name="ActionExecutionSpecification10" covered="__rFmME1kEeyuUKdxlVCWbA" finish="_NjL-cE1lEeyuUKdxlVCWbA" start="_NjLXYU1lEeyuUKdxlVCWbA"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NjL-cE1lEeyuUKdxlVCWbA" name="Message13ReceiveEvent" covered="__rFmME1kEeyuUKdxlVCWbA" message="_NjLXYE1lEeyuUKdxlVCWbA"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_TDtAsE1lEeyuUKdxlVCWbA" name="Message17SendEvent" covered="__rFmME1kEeyuUKdxlVCWbA" message="_TDsZoE1lEeyuUKdxlVCWbA"/>
+    <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_RE2uYE1lEeyuUKdxlVCWbA" name="ActionExecutionSpecification14" covered="__rFmME1kEeyuUKdxlVCWbA" finish="_TDtnwE1lEeyuUKdxlVCWbA" start="_TDtAsE1lEeyuUKdxlVCWbA"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_TDtnwE1lEeyuUKdxlVCWbA" name="Message17ReceiveEvent" covered="__rFmME1kEeyuUKdxlVCWbA" message="_TDsZoE1lEeyuUKdxlVCWbA"/>
+    <message xmi:type="uml:Message" xmi:id="_HWHYME1lEeyuUKdxlVCWbA" name="request security information" receiveEvent="_HWH_QE1lEeyuUKdxlVCWbA" sendEvent="_HWHYMU1lEeyuUKdxlVCWbA"/>
+    <message xmi:type="uml:Message" xmi:id="_HWXP0E1lEeyuUKdxlVCWbA" name="return if successful" messageSort="reply" receiveEvent="_HWX24U1lEeyuUKdxlVCWbA" sendEvent="_HWX24E1lEeyuUKdxlVCWbA"/>
+    <message xmi:type="uml:Message" xmi:id="_NjLXYE1lEeyuUKdxlVCWbA" name="login protocol" receiveEvent="_NjL-cE1lEeyuUKdxlVCWbA" sendEvent="_NjLXYU1lEeyuUKdxlVCWbA"/>
+    <message xmi:type="uml:Message" xmi:id="_TDsZoE1lEeyuUKdxlVCWbA" name="create timestamp" receiveEvent="_TDtnwE1lEeyuUKdxlVCWbA" sendEvent="_TDtAsE1lEeyuUKdxlVCWbA"/>
+  </packagedElement>
 </uml:Model>
