@@ -200,6 +200,34 @@
   <packagedElement xmi:type="uml:Class" xmi:id="_-eBsQE1bEeynzawPxJz7DQ" name="LandsideManagement"/>
   <packagedElement xmi:type="uml:Class" xmi:id="_MmusUE1cEeynzawPxJz7DQ" name="ControlManagement"/>
   <packagedElement xmi:type="uml:Class" xmi:id="_T_MusE1cEeynzawPxJz7DQ" name="Security"/>
+  <packagedElement xmi:type="uml:Interaction" xmi:id="_fC6-AE1gEeyuUKdxlVCWbA" name="Check In">
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_iIGmQE1gEeyuUKdxlVCWbA" name="Passenger" coveredBy="_p9KeAE1gEeyuUKdxlVCWbA _Z49lIE1hEeyuUKdxlVCWbA _Z4-zQE1hEeyuUKdxlVCWbA _saSyUk1hEeyuUKdxlVCWbA _dFaTAE1hEeyuUKdxlVCWbA"/>
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_ifdWUE1gEeyuUKdxlVCWbA" name="TerminalWorker" coveredBy="_p9KeAU1gEeyuUKdxlVCWbA _tDq78E1gEeyuUKdxlVCWbA _Z49lIE1hEeyuUKdxlVCWbA _Z4-zQE1hEeyuUKdxlVCWbA _m81rIU1hEeyuUKdxlVCWbA _saSyUU1hEeyuUKdxlVCWbA _dFaTAE1hEeyuUKdxlVCWbA _2kHiAE1hEeyuUKdxlVCWbA"/>
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_i3QyUE1gEeyuUKdxlVCWbA" name="CheckIn" coveredBy="_tDq78U1gEeyuUKdxlVCWbA _Z49lIE1hEeyuUKdxlVCWbA _Z4-zQE1hEeyuUKdxlVCWbA _m81rIE1hEeyuUKdxlVCWbA _dFaTAE1hEeyuUKdxlVCWbA _2kG68U1hEeyuUKdxlVCWbA"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_p9KeAU1gEeyuUKdxlVCWbA" name="Message4ReceiveEvent" covered="_ifdWUE1gEeyuUKdxlVCWbA" message="_p9GMkE1gEeyuUKdxlVCWbA"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_p9KeAE1gEeyuUKdxlVCWbA" name="Message4SendEvent" covered="_iIGmQE1gEeyuUKdxlVCWbA" message="_p9GMkE1gEeyuUKdxlVCWbA"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_tDq78E1gEeyuUKdxlVCWbA" name="Message7SendEvent" covered="_ifdWUE1gEeyuUKdxlVCWbA" message="_tDpt0E1gEeyuUKdxlVCWbA"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_tDq78U1gEeyuUKdxlVCWbA" name="Message7ReceiveEvent" covered="_i3QyUE1gEeyuUKdxlVCWbA" message="_tDpt0E1gEeyuUKdxlVCWbA"/>
+    <fragment xmi:type="uml:CombinedFragment" xmi:id="_Z49lIE1hEeyuUKdxlVCWbA" name="CombinedFragment10" covered="_iIGmQE1gEeyuUKdxlVCWbA _i3QyUE1gEeyuUKdxlVCWbA _ifdWUE1gEeyuUKdxlVCWbA" interactionOperator="alt">
+      <operand xmi:type="uml:InteractionOperand" xmi:id="_Z4-zQE1hEeyuUKdxlVCWbA" name="InteractionOperand0" covered="_iIGmQE1gEeyuUKdxlVCWbA _i3QyUE1gEeyuUKdxlVCWbA _ifdWUE1gEeyuUKdxlVCWbA">
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_m81rIE1hEeyuUKdxlVCWbA" name="Message11SendEvent" covered="_i3QyUE1gEeyuUKdxlVCWbA" message="_m80dAE1hEeyuUKdxlVCWbA"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_m81rIU1hEeyuUKdxlVCWbA" name="Message11ReceiveEvent" covered="_ifdWUE1gEeyuUKdxlVCWbA" message="_m80dAE1hEeyuUKdxlVCWbA"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_saSyUU1hEeyuUKdxlVCWbA" name="Message12SendEvent" covered="_ifdWUE1gEeyuUKdxlVCWbA" message="_saSyUE1hEeyuUKdxlVCWbA"/>
+        <guard xmi:type="uml:InteractionConstraint" xmi:id="_Z4-zQU1hEeyuUKdxlVCWbA" visibility="public"/>
+      </operand>
+      <operand xmi:type="uml:InteractionOperand" xmi:id="_dFaTAE1hEeyuUKdxlVCWbA" name="InteractionOperand2" covered="_iIGmQE1gEeyuUKdxlVCWbA _i3QyUE1gEeyuUKdxlVCWbA _ifdWUE1gEeyuUKdxlVCWbA">
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_2kG68U1hEeyuUKdxlVCWbA" name="Message14SendEvent" covered="_i3QyUE1gEeyuUKdxlVCWbA" message="_2kG68E1hEeyuUKdxlVCWbA"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_2kHiAE1hEeyuUKdxlVCWbA" name="Message14ReceiveEvent" covered="_ifdWUE1gEeyuUKdxlVCWbA" message="_2kG68E1hEeyuUKdxlVCWbA"/>
+        <guard xmi:type="uml:InteractionConstraint" xmi:id="_dFa6EE1hEeyuUKdxlVCWbA" name="guard"/>
+      </operand>
+    </fragment>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_saSyUk1hEeyuUKdxlVCWbA" name="Message12ReceiveEvent" covered="_iIGmQE1gEeyuUKdxlVCWbA" message="_saSyUE1hEeyuUKdxlVCWbA"/>
+    <message xmi:type="uml:Message" xmi:id="_p9GMkE1gEeyuUKdxlVCWbA" name="gives passport" receiveEvent="_p9KeAU1gEeyuUKdxlVCWbA" sendEvent="_p9KeAE1gEeyuUKdxlVCWbA"/>
+    <message xmi:type="uml:Message" xmi:id="_tDpt0E1gEeyuUKdxlVCWbA" name="validity check by system" receiveEvent="_tDq78U1gEeyuUKdxlVCWbA" sendEvent="_tDq78E1gEeyuUKdxlVCWbA"/>
+    <message xmi:type="uml:Message" xmi:id="_m80dAE1hEeyuUKdxlVCWbA" name="valid + printed ticket" messageSort="reply" receiveEvent="_m81rIU1hEeyuUKdxlVCWbA" sendEvent="_m81rIE1hEeyuUKdxlVCWbA"/>
+    <message xmi:type="uml:Message" xmi:id="_saSyUE1hEeyuUKdxlVCWbA" name="give ticket" receiveEvent="_saSyUk1hEeyuUKdxlVCWbA" sendEvent="_saSyUU1hEeyuUKdxlVCWbA"/>
+    <message xmi:type="uml:Message" xmi:id="_2kG68E1hEeyuUKdxlVCWbA" name="invalid" messageSort="reply" receiveEvent="_2kHiAE1hEeyuUKdxlVCWbA" sendEvent="_2kG68U1hEeyuUKdxlVCWbA"/>
+  </packagedElement>
   <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_C5GwgEe2EeyXgr2oMmhtqg">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_C5H-oEe2EeyXgr2oMmhtqg" source="http://www.eclipse.org/uml2/2.0.0/UML">
       <references xmi:type="ecore:EPackage" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ"/>
