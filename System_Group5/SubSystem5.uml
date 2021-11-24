@@ -125,12 +125,25 @@
       <ownedAttribute xmi:type="uml:Property" xmi:id="_ixJosEfNEeywuKMtWPoySw" name="passengers">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EEList"/>
       </ownedAttribute>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_DJqMkE1qEeyuRbUpc4Cr8w" name="registerFlight">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_GAa-UE1qEeyuRbUpc4Cr8w" name="flight" type="_85mGUEfPEeywuKMtWPoySw"/>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_G2iG8E1qEeyuRbUpc4Cr8w" name="unregisterFlight">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_IsMBAE1qEeyuRbUpc4Cr8w" type="_85mGUEfPEeywuKMtWPoySw"/>
+      </ownedOperation>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="__4H-4EfNEeywuKMtWPoySw" name="FacilityManagement">
       <generalization xmi:type="uml:Generalization" xmi:id="__efvMEfTEeywuKMtWPoySw" general="_B83TQEfNEeywuKMtWPoySw"/>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_ElVU4EfOEeywuKMtWPoySw" name="facilities">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EEList"/>
       </ownedAttribute>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_yr4ykE1pEeyuRbUpc4Cr8w" name="registerFacility">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_3I0Q4E1pEeyuRbUpc4Cr8w" name="facility" type="_lh94kEfPEeywuKMtWPoySw"/>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_3kdEAE1pEeyuRbUpc4Cr8w" name="unregisterFacility">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_57B50E1pEeyuRbUpc4Cr8w" name="facility" type="_lh94kEfPEeywuKMtWPoySw"/>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_8vMDgE1pEeyuRbUpc4Cr8w" name="calculateFacilityRent"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_Op9bgEfOEeywuKMtWPoySw" name="MaintenanceManagement">
       <generalization xmi:type="uml:Generalization" xmi:id="_9Cp-4EfTEeywuKMtWPoySw" general="_B83TQEfNEeywuKMtWPoySw"/>
@@ -140,12 +153,36 @@
       <ownedAttribute xmi:type="uml:Property" xmi:id="_TnxZUEfOEeywuKMtWPoySw" name="aircraftFuelStock">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
       </ownedAttribute>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_bZNWQE1pEeyuRbUpc4Cr8w" name="reportMaintenanceDemand">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_mpND0E1pEeyuRbUpc4Cr8w" name="maintenanceId">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_nlJusE1pEeyuRbUpc4Cr8w" name="reportMaterialDemand">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_slyXAE1pEeyuRbUpc4Cr8w" name="materialId">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_tVn4gE1pEeyuRbUpc4Cr8w" name="reportEquipmentDemand">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_xGaCgE1pEeyuRbUpc4Cr8w" name="equipmentId">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        </ownedParameter>
+      </ownedOperation>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_dnJMgEfOEeywuKMtWPoySw" name="HumanResourcesManagement">
       <generalization xmi:type="uml:Generalization" xmi:id="_7NNgMEfTEeywuKMtWPoySw" general="_B83TQEfNEeywuKMtWPoySw"/>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_gfmAUEfOEeywuKMtWPoySw" name="employees">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EEList"/>
       </ownedAttribute>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_AxOyEE1pEeyuRbUpc4Cr8w" name="registerEmployee">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_MKiMoE1pEeyuRbUpc4Cr8w" name="employee" type="_PC_RcEfMEeywuKMtWPoySw"/>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_NBbYYE1pEeyuRbUpc4Cr8w" name="unregisterEmployee">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_QVH9wE1pEeyuRbUpc4Cr8w" name="employee" type="_PC_RcEfMEeywuKMtWPoySw"/>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_RWLyIE1pEeyuRbUpc4Cr8w" name="calculateSalary">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_Wy22ME1pEeyuRbUpc4Cr8w" name="employee" type="_PC_RcEfMEeywuKMtWPoySw"/>
+      </ownedOperation>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_py7z8EfOEeywuKMtWPoySw" name="Material">
       <ownedAttribute xmi:type="uml:Property" xmi:id="_uwyOAEfOEeywuKMtWPoySw" name="id">
@@ -155,6 +192,9 @@
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
       </ownedAttribute>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_zz_pMEfOEeywuKMtWPoySw" name="stock">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_wCBHMEfgEeyRoPsTl90T3g" name="price">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
       </ownedAttribute>
     </packagedElement>
@@ -170,6 +210,9 @@
       </ownedAttribute>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_GcWrcEfPEeywuKMtWPoySw" name="supplier">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_2Col0EfgEeyRoPsTl90T3g" name="price">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_QMnroEfPEeywuKMtWPoySw" name="Aircraft">
@@ -215,6 +258,9 @@
       </ownedAttribute>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_62RjsEfPEeywuKMtWPoySw" name="passportId">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_6K-7QEfgEeyRoPsTl90T3g" name="price">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_85mGUEfPEeywuKMtWPoySw" name="Flight">
@@ -345,7 +391,7 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6Zv7kEfWEeywuKMtWPoySw" value="*"/>
       </ownedEnd>
     </packagedElement>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="_ZJ_VoEfXEeywuKMtWPoySw" name="retrieve flight data" client="_VVQrUEfNEeywuKMtWPoySw" supplier="_ro6zQEfQEeywuKMtWPoySw"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_ZJ_VoEfXEeywuKMtWPoySw" name="retrieve flight data" client="_VVQrUEfNEeywuKMtWPoySw" supplier="_XEcd8DD4EeyemoxuiQ3Sug"/>
     <packagedElement xmi:type="uml:Dependency" xmi:id="_g9jYkEfXEeywuKMtWPoySw" name="retrieve facility data" client="__4H-4EfNEeywuKMtWPoySw" supplier="_XEcd8DD4EeyemoxuiQ3Sug"/>
     <packagedElement xmi:type="uml:Dependency" xmi:id="_rgdWoEfXEeywuKMtWPoySw" name="retrieve maintenance data" client="_Op9bgEfOEeywuKMtWPoySw" supplier="_O6L98EfQEeywuKMtWPoySw"/>
     <packagedElement xmi:type="uml:Association" xmi:id="_5TgPwEfXEeywuKMtWPoySw"/>
