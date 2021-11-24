@@ -228,6 +228,21 @@
     <message xmi:type="uml:Message" xmi:id="_saSyUE1hEeyuUKdxlVCWbA" name="give ticket" receiveEvent="_saSyUk1hEeyuUKdxlVCWbA" sendEvent="_saSyUU1hEeyuUKdxlVCWbA"/>
     <message xmi:type="uml:Message" xmi:id="_2kG68E1hEeyuUKdxlVCWbA" name="invalid" messageSort="reply" receiveEvent="_2kHiAE1hEeyuUKdxlVCWbA" sendEvent="_2kG68U1hEeyuUKdxlVCWbA"/>
   </packagedElement>
+  <packagedElement xmi:type="uml:Interaction" xmi:id="_Pjd7gE1iEeyuUKdxlVCWbA" name="Baggage Handling">
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_Vj1igE1iEeyuUKdxlVCWbA" name="Passenger" coveredBy="_fCtQsE1iEeyuUKdxlVCWbA _fC9vYE1iEeyuUKdxlVCWbA"/>
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_YNj90E1iEeyuUKdxlVCWbA" name="BaggageHandling" coveredBy="_fCtQsU1iEeyuUKdxlVCWbA _jeh7wE1iEeyuUKdxlVCWbA _fC9IUU1iEeyuUKdxlVCWbA _fC7TIE1iEeyuUKdxlVCWbA"/>
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_Ylri4E1iEeyuUKdxlVCWbA" name="LandsideManagement" coveredBy="_jeh7wU1iEeyuUKdxlVCWbA"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_fCtQsE1iEeyuUKdxlVCWbA" name="Message4SendEvent" covered="_Vj1igE1iEeyuUKdxlVCWbA" message="_fCspoE1iEeyuUKdxlVCWbA"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_fCtQsU1iEeyuUKdxlVCWbA" name="Message4ReceiveEvent" covered="_YNj90E1iEeyuUKdxlVCWbA" message="_fCspoE1iEeyuUKdxlVCWbA"/>
+    <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_fC7TIE1iEeyuUKdxlVCWbA" name="BehaviorExecutionSpecification7" covered="_YNj90E1iEeyuUKdxlVCWbA" finish="_fC9IUU1iEeyuUKdxlVCWbA" start="_fCtQsU1iEeyuUKdxlVCWbA"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_jeh7wE1iEeyuUKdxlVCWbA" name="Message11SendEvent" covered="_YNj90E1iEeyuUKdxlVCWbA" message="_jehUsE1iEeyuUKdxlVCWbA"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_jeh7wU1iEeyuUKdxlVCWbA" name="Message11ReceiveEvent" covered="_Ylri4E1iEeyuUKdxlVCWbA" message="_jehUsE1iEeyuUKdxlVCWbA"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_fC9IUU1iEeyuUKdxlVCWbA" name="Message9SendEvent" covered="_YNj90E1iEeyuUKdxlVCWbA" message="_fC9IUE1iEeyuUKdxlVCWbA"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_fC9vYE1iEeyuUKdxlVCWbA" name="Message9ReceiveEvent" covered="_Vj1igE1iEeyuUKdxlVCWbA" message="_fC9IUE1iEeyuUKdxlVCWbA"/>
+    <message xmi:type="uml:Message" xmi:id="_fCspoE1iEeyuUKdxlVCWbA" name="hands over baggage" receiveEvent="_fCtQsU1iEeyuUKdxlVCWbA" sendEvent="_fCtQsE1iEeyuUKdxlVCWbA"/>
+    <message xmi:type="uml:Message" xmi:id="_fC9IUE1iEeyuUKdxlVCWbA" name="prints baggage tag" messageSort="reply" receiveEvent="_fC9vYE1iEeyuUKdxlVCWbA" sendEvent="_fC9IUU1iEeyuUKdxlVCWbA"/>
+    <message xmi:type="uml:Message" xmi:id="_jehUsE1iEeyuUKdxlVCWbA" name="updates data" receiveEvent="_jeh7wU1iEeyuUKdxlVCWbA" sendEvent="_jeh7wE1iEeyuUKdxlVCWbA"/>
+  </packagedElement>
   <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_C5GwgEe2EeyXgr2oMmhtqg">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_C5H-oEe2EeyXgr2oMmhtqg" source="http://www.eclipse.org/uml2/2.0.0/UML">
       <references xmi:type="ecore:EPackage" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ"/>
