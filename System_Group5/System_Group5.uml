@@ -187,7 +187,17 @@ The terminal worker enters the ticket number into the system
       <message xmi:type="uml:Message" xmi:id="_9Dur8E1wEeyO7YzLcd32NQ" name="get data if check was successful" receiveEvent="_9DvTAU1wEeyO7YzLcd32NQ" sendEvent="_9DvTAE1wEeyO7YzLcd32NQ"/>
       <message xmi:type="uml:Message" xmi:id="_9EAYwE1wEeyO7YzLcd32NQ" name="return report " messageSort="reply" receiveEvent="_9EA_0U1wEeyO7YzLcd32NQ" sendEvent="_9EA_0E1wEeyO7YzLcd32NQ"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Interaction" xmi:id="_NvSKoE1uEeyuUKdxlVCWbA" name="Get Airplane Data"/>
+    <packagedElement xmi:type="uml:Interaction" xmi:id="_NvSKoE1uEeyuUKdxlVCWbA" name="Get Airplane Data">
+      <lifeline xmi:type="uml:Lifeline" xmi:id="_LWCT8E1xEeyO7YzLcd32NQ" name="Pilot/Security" coveredBy="_TVYwIE1xEeyO7YzLcd32NQ _TVonwE1xEeyO7YzLcd32NQ"/>
+      <lifeline xmi:type="uml:Lifeline" xmi:id="_NirKoE1xEeyO7YzLcd32NQ" name="ControlManagement" coveredBy="_TVYwIU1xEeyO7YzLcd32NQ _TVoAsU1xEeyO7YzLcd32NQ _TVlkcE1xEeyO7YzLcd32NQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_TVYwIE1xEeyO7YzLcd32NQ" name="Message3SendEvent" covered="_LWCT8E1xEeyO7YzLcd32NQ" message="_TVYJEE1xEeyO7YzLcd32NQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_TVYwIU1xEeyO7YzLcd32NQ" name="Message3ReceiveEvent" covered="_NirKoE1xEeyO7YzLcd32NQ" message="_TVYJEE1xEeyO7YzLcd32NQ"/>
+      <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_TVlkcE1xEeyO7YzLcd32NQ" name="BehaviorExecutionSpecification6" covered="_NirKoE1xEeyO7YzLcd32NQ" finish="_TVoAsU1xEeyO7YzLcd32NQ" start="_TVYwIU1xEeyO7YzLcd32NQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_TVoAsU1xEeyO7YzLcd32NQ" name="Message8SendEvent" covered="_NirKoE1xEeyO7YzLcd32NQ" message="_TVoAsE1xEeyO7YzLcd32NQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_TVonwE1xEeyO7YzLcd32NQ" name="Message8ReceiveEvent" covered="_LWCT8E1xEeyO7YzLcd32NQ" message="_TVoAsE1xEeyO7YzLcd32NQ"/>
+      <message xmi:type="uml:Message" xmi:id="_TVYJEE1xEeyO7YzLcd32NQ" name="request data" receiveEvent="_TVYwIU1xEeyO7YzLcd32NQ" sendEvent="_TVYwIE1xEeyO7YzLcd32NQ"/>
+      <message xmi:type="uml:Message" xmi:id="_TVoAsE1xEeyO7YzLcd32NQ" name="return data" messageSort="reply" receiveEvent="_TVonwE1xEeyO7YzLcd32NQ" sendEvent="_TVoAsU1xEeyO7YzLcd32NQ"/>
+    </packagedElement>
     <packagedElement xmi:type="uml:Interaction" xmi:id="_TBGpkE1uEeyuUKdxlVCWbA" name="Get airfield data"/>
     <packagedElement xmi:type="uml:Interaction" xmi:id="_YycWEE1uEeyuUKdxlVCWbA" name="Get security data"/>
   </packagedElement>
