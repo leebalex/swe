@@ -124,7 +124,7 @@ The terminal worker enters the ticket number into the system
     <packagedElement xmi:type="uml:Association" xmi:id="_MOQacDZ9EeymGvEYQtMk9w"/>
     <packagedElement xmi:type="uml:Association" xmi:id="_OJ9SIDZ9EeymGvEYQtMk9w"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Class" xmi:id="_9v1rcEfHEey_BuMwIf_5MQ" name="ControlManagement">
+  <packagedElement xmi:type="uml:Class" xmi:id="_9v1rcEfHEey_BuMwIf_5MQ" name="ControlManagement" visibility="protected">
     <ownedAttribute xmi:type="uml:Property" xmi:id="_BxVvAEfpEey_BuMwIf_5MQ" name="InformationId">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
     </ownedAttribute>
@@ -134,8 +134,11 @@ The terminal worker enters the ticket number into the system
     <ownedAttribute xmi:type="uml:Property" xmi:id="_HpP9kEfpEey_BuMwIf_5MQ" name="generalHealthStatus">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
     </ownedAttribute>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_DRQCUE1qEeyuUKdxlVCWbA" name="setRiskLevel"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_E7qVsE1qEeyuUKdxlVCWbA" name="pushSecurityInformation"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_GSwrgE1qEeyuUKdxlVCWbA" name="pullSecurityInformation"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Class" xmi:id="_AZDJYEfIEey_BuMwIf_5MQ" name="AirsideManagement">
+  <packagedElement xmi:type="uml:Class" xmi:id="_AZDJYEfIEey_BuMwIf_5MQ" name="AirsideManagement" visibility="protected">
     <ownedAttribute xmi:type="uml:Property" xmi:id="_0NCcgEfoEey_BuMwIf_5MQ" name="runwayId">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
     </ownedAttribute>
@@ -145,6 +148,7 @@ The terminal worker enters the ticket number into the system
     <ownedAttribute xmi:type="uml:Property" xmi:id="_5VinYEfoEey_BuMwIf_5MQ" name="aircraftId">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
     </ownedAttribute>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_ewDg0E1qEeyuUKdxlVCWbA" name="gatherAirsideInformation"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_BwPl0EfIEey_BuMwIf_5MQ" name="LandsideManagement">
     <ownedAttribute xmi:type="uml:Property" xmi:id="_Z_Z1gEfpEey_BuMwIf_5MQ" name="availableFuel">
@@ -152,6 +156,7 @@ The terminal worker enters the ticket number into the system
     </ownedAttribute>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_h8_XIEfpEey_BuMwIf_5MQ" name="workers" type="_hq_BIEfpEey_BuMwIf_5MQ"/>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_oWTCkEfpEey_BuMwIf_5MQ" name="vehicles" type="_oK8uMEfpEey_BuMwIf_5MQ"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_M6Zt4E1qEeyuUKdxlVCWbA" name="sendVehicle"/>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_hq_BIEfpEey_BuMwIf_5MQ" name="Worker"/>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_oK8uMEfpEey_BuMwIf_5MQ" name="Vehicle"/>
   </packagedElement>
@@ -162,6 +167,7 @@ The terminal worker enters the ticket number into the system
     <ownedAttribute xmi:type="uml:Property" xmi:id="_5iclgEfpEey_BuMwIf_5MQ" name="employees">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EEList"/>
     </ownedAttribute>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_VyLm4E1qEeyuUKdxlVCWbA" name="createReport"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_D-0WMEfIEey_BuMwIf_5MQ" name="TerminalManagement">
     <ownedAttribute xmi:type="uml:Property" xmi:id="_DK_0IEfqEey_BuMwIf_5MQ" name="passengers">
@@ -173,6 +179,7 @@ The terminal worker enters the ticket number into the system
     <ownedAttribute xmi:type="uml:Property" xmi:id="_Os_3sEfqEey_BuMwIf_5MQ" name="baggage">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EEList"/>
     </ownedAttribute>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_Q_bCgE1qEeyuUKdxlVCWbA" name="requestTransport"/>
   </packagedElement>
   <packagedElement xmi:type="uml:InformationFlow" xmi:id="_R6DCgEfqEey_BuMwIf_5MQ" name="provides" informationSource="_9v1rcEfHEey_BuMwIf_5MQ" informationTarget="_BwPl0EfIEey_BuMwIf_5MQ"/>
   <packagedElement xmi:type="uml:InformationFlow" xmi:id="_TTMmwEfqEey_BuMwIf_5MQ" name="provides" informationSource="_9v1rcEfHEey_BuMwIf_5MQ" informationTarget="_AZDJYEfIEey_BuMwIf_5MQ"/>
