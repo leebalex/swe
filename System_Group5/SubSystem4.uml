@@ -295,4 +295,19 @@
     <message xmi:type="uml:Message" xmi:id="_sAUPQE1lEeyuUKdxlVCWbA" name="retrieve security information" receiveEvent="_sAU2UU1lEeyuUKdxlVCWbA" sendEvent="_sAU2UE1lEeyuUKdxlVCWbA"/>
     <message xmi:type="uml:Message" xmi:id="_sAi4wE1lEeyuUKdxlVCWbA" name="return information" messageSort="reply" receiveEvent="_sAi4wk1lEeyuUKdxlVCWbA" sendEvent="_sAi4wU1lEeyuUKdxlVCWbA"/>
   </packagedElement>
+  <packagedElement xmi:type="uml:Interaction" xmi:id="_5LBWAE1lEeyuUKdxlVCWbA" name="Check Landside and Airside Information">
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_8v2usE1lEeyuUKdxlVCWbA" name="ControlWorker" coveredBy="_HlTOQE1mEeyuUKdxlVCWbA _J6ot8E1mEeyuUKdxlVCWbA"/>
+    <lifeline xmi:type="uml:Lifeline" xmi:id="__80Z8E1lEeyuUKdxlVCWbA" name="PermissionCheckController" coveredBy="_HlTOQU1mEeyuUKdxlVCWbA _J6VL8E1mEeyuUKdxlVCWbA"/>
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_AV6PYE1mEeyuUKdxlVCWbA" name="Air/LandsideInformation" coveredBy="_J6VL8U1mEeyuUKdxlVCWbA _J6oG4U1mEeyuUKdxlVCWbA _J6mRsE1mEeyuUKdxlVCWbA"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_HlTOQE1mEeyuUKdxlVCWbA" name="Message4SendEvent" covered="_8v2usE1lEeyuUKdxlVCWbA" message="_HlSnME1mEeyuUKdxlVCWbA"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_HlTOQU1mEeyuUKdxlVCWbA" name="Message4ReceiveEvent" covered="__80Z8E1lEeyuUKdxlVCWbA" message="_HlSnME1mEeyuUKdxlVCWbA"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_J6VL8E1mEeyuUKdxlVCWbA" name="Message11SendEvent" covered="__80Z8E1lEeyuUKdxlVCWbA" message="_J6Uk4E1mEeyuUKdxlVCWbA"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_J6VL8U1mEeyuUKdxlVCWbA" name="Message11ReceiveEvent" covered="_AV6PYE1mEeyuUKdxlVCWbA" message="_J6Uk4E1mEeyuUKdxlVCWbA"/>
+    <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_J6mRsE1mEeyuUKdxlVCWbA" name="BehaviorExecutionSpecification14" covered="_AV6PYE1mEeyuUKdxlVCWbA" finish="_J6oG4U1mEeyuUKdxlVCWbA" start="_J6VL8U1mEeyuUKdxlVCWbA"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_J6oG4U1mEeyuUKdxlVCWbA" name="Message16SendEvent" covered="_AV6PYE1mEeyuUKdxlVCWbA" message="_J6oG4E1mEeyuUKdxlVCWbA"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_J6ot8E1mEeyuUKdxlVCWbA" name="Message16ReceiveEvent" covered="_8v2usE1lEeyuUKdxlVCWbA" message="_J6oG4E1mEeyuUKdxlVCWbA"/>
+    <message xmi:type="uml:Message" xmi:id="_HlSnME1mEeyuUKdxlVCWbA" name="get data" receiveEvent="_HlTOQU1mEeyuUKdxlVCWbA" sendEvent="_HlTOQE1mEeyuUKdxlVCWbA"/>
+    <message xmi:type="uml:Message" xmi:id="_J6Uk4E1mEeyuUKdxlVCWbA" name="permission check" receiveEvent="_J6VL8U1mEeyuUKdxlVCWbA" sendEvent="_J6VL8E1mEeyuUKdxlVCWbA"/>
+    <message xmi:type="uml:Message" xmi:id="_J6oG4E1mEeyuUKdxlVCWbA" name="return data if granted" messageSort="reply" receiveEvent="_J6ot8E1mEeyuUKdxlVCWbA" sendEvent="_J6oG4U1mEeyuUKdxlVCWbA"/>
+  </packagedElement>
 </uml:Model>
