@@ -172,7 +172,21 @@ The terminal worker enters the ticket number into the system
       <message xmi:type="uml:Message" xmi:id="_pB0c0E1wEeyO7YzLcd32NQ" name="return recipe " messageSort="reply" receiveEvent="_pB1D4U1wEeyO7YzLcd32NQ" sendEvent="_pB1D4E1wEeyO7YzLcd32NQ"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Interaction" xmi:id="_vWFXkE1tEeyuUKdxlVCWbA" name="Interaction22"/>
-    <packagedElement xmi:type="uml:Interaction" xmi:id="_IKcpEE1uEeyuUKdxlVCWbA" name="Get financial data"/>
+    <packagedElement xmi:type="uml:Interaction" xmi:id="_IKcpEE1uEeyuUKdxlVCWbA" name="Get financial data">
+      <lifeline xmi:type="uml:Lifeline" xmi:id="_yj9hcE1wEeyO7YzLcd32NQ" name="Management/FinanceWorker" coveredBy="_6_duIU1wEeyO7YzLcd32NQ _9EA_0U1wEeyO7YzLcd32NQ"/>
+      <lifeline xmi:type="uml:Lifeline" xmi:id="_y1br8E1wEeyO7YzLcd32NQ" name="SecurityCheck" coveredBy="_9DvTAE1wEeyO7YzLcd32NQ _6_duIk1wEeyO7YzLcd32NQ"/>
+      <lifeline xmi:type="uml:Lifeline" xmi:id="_zLI2ME1wEeyO7YzLcd32NQ" name="Database" coveredBy="_9DvTAU1wEeyO7YzLcd32NQ _9EA_0E1wEeyO7YzLcd32NQ _9D_KoE1wEeyO7YzLcd32NQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_9DvTAE1wEeyO7YzLcd32NQ" name="Message11SendEvent" covered="_y1br8E1wEeyO7YzLcd32NQ" message="_9Dur8E1wEeyO7YzLcd32NQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_9DvTAU1wEeyO7YzLcd32NQ" name="Message11ReceiveEvent" covered="_zLI2ME1wEeyO7YzLcd32NQ" message="_9Dur8E1wEeyO7YzLcd32NQ"/>
+      <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_9D_KoE1wEeyO7YzLcd32NQ" name="BehaviorExecutionSpecification14" covered="_zLI2ME1wEeyO7YzLcd32NQ" finish="_9EA_0E1wEeyO7YzLcd32NQ" start="_9DvTAU1wEeyO7YzLcd32NQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_6_duIU1wEeyO7YzLcd32NQ" name="Message4SendEvent" covered="_yj9hcE1wEeyO7YzLcd32NQ" message="_6_duIE1wEeyO7YzLcd32NQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_6_duIk1wEeyO7YzLcd32NQ" name="Message4ReceiveEvent" covered="_y1br8E1wEeyO7YzLcd32NQ" message="_6_duIE1wEeyO7YzLcd32NQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_9EA_0E1wEeyO7YzLcd32NQ" name="Message16SendEvent" covered="_zLI2ME1wEeyO7YzLcd32NQ" message="_9EAYwE1wEeyO7YzLcd32NQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_9EA_0U1wEeyO7YzLcd32NQ" name="Message16ReceiveEvent" covered="_yj9hcE1wEeyO7YzLcd32NQ" message="_9EAYwE1wEeyO7YzLcd32NQ"/>
+      <message xmi:type="uml:Message" xmi:id="_6_duIE1wEeyO7YzLcd32NQ" name="request report" receiveEvent="_6_duIk1wEeyO7YzLcd32NQ" sendEvent="_6_duIU1wEeyO7YzLcd32NQ"/>
+      <message xmi:type="uml:Message" xmi:id="_9Dur8E1wEeyO7YzLcd32NQ" name="get data if check was successful" receiveEvent="_9DvTAU1wEeyO7YzLcd32NQ" sendEvent="_9DvTAE1wEeyO7YzLcd32NQ"/>
+      <message xmi:type="uml:Message" xmi:id="_9EAYwE1wEeyO7YzLcd32NQ" name="return report " messageSort="reply" receiveEvent="_9EA_0U1wEeyO7YzLcd32NQ" sendEvent="_9EA_0E1wEeyO7YzLcd32NQ"/>
+    </packagedElement>
     <packagedElement xmi:type="uml:Interaction" xmi:id="_NvSKoE1uEeyuUKdxlVCWbA" name="Get Airplane Data"/>
     <packagedElement xmi:type="uml:Interaction" xmi:id="_TBGpkE1uEeyuUKdxlVCWbA" name="Get airfield data"/>
     <packagedElement xmi:type="uml:Interaction" xmi:id="_YycWEE1uEeyuUKdxlVCWbA" name="Get security data"/>
