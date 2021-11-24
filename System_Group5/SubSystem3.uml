@@ -81,32 +81,64 @@
     <supplier xmi:type="uml:Model" href="SubSystem5.uml#_SYGRoCXWEeybxdv-5Uc1kw"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_1GYSYEezEeyXgr2oMmhtqg" name="Passenger">
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_-1CBoEe2EeyXgr2oMmhtqg" name="Name"/>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="___EL0Ee2EeyXgr2oMmhtqg" name="PassportID"/>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_BZgJgEe3EeyXgr2oMmhtqg" name="Baggage"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_-1CBoEe2EeyXgr2oMmhtqg" name="Name">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="___EL0Ee2EeyXgr2oMmhtqg" name="PassportID">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_BZgJgEe3EeyXgr2oMmhtqg" name="Baggage" type="_r3gdEE1bEeynzawPxJz7DQ"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_cMlm4E1cEeynzawPxJz7DQ" name="Ticket" visibility="public" aggregation="composite">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fYlo0E1cEeynzawPxJz7DQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fQy-wE1cEeynzawPxJz7DQ" value="*"/>
+    </ownedAttribute>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_r3gdEE1bEeynzawPxJz7DQ" name="Baggage"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_5aTlsEezEeyXgr2oMmhtqg" name="Check-in">
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_ZF5NsEe0EeyXgr2oMmhtqg" name="Passenger"/>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_Q2M9gEe2EeyXgr2oMmhtqg" name="TerminalWorker"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_ZF5NsEe0EeyXgr2oMmhtqg" name="Passenger" type="_v2W4QE1bEeynzawPxJz7DQ"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_Q2M9gEe2EeyXgr2oMmhtqg" name="TerminalWorker" type="_20crwE1bEeynzawPxJz7DQ"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_7nz3oE1cEeynzawPxJz7DQ" name="checkPassportId">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_7nz3oU1cEeynzawPxJz7DQ" name="Id">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_DhtMEE1dEeynzawPxJz7DQ" name="printTicket"/>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_v2W4QE1bEeynzawPxJz7DQ" name="Passenger"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_9wj0QEezEeyXgr2oMmhtqg" name="Baggage Handling">
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_TjbYwEe2EeyXgr2oMmhtqg" name="Passenger"/>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_WTV7oEe2EeyXgr2oMmhtqg" name="LandsideManagement"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_TjbYwEe2EeyXgr2oMmhtqg" name="Passenger" type="_PgoA0DDwEeyemoxuiQ3Sug"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_WTV7oEe2EeyXgr2oMmhtqg" name="LandsideManagement" type="_-eBsQE1bEeynzawPxJz7DQ"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_QFe1sE1dEeynzawPxJz7DQ" name="registerBagId">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_QFe1sU1dEeynzawPxJz7DQ" name="Id">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_UT3hsE1dEeynzawPxJz7DQ" name="printTag"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="__-8-cEezEeyXgr2oMmhtqg" name="Security Handling">
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_bkqrUEe2EeyXgr2oMmhtqg" name="Passenger"/>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_rxGdsEe2EeyXgr2oMmhtqg" name="Security"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_bkqrUEe2EeyXgr2oMmhtqg" name="Passenger" type="_PgoA0DDwEeyemoxuiQ3Sug"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_rxGdsEe2EeyXgr2oMmhtqg" name="Security" type="_T_MusE1cEeynzawPxJz7DQ"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_X2yO0E1dEeynzawPxJz7DQ" name="checkPassengerData"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_Bt9d8Ee0EeyXgr2oMmhtqg" name="Flight Handling">
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_87o3EEe2EeyXgr2oMmhtqg" name="ControlManagement"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_87o3EEe2EeyXgr2oMmhtqg" name="ControlManagement" type="_MmusUE1cEeynzawPxJz7DQ"/>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_nsr28Ue_EeyXgr2oMmhtqg" type="_1GYSYEezEeyXgr2oMmhtqg" association="_nsrP4Ee_EeyXgr2oMmhtqg"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_c7KusE1dEeynzawPxJz7DQ" name="displayInfo"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_ELURMEe0EeyXgr2oMmhtqg" name="Boarding">
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_w7gGAEe2EeyXgr2oMmhtqg" name="Passenger"/>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_1rCXQEe2EeyXgr2oMmhtqg" name="LandsideManagement"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_w7gGAEe2EeyXgr2oMmhtqg" name="Passenger" type="_PgoA0DDwEeyemoxuiQ3Sug"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_1rCXQEe2EeyXgr2oMmhtqg" name="LandsideManagement" type="_Rfb24DDwEeyemoxuiQ3Sug"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_mTAAwE1dEeynzawPxJz7DQ" name="checkTicketId">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_mTAAwU1dEeynzawPxJz7DQ" name="Id">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedParameter>
+    </ownedOperation>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_FigGkEe0EeyXgr2oMmhtqg" name="Baggage">
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_5NntMEe2EeyXgr2oMmhtqg" name="BaggageID"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_5NntMEe2EeyXgr2oMmhtqg" name="BaggageID">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
   </packagedElement>
   <packagedElement xmi:type="uml:Association" xmi:id="_NLwPkEe3EeyXgr2oMmhtqg" memberEnd="_NLyEwEe3EeyXgr2oMmhtqg _NL2WMEe3EeyXgr2oMmhtqg">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_NLxdsEe3EeyXgr2oMmhtqg" source="org.eclipse.papyrus">
@@ -164,6 +196,10 @@
     </eAnnotations>
     <ownedEnd xmi:type="uml:Property" xmi:id="_nsr29Ee_EeyXgr2oMmhtqg" type="_Bt9d8Ee0EeyXgr2oMmhtqg" association="_nsrP4Ee_EeyXgr2oMmhtqg"/>
   </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_20crwE1bEeynzawPxJz7DQ" name="TerminalWorker"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_-eBsQE1bEeynzawPxJz7DQ" name="LandsideManagement"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_MmusUE1cEeynzawPxJz7DQ" name="ControlManagement"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_T_MusE1cEeynzawPxJz7DQ" name="Security"/>
   <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_C5GwgEe2EeyXgr2oMmhtqg">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_C5H-oEe2EeyXgr2oMmhtqg" source="http://www.eclipse.org/uml2/2.0.0/UML">
       <references xmi:type="ecore:EPackage" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ"/>
