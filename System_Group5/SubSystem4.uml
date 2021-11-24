@@ -284,4 +284,15 @@
     <message xmi:type="uml:Message" xmi:id="_NjLXYE1lEeyuUKdxlVCWbA" name="login protocol" receiveEvent="_NjL-cE1lEeyuUKdxlVCWbA" sendEvent="_NjLXYU1lEeyuUKdxlVCWbA"/>
     <message xmi:type="uml:Message" xmi:id="_TDsZoE1lEeyuUKdxlVCWbA" name="create timestamp" receiveEvent="_TDtnwE1lEeyuUKdxlVCWbA" sendEvent="_TDtAsE1lEeyuUKdxlVCWbA"/>
   </packagedElement>
+  <packagedElement xmi:type="uml:Interaction" xmi:id="_fecDEE1lEeyuUKdxlVCWbA" name="Retrieve Relevant Security Information">
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_jwKW8E1lEeyuUKdxlVCWbA" name="Subsystems" coveredBy="_sAU2UE1lEeyuUKdxlVCWbA _sAi4wk1lEeyuUKdxlVCWbA"/>
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_mWrGME1lEeyuUKdxlVCWbA" name="SecurityInformation" coveredBy="_sAU2UU1lEeyuUKdxlVCWbA _sAi4wU1lEeyuUKdxlVCWbA _sAhDkE1lEeyuUKdxlVCWbA"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_sAU2UE1lEeyuUKdxlVCWbA" name="Message3SendEvent" covered="_jwKW8E1lEeyuUKdxlVCWbA" message="_sAUPQE1lEeyuUKdxlVCWbA"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_sAU2UU1lEeyuUKdxlVCWbA" name="Message3ReceiveEvent" covered="_mWrGME1lEeyuUKdxlVCWbA" message="_sAUPQE1lEeyuUKdxlVCWbA"/>
+    <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_sAhDkE1lEeyuUKdxlVCWbA" name="BehaviorExecutionSpecification6" covered="_mWrGME1lEeyuUKdxlVCWbA" finish="_sAi4wU1lEeyuUKdxlVCWbA" start="_sAU2UU1lEeyuUKdxlVCWbA"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_sAi4wU1lEeyuUKdxlVCWbA" name="Message8SendEvent" covered="_mWrGME1lEeyuUKdxlVCWbA" message="_sAi4wE1lEeyuUKdxlVCWbA"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_sAi4wk1lEeyuUKdxlVCWbA" name="Message8ReceiveEvent" covered="_jwKW8E1lEeyuUKdxlVCWbA" message="_sAi4wE1lEeyuUKdxlVCWbA"/>
+    <message xmi:type="uml:Message" xmi:id="_sAUPQE1lEeyuUKdxlVCWbA" name="retrieve security information" receiveEvent="_sAU2UU1lEeyuUKdxlVCWbA" sendEvent="_sAU2UE1lEeyuUKdxlVCWbA"/>
+    <message xmi:type="uml:Message" xmi:id="_sAi4wE1lEeyuUKdxlVCWbA" name="return information" messageSort="reply" receiveEvent="_sAi4wk1lEeyuUKdxlVCWbA" sendEvent="_sAi4wU1lEeyuUKdxlVCWbA"/>
+  </packagedElement>
 </uml:Model>
