@@ -265,6 +265,30 @@
     <message xmi:type="uml:Message" xmi:id="_U_7uwE1jEeyuUKdxlVCWbA" name="shows id" receiveEvent="_U_8V0U1jEeyuUKdxlVCWbA" sendEvent="_U_8V0E1jEeyuUKdxlVCWbA"/>
     <message xmi:type="uml:Message" xmi:id="_WogPEE1jEeyuUKdxlVCWbA" name="enters data" receiveEvent="_Wog2IU1jEeyuUKdxlVCWbA" sendEvent="_Wog2IE1jEeyuUKdxlVCWbA"/>
   </packagedElement>
+  <packagedElement xmi:type="uml:Interaction" xmi:id="_gXqcAE1jEeyuUKdxlVCWbA" name="Interaction28">
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_iZJLkE1jEeyuUKdxlVCWbA" name="Passenger" coveredBy="_p1r1oU1jEeyuUKdxlVCWbA _teyDQE1jEeyuUKdxlVCWbA _teyqUE1jEeyuUKdxlVCWbA _vDfXQE1jEeyuUKdxlVCWbA _xteRQE1jEeyuUKdxlVCWbA"/>
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_jFyPIE1jEeyuUKdxlVCWbA" name="Boarding" coveredBy="_p1scsE1jEeyuUKdxlVCWbA _teyDQE1jEeyuUKdxlVCWbA _teyqUE1jEeyuUKdxlVCWbA _4PU0sE1jEeyuUKdxlVCWbA _vDfXQE1jEeyuUKdxlVCWbA _xtdqME1jEeyuUKdxlVCWbA"/>
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_jifZQE1jEeyuUKdxlVCWbA" name="LandsideManagement" coveredBy="_teyDQE1jEeyuUKdxlVCWbA _teyqUE1jEeyuUKdxlVCWbA _4PVbwE1jEeyuUKdxlVCWbA _vDfXQE1jEeyuUKdxlVCWbA"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_p1r1oU1jEeyuUKdxlVCWbA" name="Message4SendEvent" covered="_iZJLkE1jEeyuUKdxlVCWbA" message="_p1r1oE1jEeyuUKdxlVCWbA"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_p1scsE1jEeyuUKdxlVCWbA" name="Message4ReceiveEvent" covered="_jFyPIE1jEeyuUKdxlVCWbA" message="_p1r1oE1jEeyuUKdxlVCWbA"/>
+    <fragment xmi:type="uml:CombinedFragment" xmi:id="_teyDQE1jEeyuUKdxlVCWbA" name="CombinedFragment7" covered="_iZJLkE1jEeyuUKdxlVCWbA _jFyPIE1jEeyuUKdxlVCWbA _jifZQE1jEeyuUKdxlVCWbA" interactionOperator="alt">
+      <operand xmi:type="uml:InteractionOperand" xmi:id="_teyqUE1jEeyuUKdxlVCWbA" name="InteractionOperand0" covered="_iZJLkE1jEeyuUKdxlVCWbA _jFyPIE1jEeyuUKdxlVCWbA _jifZQE1jEeyuUKdxlVCWbA">
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_4PU0sE1jEeyuUKdxlVCWbA" name="Message10SendEvent" covered="_jFyPIE1jEeyuUKdxlVCWbA" message="_4PUNoE1jEeyuUKdxlVCWbA"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_4PVbwE1jEeyuUKdxlVCWbA" name="Message10ReceiveEvent" covered="_jifZQE1jEeyuUKdxlVCWbA" message="_4PUNoE1jEeyuUKdxlVCWbA"/>
+        <guard xmi:type="uml:InteractionConstraint" xmi:id="_teyqUU1jEeyuUKdxlVCWbA" name="true">
+          <specification xmi:type="uml:LiteralBoolean" xmi:id="_BumykE1kEeyuUKdxlVCWbA" name="true" value="true"/>
+        </guard>
+      </operand>
+      <operand xmi:type="uml:InteractionOperand" xmi:id="_vDfXQE1jEeyuUKdxlVCWbA" name="InteractionOperand2" covered="_iZJLkE1jEeyuUKdxlVCWbA _jFyPIE1jEeyuUKdxlVCWbA _jifZQE1jEeyuUKdxlVCWbA">
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_xtdqME1jEeyuUKdxlVCWbA" name="Message8SendEvent" covered="_jFyPIE1jEeyuUKdxlVCWbA" message="_xtdDIE1jEeyuUKdxlVCWbA"/>
+        <guard xmi:type="uml:InteractionConstraint" xmi:id="_vDfXQU1jEeyuUKdxlVCWbA" name="guard"/>
+      </operand>
+    </fragment>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_xteRQE1jEeyuUKdxlVCWbA" name="Message8ReceiveEvent" covered="_iZJLkE1jEeyuUKdxlVCWbA" message="_xtdDIE1jEeyuUKdxlVCWbA"/>
+    <message xmi:type="uml:Message" xmi:id="_p1r1oE1jEeyuUKdxlVCWbA" name="enters ticket number" receiveEvent="_p1scsE1jEeyuUKdxlVCWbA" sendEvent="_p1r1oU1jEeyuUKdxlVCWbA"/>
+    <message xmi:type="uml:Message" xmi:id="_xtdDIE1jEeyuUKdxlVCWbA" name="invalid (error message)" messageSort="reply" receiveEvent="_xteRQE1jEeyuUKdxlVCWbA" sendEvent="_xtdqME1jEeyuUKdxlVCWbA"/>
+    <message xmi:type="uml:Message" xmi:id="_4PUNoE1jEeyuUKdxlVCWbA" name="valid ticket + update data" receiveEvent="_4PVbwE1jEeyuUKdxlVCWbA" sendEvent="_4PU0sE1jEeyuUKdxlVCWbA"/>
+  </packagedElement>
   <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_C5GwgEe2EeyXgr2oMmhtqg">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_C5H-oEe2EeyXgr2oMmhtqg" source="http://www.eclipse.org/uml2/2.0.0/UML">
       <references xmi:type="ecore:EPackage" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ"/>
