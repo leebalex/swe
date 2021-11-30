@@ -552,7 +552,7 @@
         <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Pa5R00flEey_BuMwIf_5MQ"/>
       </children>
       <element xmi:type="uml:Class" href="SubSystem1.uml#_Pa4DoEflEey_BuMwIf_5MQ"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Pa5RwUflEey_BuMwIf_5MQ" x="640" y="320" height="121"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Pa5RwUflEey_BuMwIf_5MQ" x="640" y="360" height="121"/>
     </children>
     <children xmi:type="notation:Shape" xmi:id="_RR0XIEflEey_BuMwIf_5MQ" type="Class_Shape">
       <children xmi:type="notation:DecorationNode" xmi:id="_RR0XIkflEey_BuMwIf_5MQ" type="Class_NameLabel"/>
@@ -724,7 +724,7 @@
         <layoutConstraint xmi:type="notation:Bounds" xmi:id="_VzX2yUflEey_BuMwIf_5MQ"/>
       </children>
       <element xmi:type="uml:Class" href="SubSystem1.uml#_VzWooEflEey_BuMwIf_5MQ"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_VzXPsUflEey_BuMwIf_5MQ" x="640" y="480"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_VzXPsUflEey_BuMwIf_5MQ" x="640" y="500"/>
     </children>
     <styles xmi:type="notation:StringValueStyle" xmi:id="_ALSUAUflEey_BuMwIf_5MQ" name="diagram_compatibility_version" stringValue="1.4.0"/>
     <styles xmi:type="notation:DiagramStyle" xmi:id="_ALSUAkflEey_BuMwIf_5MQ"/>
@@ -799,9 +799,9 @@
       </children>
       <styles xmi:type="notation:FontStyle" xmi:id="_hkrPsUfnEey_BuMwIf_5MQ"/>
       <element xmi:type="uml:Generalization" href="SubSystem1.uml#_hkgQkEfnEey_BuMwIf_5MQ"/>
-      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_hkrPskfnEey_BuMwIf_5MQ" points="[640, 360, -643984, -643984]$[320, 360, -643984, -643984]$[320, 240, -643984, -643984]$[245, 240, -643984, -643984]"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_hkrPskfnEey_BuMwIf_5MQ" points="[640, 400, -643984, -643984]$[320, 400, -643984, -643984]$[320, 240, -643984, -643984]$[245, 240, -643984, -643984]"/>
       <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_hlAm4EfnEey_BuMwIf_5MQ" id="(0.0,0.3305785123966942)"/>
-      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_hlAm4UfnEey_BuMwIf_5MQ" id="(1.0,0.6451612903225806)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_hlAm4UfnEey_BuMwIf_5MQ" id="(1.0,0.5925925925925926)"/>
     </edges>
     <edges xmi:type="notation:Connector" xmi:id="_mTdTAEfnEey_BuMwIf_5MQ" type="InformationFlow_Edge" source="_RR0XIEflEey_BuMwIf_5MQ" target="_S2LF0EflEey_BuMwIf_5MQ">
       <children xmi:type="notation:DecorationNode" xmi:id="_mTdTA0fnEey_BuMwIf_5MQ" type="InformationFlow_ConveyedLabel">
@@ -818,9 +818,9 @@
       </children>
       <styles xmi:type="notation:FontStyle" xmi:id="_mTdTAUfnEey_BuMwIf_5MQ"/>
       <element xmi:type="uml:InformationFlow" href="SubSystem1.uml#_mTbd0EfnEey_BuMwIf_5MQ"/>
-      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_mTdTAkfnEey_BuMwIf_5MQ" points="[220, 484, -643984, -643984]$[220, 540, -643984, -643984]$[360, 540, -643984, -643984]"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_mTdTAkfnEey_BuMwIf_5MQ" points="[220, 515, -643984, -643984]$[220, 560, -643984, -643984]$[360, 560, -643984, -643984]"/>
       <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_mT2UkEfnEey_BuMwIf_5MQ" id="(0.7575757575757576,1.0)"/>
-      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_mT27oEfnEey_BuMwIf_5MQ" id="(0.0,0.8333333333333334)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_mT27oEfnEey_BuMwIf_5MQ" id="(0.0,0.8)"/>
     </edges>
     <edges xmi:type="notation:Connector" xmi:id="_yGW5UEfnEey_BuMwIf_5MQ" type="InformationFlow_Edge" source="_GrLIkEflEey_BuMwIf_5MQ" target="_FFDfUEflEey_BuMwIf_5MQ">
       <children xmi:type="notation:DecorationNode" xmi:id="_yGXgYEfnEey_BuMwIf_5MQ" type="InformationFlow_ConveyedLabel">
@@ -833,7 +833,7 @@
       </children>
       <children xmi:type="notation:DecorationNode" xmi:id="_yGXgZEfnEey_BuMwIf_5MQ" type="InformationFlow_NameLabel">
         <styles xmi:type="notation:BooleanValueStyle" xmi:id="_A1EJcEfoEey_BuMwIf_5MQ" name="IS_UPDATED_POSITION" booleanValue="true"/>
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_yGXgZUfnEey_BuMwIf_5MQ" y="40"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_yGXgZUfnEey_BuMwIf_5MQ" x="1" y="30"/>
       </children>
       <styles xmi:type="notation:FontStyle" xmi:id="_yGW5UUfnEey_BuMwIf_5MQ"/>
       <element xmi:type="uml:InformationFlow" href="SubSystem1.uml#_yGVrMEfnEey_BuMwIf_5MQ"/>
@@ -857,7 +857,7 @@
       <styles xmi:type="notation:FontStyle" xmi:id="_178q0UfnEey_BuMwIf_5MQ"/>
       <element xmi:type="uml:InformationFlow" href="SubSystem1.uml#_178DwEfnEey_BuMwIf_5MQ"/>
       <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_178q0kfnEey_BuMwIf_5MQ" points="[940, 120, -643984, -643984]$[760, 120, -643984, -643984]$[760, 180, -643984, -643984]"/>
-      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_18WTcEfnEey_BuMwIf_5MQ" id="(0.0,0.6944444444444444)"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_18WTcEfnEey_BuMwIf_5MQ" id="(0.0,0.5714285714285714)"/>
       <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_18WTcUfnEey_BuMwIf_5MQ" id="(0.6111111111111112,0.0)"/>
     </edges>
     <edges xmi:type="notation:Connector" xmi:id="_7DOGoEfnEey_BuMwIf_5MQ" type="InformationFlow_Edge" source="_GrLIkEflEey_BuMwIf_5MQ" target="_Pa5RwEflEey_BuMwIf_5MQ">
@@ -875,8 +875,8 @@
       </children>
       <styles xmi:type="notation:FontStyle" xmi:id="_7DOGoUfnEey_BuMwIf_5MQ"/>
       <element xmi:type="uml:InformationFlow" href="SubSystem1.uml#_7DM4gEfnEey_BuMwIf_5MQ"/>
-      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_7DOGokfnEey_BuMwIf_5MQ" points="[920, 164, -643984, -643984]$[920, 360, -643984, -643984]$[827, 360, -643984, -643984]"/>
-      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_7DlTAEfnEey_BuMwIf_5MQ" id="(0.07905138339920949,1.0)"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_7DOGokfnEey_BuMwIf_5MQ" points="[920, 195, -643984, -643984]$[920, 400, -643984, -643984]$[845, 400, -643984, -643984]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_7DlTAEfnEey_BuMwIf_5MQ" id="(0.0749063670411985,1.0)"/>
       <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_7DlTAUfnEey_BuMwIf_5MQ" id="(1.0,0.3305785123966942)"/>
     </edges>
     <edges xmi:type="notation:Connector" xmi:id="_DT48UEfoEey_BuMwIf_5MQ" type="InformationFlow_Edge" source="_GrLIkEflEey_BuMwIf_5MQ" target="_VzXPsEflEey_BuMwIf_5MQ">
@@ -894,9 +894,9 @@
       </children>
       <styles xmi:type="notation:FontStyle" xmi:id="_DT48UUfoEey_BuMwIf_5MQ"/>
       <element xmi:type="uml:InformationFlow" href="SubSystem1.uml#_DT3uMEfoEey_BuMwIf_5MQ"/>
-      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_DT48UkfoEey_BuMwIf_5MQ" points="[980, 164, -643984, -643984]$[960, 500, -643984, -643984]$[846, 500, -643984, -643984]"/>
-      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_DUR94EfoEey_BuMwIf_5MQ" id="(0.23715415019762845,1.0)"/>
-      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_DUR94UfoEey_BuMwIf_5MQ" id="(1.0,0.16129032258064516)"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_DT48UkfoEey_BuMwIf_5MQ" points="[960, 195, -643984, -643984]$[960, 520, -643984, -643984]$[846, 520, -643984, -643984]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_DUR94EfoEey_BuMwIf_5MQ" id="(0.2247191011235955,1.0)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_DUR94UfoEey_BuMwIf_5MQ" id="(1.0,0.12903225806451613)"/>
     </edges>
     <edges xmi:type="notation:Connector" xmi:id="_LUYoAEfoEey_BuMwIf_5MQ" type="InformationFlow_Edge" source="_Jp15IEflEey_BuMwIf_5MQ" target="_L2PfQEflEey_BuMwIf_5MQ">
       <children xmi:type="notation:DecorationNode" xmi:id="_LUZPEEfoEey_BuMwIf_5MQ" type="InformationFlow_ConveyedLabel">
@@ -911,7 +911,7 @@
       <styles xmi:type="notation:FontStyle" xmi:id="_LUYoAUfoEey_BuMwIf_5MQ"/>
       <element xmi:type="uml:InformationFlow" href="SubSystem1.uml#_LUYA8EfoEey_BuMwIf_5MQ"/>
       <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_LUYoAkfoEey_BuMwIf_5MQ" points="[1020, 360, -643984, -643984]$[900, 260, -643984, -643984]"/>
-      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_LUxpkEfoEey_BuMwIf_5MQ" id="(0.0,0.12195121951219512)"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_LUxpkEfoEey_BuMwIf_5MQ" id="(0.0,0.3076923076923077)"/>
       <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_LUxpkUfoEey_BuMwIf_5MQ" id="(1.0,0.6451612903225806)"/>
     </edges>
   </notation:Diagram>

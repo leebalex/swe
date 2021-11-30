@@ -136,8 +136,8 @@ The terminal worker enters the ticket number into the system
       <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_B-LpME1wEeyO7YzLcd32NQ" name="Message18SendEvent" covered="_qpLRoE1vEeyO7YzLcd32NQ" message="_B-LCIE1wEeyO7YzLcd32NQ"/>
       <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_2pfB0E1vEeyO7YzLcd32NQ" name="Message9SendEvent" covered="_AUfkAE1vEeyO7YzLcd32NQ" message="_2peawE1vEeyO7YzLcd32NQ"/>
       <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_5qqT0U1vEeyO7YzLcd32NQ" name="Message16SendEvent" covered="_qpLRoE1vEeyO7YzLcd32NQ" message="_5qqT0E1vEeyO7YzLcd32NQ"/>
-      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_2pfB0U1vEeyO7YzLcd32NQ" name="Message9ReceiveEvent" covered="__5HPkE1uEeyO7YzLcd32NQ" message="_2peawE1vEeyO7YzLcd32NQ"/>
       <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_B-LpMU1wEeyO7YzLcd32NQ" name="Message18ReceiveEvent" covered="_qpLRoE1vEeyO7YzLcd32NQ" message="_B-LCIE1wEeyO7YzLcd32NQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_2pfB0U1vEeyO7YzLcd32NQ" name="Message9ReceiveEvent" covered="__5HPkE1uEeyO7YzLcd32NQ" message="_2peawE1vEeyO7YzLcd32NQ"/>
       <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_5qq64E1vEeyO7YzLcd32NQ" name="Message16ReceiveEvent" covered="_AUfkAE1vEeyO7YzLcd32NQ" message="_5qqT0E1vEeyO7YzLcd32NQ"/>
       <message xmi:type="uml:Message" xmi:id="_2pEyIE1vEeyO7YzLcd32NQ" name="open booking site" receiveEvent="_2pFZMU1vEeyO7YzLcd32NQ" sendEvent="_2pFZME1vEeyO7YzLcd32NQ"/>
       <message xmi:type="uml:Message" xmi:id="_2peawE1vEeyO7YzLcd32NQ" name="return ticket number" messageSort="reply" receiveEvent="_2pfB0U1vEeyO7YzLcd32NQ" sendEvent="_2pfB0E1vEeyO7YzLcd32NQ"/>
@@ -254,6 +254,7 @@ The terminal worker enters the ticket number into the system
     <ownedAttribute xmi:type="uml:Property" xmi:id="_h8_XIEfpEey_BuMwIf_5MQ" name="workers" type="_hq_BIEfpEey_BuMwIf_5MQ"/>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_oWTCkEfpEey_BuMwIf_5MQ" name="vehicles" type="_oK8uMEfpEey_BuMwIf_5MQ"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_M6Zt4E1qEeyuUKdxlVCWbA" name="sendVehicle"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_2ooKMFIlEeyVmrOTWb-k8A" name="transport()"/>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_hq_BIEfpEey_BuMwIf_5MQ" name="Worker"/>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_oK8uMEfpEey_BuMwIf_5MQ" name="Vehicle"/>
   </packagedElement>
@@ -285,7 +286,7 @@ The terminal worker enters the ticket number into the system
   <packagedElement xmi:type="uml:InformationFlow" xmi:id="_YQhcYEfqEey_BuMwIf_5MQ" name="provides" informationSource="_BwPl0EfIEey_BuMwIf_5MQ" informationTarget="_AZDJYEfIEey_BuMwIf_5MQ"/>
   <packagedElement xmi:type="uml:InformationFlow" xmi:id="_q9TroEfqEey_BuMwIf_5MQ" name="provides" informationSource="_C_cj4EfIEey_BuMwIf_5MQ" informationTarget="_D-0WMEfIEey_BuMwIf_5MQ"/>
   <packagedElement xmi:type="uml:InformationFlow" xmi:id="_vcTmgEfqEey_BuMwIf_5MQ" name="updates" informationSource="_AZDJYEfIEey_BuMwIf_5MQ" informationTarget="_9v1rcEfHEey_BuMwIf_5MQ"/>
-  <packagedElement xmi:type="uml:InformationFlow" xmi:id="_yICM8EfqEey_BuMwIf_5MQ" name="updates" informationSource="_BwPl0EfIEey_BuMwIf_5MQ" informationTarget="_9v1rcEfHEey_BuMwIf_5MQ"/>
+  <packagedElement xmi:type="uml:InformationFlow" xmi:id="_yICM8EfqEey_BuMwIf_5MQ" name="updates" informationSource="_BwPl0EfIEey_BuMwIf_5MQ _Wv3OACXUEeybxdv-5Uc1kw" informationTarget="_9v1rcEfHEey_BuMwIf_5MQ"/>
   <packagedElement xmi:type="uml:Association" xmi:id="_2XG1cEfqEey_BuMwIf_5MQ" name="inderacts"/>
   <packagedElement xmi:type="uml:InformationFlow" xmi:id="_-xzJ0EfqEey_BuMwIf_5MQ" name="updates" informationSource="_AZDJYEfIEey_BuMwIf_5MQ" informationTarget="_C_cj4EfIEey_BuMwIf_5MQ"/>
   <packagedElement xmi:type="uml:InformationFlow" xmi:id="_Dtqm4EfrEey_BuMwIf_5MQ" name="updates" informationSource="_D-0WMEfIEey_BuMwIf_5MQ" informationTarget="_9v1rcEfHEey_BuMwIf_5MQ"/>
