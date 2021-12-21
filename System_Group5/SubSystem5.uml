@@ -498,8 +498,8 @@
       <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_NMu6wFKeEey9e7IyDdyAhw" name="BehaviorExecutionSpecification14" covered="_4IWiAFKdEey9e7IyDdyAhw" finish="_NMwv8FKeEey9e7IyDdyAhw" start="_NMlJwFKeEey9e7IyDdyAhw"/>
       <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NMwv8FKeEey9e7IyDdyAhw" name="Message16SendEvent" covered="_4IWiAFKdEey9e7IyDdyAhw" message="_NMwI4FKeEey9e7IyDdyAhw"/>
       <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_NMwv8VKeEey9e7IyDdyAhw" name="Message16ReceiveEvent" covered="_2F6wMFKdEey9e7IyDdyAhw" message="_NMwI4FKeEey9e7IyDdyAhw"/>
-      <fragment xmi:type="uml:CombinedFragment" xmi:id="_hfDVsFKkEey9e7IyDdyAhw" name="CombinedFragment19" covered="_2F6wMFKdEey9e7IyDdyAhw _4IWiAFKdEey9e7IyDdyAhw _zlwgkFKdEey9e7IyDdyAhw" interactionOperator="alt">
-        <operand xmi:type="uml:InteractionOperand" xmi:id="_hfEj0FKkEey9e7IyDdyAhw" name="InteractionOperand0" covered="_2F6wMFKdEey9e7IyDdyAhw _4IWiAFKdEey9e7IyDdyAhw _zlwgkFKdEey9e7IyDdyAhw">
+      <fragment xmi:type="uml:CombinedFragment" xmi:id="_hfDVsFKkEey9e7IyDdyAhw" name="CombinedFragment19" covered="_zlwgkFKdEey9e7IyDdyAhw _2F6wMFKdEey9e7IyDdyAhw _4IWiAFKdEey9e7IyDdyAhw" interactionOperator="alt">
+        <operand xmi:type="uml:InteractionOperand" xmi:id="_hfEj0FKkEey9e7IyDdyAhw" name="InteractionOperand0" covered="_zlwgkFKdEey9e7IyDdyAhw _2F6wMFKdEey9e7IyDdyAhw _4IWiAFKdEey9e7IyDdyAhw">
           <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_AuemIFKlEeyrvYMFUp4rig" name="Message19SendEvent" covered="_zlwgkFKdEey9e7IyDdyAhw" message="_AuX4cFKlEeyrvYMFUp4rig"/>
           <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_AuemIVKlEeyrvYMFUp4rig" name="Message19ReceiveEvent" covered="_2F6wMFKdEey9e7IyDdyAhw" message="_AuX4cFKlEeyrvYMFUp4rig"/>
           <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_AvNl8FKlEeyrvYMFUp4rig" name="BehaviorExecutionSpecification22" covered="_2F6wMFKdEey9e7IyDdyAhw" finish="_AvR3YVKlEeyrvYMFUp4rig" start="_AuemIVKlEeyrvYMFUp4rig"/>
@@ -516,7 +516,7 @@
             <specification xmi:type="uml:LiteralString" xmi:id="_q33fMFKkEey9e7IyDdyAhw" value="available"/>
           </guard>
         </operand>
-        <operand xmi:type="uml:InteractionOperand" xmi:id="_tSRsIFKkEey9e7IyDdyAhw" name="InteractionOperand2" covered="_2F6wMFKdEey9e7IyDdyAhw _4IWiAFKdEey9e7IyDdyAhw _zlwgkFKdEey9e7IyDdyAhw">
+        <operand xmi:type="uml:InteractionOperand" xmi:id="_tSRsIFKkEey9e7IyDdyAhw" name="InteractionOperand2" covered="_zlwgkFKdEey9e7IyDdyAhw _2F6wMFKdEey9e7IyDdyAhw _4IWiAFKdEey9e7IyDdyAhw">
           <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_lvieAVKlEeyrvYMFUp4rig" name="Message24SendEvent" covered="_4IWiAFKdEey9e7IyDdyAhw" message="_lvieAFKlEeyrvYMFUp4rig"/>
           <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_lvjFEFKlEeyrvYMFUp4rig" name="Message24ReceiveEvent" covered="_2F6wMFKdEey9e7IyDdyAhw" message="_lvieAFKlEeyrvYMFUp4rig"/>
           <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_AvR3YVKlEeyrvYMFUp4rig" name="Message24SendEvent" covered="_2F6wMFKdEey9e7IyDdyAhw" message="_AvR3YFKlEeyrvYMFUp4rig"/>
@@ -539,7 +539,7 @@
       <message xmi:type="uml:Message" xmi:id="_lvieAFKlEeyrvYMFUp4rig" name="exception" messageSort="reply" receiveEvent="_lvjFEFKlEeyrvYMFUp4rig" sendEvent="_lvieAVKlEeyrvYMFUp4rig"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Interaction" xmi:id="_dA30MFLmEeyx15KUvk2e4A" name="Interaction55"/>
-    <packagedElement xmi:type="uml:Interaction" xmi:id="_i6M_EFLmEeyx15KUvk2e4A" name="Interaction56">
+    <packagedElement xmi:type="uml:Interaction" xmi:id="_i6M_EFLmEeyx15KUvk2e4A" name="Customer Information">
       <lifeline xmi:type="uml:Lifeline" xmi:id="_ls5JIFLmEeyx15KUvk2e4A" name="Customer" coveredBy="_uL8ZEVLmEeyx15KUvk2e4A _uMJ0clLmEeyx15KUvk2e4A"/>
       <lifeline xmi:type="uml:Lifeline" xmi:id="_oRRKYFLmEeyx15KUvk2e4A" name="Financial Management" coveredBy="_uL8ZElLmEeyx15KUvk2e4A _4feeYFLmEeyx15KUvk2e4A _4fuWAVLmEeyx15KUvk2e4A _PsJZUVLnEeyx15KUvk2e4A _PsJZUlLnEeyx15KUvk2e4A _uMJ0cVLmEeyx15KUvk2e4A _NwMqAFLnEeyx15KUvk2e4A _uMH_QFLmEeyx15KUvk2e4A"/>
       <lifeline xmi:type="uml:Lifeline" xmi:id="_pt0A4FLmEeyx15KUvk2e4A" name="Database" coveredBy="_4feeYVLmEeyx15KUvk2e4A _4fuWAFLmEeyx15KUvk2e4A _4fr5wFLmEeyx15KUvk2e4A"/>
