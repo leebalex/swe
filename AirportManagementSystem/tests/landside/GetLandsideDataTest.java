@@ -17,22 +17,20 @@ class GetLandsideDataTest {
 
     LandsideDataStorage dataStorage;
     DataController controller;
-    List<String > testArraylist = new ArrayList<>();
 
 
     @BeforeEach
     void setUp() {
-        this.controller = new DataController();
         this.dataStorage = new LandsideDataStorage();
         this.dataStorage.setLandsideData("TestData");
-        this.testArraylist.add("TestData");
+        this.controller = new DataController(dataStorage);
     }
 
     @Test
     @DisplayName("Should return Landside Data")
     void testGetLandsideData() {
 
-        assertEquals(testArraylist, controller.getLandsideData(),
+        assertEquals("TestData", controller.getLandsideData().get(0),
                 "These two list should be the same");
     }
 
