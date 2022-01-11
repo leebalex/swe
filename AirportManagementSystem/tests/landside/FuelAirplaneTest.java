@@ -17,7 +17,6 @@ public class FuelAirplaneTest {
 
     FuelTransport fuelTruck;
     FuelController controller;
-    List<String > testArraylist = new ArrayList<>();
 
 
     @BeforeEach
@@ -31,6 +30,6 @@ public class FuelAirplaneTest {
     void fuelAirplane() {
 
         assertEquals(true, controller.sendFuelTruck(new Location(2,2)),
-                "These two list should be the same");
+                "Should be successful and return true");
     }
 }

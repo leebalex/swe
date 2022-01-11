@@ -31,7 +31,7 @@ class GetLandsideDataTest {
     void testGetLandsideData() {
 
         assertEquals("TestData", controller.getLandsideData().get(0),
-                "These two list should be the same");
+                "The result should be the same");
     }
 
 
