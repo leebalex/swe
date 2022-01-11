@@ -1,3 +1,7 @@
+/*
+ * @author Florian Engertsberger
+ */
+
 package landside;
 
 import java.util.ArrayList;

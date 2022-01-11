@@ -1,3 +1,7 @@
+/*
+ * @author Florian Engertsberger
+ */
+
 package landside;
 
 public class FuelTransport extends Vehicle{
