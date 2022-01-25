@@ -1,22 +1,24 @@
 package subsys.financial.management.facility;
 
+import subsys.financial.utils.DataItem;
+
 /**
  * @author Alexander Leeb, k11702617
  */
-public class Facility {
+public class FacilityDataItem extends DataItem {
 	
 	private int id;
 	private String address;
-	private float rent;
+	private double rent;
 	private String description;
 	
-	public Facility(int id, String address, float rent, String description) {
+	public FacilityDataItem(int id, String address, double rent, String description) {
 		this.id = id;
 		this.address = address;
 		this.rent = rent;
 		this.description = description;
 	}
-
+	
 	public int getId() {
 		return id;
 	}
@@ -25,7 +27,7 @@ public class Facility {
 		return address;
 	}
 
-	public float getRent() {
+	public double getRent() {
 		return rent;
 	}
 
@@ -41,11 +43,22 @@ public class Facility {
 		this.address = address;
 	}
 
-	public void setRent(float rent) {
+	public void setRent(double rent) {
 		this.rent = rent;
 	}
 
 	public void setDescription(String description) {
 		this.description = description;
+	}
+	
+	@Override
+	public String toString() {
+		return "FacilityDataItem [id=" + id + ", address=" + address + ", rent=" + rent + ", description=" + description
+				+ "]";
+	}
+
+	@Override
+	public String toCSVString() {
+		return id + ";" + address + ";" + rent + ";" + description + ";\n";
 	}
 }

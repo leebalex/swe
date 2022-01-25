@@ -1,15 +1,17 @@
 package subsys.financial.management.maintenance;
 
+import subsys.financial.utils.DataItem;
+
 /**
  * @author Alexander Leeb, k11702617
  */
-public class MaterialDataItem {
+public class MaterialDataItem extends DataItem {
 	
 	private Material material;
-	private float amount;
+	private double amount;
 	private String shippingAddress;
 	
-	public MaterialDataItem(Material material, float amount, String shippingAddress) {
+	public MaterialDataItem(Material material, double amount, String shippingAddress) {
 		this.material = material;
 		this.amount = amount;
 		this.shippingAddress = shippingAddress;
@@ -19,7 +21,7 @@ public class MaterialDataItem {
 		return material;
 	}
 
-	public float getAmount() {
+	public double getAmount() {
 		return amount;
 	}
 
@@ -31,7 +33,7 @@ public class MaterialDataItem {
 		this.material = material;
 	}
 
-	public void setAmount(float amount) {
+	public void setAmount(double amount) {
 		this.amount = amount;
 	}
 
@@ -39,6 +41,12 @@ public class MaterialDataItem {
 		this.shippingAddress = shippingAddress;
 	}
 	
+	@Override
+	public String toString() {
+		return "MaterialDataItem [material=" + material + ", amount=" + amount + ", shippingAddress=" + shippingAddress
+				+ "]";
+	}
+
 	public String toCSVString() {
 		return material.getId() + ";" + material.getName() + ";" + material.getStock() + ";" + material.getPrice() + ";" + amount + ";" + shippingAddress + ";\n";
 	}

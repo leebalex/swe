@@ -1,9 +1,11 @@
 package subsys.financial.management.humanressources;
 
+import subsys.financial.utils.DataItem;
+
 /**
  * @author Alexander Leeb, k11702617
  */
-public class Employee {
+public class Employee extends DataItem {
 	private int id;
 	private boolean active;
 	private String name;
@@ -19,7 +21,7 @@ public class Employee {
 		this.departmentId = departmentId;
 		this.rank = rank;
 	}
-
+	
 	public int getId() {
 		return id;
 	}
@@ -67,8 +69,16 @@ public class Employee {
 	public void setRank(int rank) {
 		this.rank = rank;
 	}
-	
+
+	@Override
+	public String toString() {
+		return "Employee [id=" + id + ", active=" + active + ", name=" + name + ", surname=" + surname
+				+ ", departmentId=" + departmentId + ", rank=" + rank + "]";
+	}
+
+	@Override
 	public String toCSVString() {
 		return this.id + ";" + this.active + ";" + this.name + ";" + this.surname + ";" + this.departmentId + ";" + this.rank + ";\n";
 	}
+	
 }

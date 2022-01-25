@@ -2,10 +2,12 @@ package subsys.financial.management.maintenance;
 
 import java.util.Date;
 
+import subsys.financial.utils.DataItem;
+
 /**
  * @author Alexander Leeb, k11702617
  */
-public class MaintenanceDataItem {
+public class MaintenanceDataItem extends DataItem {
 	
 	private Aircraft aircraft;
 	private String description;
@@ -46,6 +48,7 @@ public class MaintenanceDataItem {
 		return "MaintenanceDataItem [aircraft=" + aircraft + ", description=" + description + ", due=" + due + "]";
 	}
 
+	@Override
 	public String toCSVString() {
 		return aircraft.getId() + ";" + aircraft.isInUse() + ";" + aircraft.getCategory() + ";" + aircraft.getNumSeats() + ";" + description + ";" + due + ";\n";
 	}

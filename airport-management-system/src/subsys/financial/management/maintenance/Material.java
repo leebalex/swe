@@ -7,10 +7,10 @@ public class Material {
 	
 	private int id;
 	private String name;
-	private float stock;
-	private float price;
+	private double stock;
+	private double price;
 	
-	public Material(int id, String name, float stock, float price) {
+	public Material(int id, String name, double stock, double price) {
 		this.id = id;
 		this.name = name;
 		this.stock = stock;
@@ -25,11 +25,11 @@ public class Material {
 		return name;
 	}
 
-	public float getStock() {
+	public double getStock() {
 		return stock;
 	}
 
-	public float getPrice() {
+	public double getPrice() {
 		return price;
 	}
 
@@ -47,5 +47,10 @@ public class Material {
 
 	public void setPrice(float price) {
 		this.price = price;
+	}
+
+	@Override
+	public String toString() {
+		return "Material [id=" + id + ", name=" + name + ", stock=" + stock + ", price=" + price + "]";
 	}
 }

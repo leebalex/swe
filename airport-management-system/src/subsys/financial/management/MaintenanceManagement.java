@@ -19,21 +19,24 @@ public interface MaintenanceManagement {
 	 */
 	public boolean writeMaintenanceData(List<MaintenanceDataItem> maintenanceDataItems) throws IllegalArgumentException, IOException;
 	
+	
+	/**
+	 * Writes material data to a designated file
+	 * @param materialDataItems
+	 * @return true if successful
+	 * @throws IllegalArgumentException if materialDataItems is null
+	 */
+	public boolean writeMaterialData(List<MaterialDataItem> materialDataItems) throws IllegalArgumentException, IOException;
+	
 	/**
 	 * Builds a maintenance report by generating a list of MaintenanceDataItems
 	 * @return List<MaintenanceDataItem> the individual entities under maintenance demand
 	 */
-	public List<MaintenanceDataItem> reportMaintenanceDemand();
+	public List<MaintenanceDataItem> readMaintenanceData();
 	
 	/**
 	 * Builds a material report by generating a list of MaterialDataItems
 	 * @return List<MaterialDataItem> the individual materials demanded to be ordered
 	 */
-	public List<MaterialDataItem> reportMaterialDemand();
-	
-	/**
-	 * Builds a equipment report by generating a list of EquipmentDataItems
-	 * @return List<EquipmentDataItem> the individual materials demanded to be ordered
-	 */
-	public List<MaintenanceDataItem> reportEquipmentDemand();
+	public List<MaterialDataItem> readMaterialData();
 }

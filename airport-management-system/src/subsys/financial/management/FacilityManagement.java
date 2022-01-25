@@ -1,6 +1,9 @@
 package subsys.financial.management;
 
-import subsys.financial.management.facility.Facility;
+import java.io.IOException;
+import java.util.List;
+
+import subsys.financial.management.facility.FacilityDataItem;
 
 /**
  * @author Alexander Leeb, k11702617
@@ -14,7 +17,7 @@ public interface FacilityManagement {
 	 * @return true for successful registration
 	 * @throws IllegalArgumentException if parameter is null
 	 */
-	public boolean registerFacility(Facility facility) throws IllegalArgumentException;
+	public boolean registerFacility(FacilityDataItem facility) throws IllegalArgumentException, IOException;
 	
 	/**
 	 * Unregisters a existing facility by deleting facility data from designated file
@@ -25,10 +28,16 @@ public interface FacilityManagement {
 	public boolean unregisterFacility(int facilityId) throws IllegalArgumentException;
 
 	/**
+	 * Builds a facility report by generating a list of FacilityDataItems
+	 * @return List<FacilityDataItem> the individual facilities
+	 */
+	public List<FacilityDataItem> readFacilityData();
+	
+	/**
 	 * Calculates this years facility costs until current date
 	 * @param facilityId The facilityId to calculate the cost for
-	 * @return float costs
+	 * @return double costs
 	 * @throws IllegalArgumentException if facilityId is not registered
 	 */
-	public float calculateFacilityCost(int facilityId) throws IllegalArgumentException;
+	public double calculateFacilityCost(int facilityId) throws IllegalArgumentException;
 }
