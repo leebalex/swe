@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<di:SashWindowsMngr xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:di="http://www.eclipse.org/papyrus/0.7.0/sashdi">
+  <sashModel currentSelection="//@sashModel/@windows.0/@children.0" restoreActivePage="true">
+    <windows>
+      <children xsi:type="di:TabFolder" currentSelection="//@sashModel/@windows.0/@children.0/@children.5">
+        <children>
+          <emfPageIdentifier href="papyrus.welcome:dynamic#/"/>
+        </children>
+        <children>
+          <emfPageIdentifier href="platform:/resource/System_Group5/SubSystem5.notation#_o19FUCh0EeyfWfVgwIuvHA"/>
+        </children>
+        <children>
+          <emfPageIdentifier href="platform:/resource/System_Group5/SubSystem5.notation#_WLwicDD4EeyemoxuiQ3Sug"/>
+        </children>
+        <children>
+          <emfPageIdentifier href="platform:/resource/System_Group5/SubSystem5.notation#_D-0WIDAiEey7qPxrfkx00A"/>
+        </children>
+        <children>
+          <emfPageIdentifier href="platform:/resource/System_Group5/SubSystem5.notation#_bKLkQDD4EeyemoxuiQ3Sug"/>
+        </children>
+        <children>
+          <emfPageIdentifier href="platform:/resource/System_Group5/SubSystem5.notation#_qQR-oEfLEeywuKMtWPoySw"/>
+        </children>
+        <children>
+          <emfPageIdentifier href="platform:/resource/System_Group5/SubSystem5.notation#_MhWu0FIXEeyEto33dnxRYQ"/>
+        </children>
+        <children>
+          <emfPageIdentifier href="platform:/resource/System_Group5/SubSystem5.notation#_spi90FIYEeyEto33dnxRYQ"/>
+        </children>
+        <children>
+          <emfPageIdentifier href="platform:/resource/System_Group5/SubSystem5.notation#_V6JeMFKbEey9e7IyDdyAhw"/>
+        </children>
+        <children>
+          <emfPageIdentifier href="platform:/resource/System_Group5/SubSystem5.notation#_vSMZoFKdEey9e7IyDdyAhw"/>
+        </children>
+        <children>
+          <emfPageIdentifier href="platform:/resource/System_Group5/SubSystem5.notation#_kZIbMFLmEeyx15KUvk2e4A"/>
+        </children>
+        <children>
+          <emfPageIdentifier href="platform:/resource/System_Group5/SubSystem5.notation#_XoI_gFLnEeyx15KUvk2e4A"/>
+        </children>
+        <children>
+          <emfPageIdentifier href="platform:/resource/System_Group5/SubSystem5.notation#_8eT2AFLnEeyx15KUvk2e4A"/>
+        </children>
+        <children>
+          <emfPageIdentifier href="platform:/resource/System_Group5/SubSystem5.notation#_etmJ0FLoEeyx15KUvk2e4A"/>
+        </children>
+      </children>
+    </windows>
+  </sashModel>
+</di:SashWindowsMngr>

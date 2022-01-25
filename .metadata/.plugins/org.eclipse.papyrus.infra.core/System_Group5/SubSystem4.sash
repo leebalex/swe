@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<di:SashWindowsMngr xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:di="http://www.eclipse.org/papyrus/0.7.0/sashdi">
+  <sashModel currentSelection="//@sashModel/@windows.0/@children.0" restoreActivePage="true">
+    <windows>
+      <children xsi:type="di:TabFolder" currentSelection="//@sashModel/@windows.0/@children.0/@children.6">
+        <children>
+          <emfPageIdentifier href="papyrus.welcome:dynamic#/"/>
+        </children>
+        <children>
+          <emfPageIdentifier href="platform:/resource/System_Group5/SubSystem4.notation#_JrmjoDDvEeyemoxuiQ3Sug"/>
+        </children>
+        <children>
+          <emfPageIdentifier href="platform:/resource/System_Group5/SubSystem4.notation#_UOSvIEfAEeyXgr2oMmhtqg"/>
+        </children>
+        <children>
+          <emfPageIdentifier href="platform:/resource/System_Group5/SubSystem4.notation#_78ZG4E1kEeyuUKdxlVCWbA"/>
+        </children>
+        <children>
+          <emfPageIdentifier href="platform:/resource/System_Group5/SubSystem4.notation#_hSs2AE1lEeyuUKdxlVCWbA"/>
+        </children>
+        <children>
+          <emfPageIdentifier href="platform:/resource/System_Group5/SubSystem4.notation#_6s28ME1lEeyuUKdxlVCWbA"/>
+        </children>
+        <children>
+          <emfPageIdentifier href="platform:/resource/System_Group5/SubSystem4.notation#_cDJygE1mEeyuUKdxlVCWbA"/>
+        </children>
+        <children>
+          <emfPageIdentifier href="platform:/resource/System_Group5/SubSystem4.notation#_JdaJ8E1nEeyuUKdxlVCWbA"/>
+        </children>
+        <children>
+          <emfPageIdentifier href="platform:/resource/System_Group5/SubSystem4.notation#_NCSwgE1oEeyuUKdxlVCWbA"/>
+        </children>
+      </children>
+    </windows>
+  </sashModel>
+</di:SashWindowsMngr>

@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_SYGRoCXWEeybxdv-5Uc1kw" name="FinancialManagementSystem">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_SYX-cCXWEeybxdv-5Uc1kw">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Package" xmi:id="_XEcd8DD4EeyemoxuiQ3Sug" name="FinancialManagementSystemPkg">
+    <packagedElement xmi:type="uml:Package" xmi:id="_cCpdUDD4EeyemoxuiQ3Sug" name="Financial Management System">
+      <packagedElement xmi:type="uml:UseCase" xmi:id="__6gRcDD4EeyemoxuiQ3Sug" name="check security information">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_qg7BUDZ1Eey3Hpl2FatJrg">
+          <body>--- The financial management provides security information to the control management system. &#xD;
+1. User logs into the system. Since this is sensitive information only specific user can access the system&#xD;
+2. System shows dashboard &#xD;
+3. User accesses the data and provides it to the specific department&#xD;
+4. Control management system uses retrieved data for managing delays, security problems and emergencies</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_B_XFIDD5EeyemoxuiQ3Sug" name="check facility reports">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_-eJkwDZ1Eey3Hpl2FatJrg">
+          <body>--- Finance Worker logs in first, since this is sensitive information only specific user can access the system.&#xD;
+1. User logs into the system&#xD;
+2. System shows dashboard &#xD;
+3. User accesses the data and provides it to the specific department&#xD;
+3. Management uses retrieved data for managing facilities currently in use, possible renovations, future construction projects</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_D7PjADD5EeyemoxuiQ3Sug" name="check invoice information">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_J19KgDZ2Eey3Hpl2FatJrg">
+          <body>--- The Customer Service checks invoice information per customer.&#xD;
+1. User logs into the system. Since this is sensitive information only specific user can access the system&#xD;
+2. System shows dashboard &#xD;
+3. Customer Service retrieves data about customers like booking history, boarding dates&#xD;
+4. Customer Service handles inquiries from customers</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_MGqsUDD5EeyemoxuiQ3Sug" name="check financial reports">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_6W-UADZ1Eey3Hpl2FatJrg">
+          <body>--- The financial management system provides financial reports about possible costs like maintenance, facilities, employees etc. &#xD;
+1. User logs into the system. Since this is sensitive information only specific user can access the system&#xD;
+2. System shows dashboard &#xD;
+3. User accesses the data and provides it to the specific department&#xD;
+4. Management uses retrieved data for reporting to others</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_tEbKwDZzEey3Hpl2FatJrg" name="check aircraft information">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_jkA5kDZ1Eey3Hpl2FatJrg">
+          <body>--- The financial management provides data about registered and ready-to use aircrafts to the control management system. &#xD;
+1. User logs into the system. Since this is sensitive information only specific user can access the system&#xD;
+2. System shows dashboard &#xD;
+3. User accesses the data and provides it to the specific department&#xD;
+4. Control management system uses retrieved data for monitoring flights and manage airport maintenance</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_UhkqkDZ0Eey3Hpl2FatJrg" name="check flight data">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_XbkhEDZ1Eey3Hpl2FatJrg">
+          <body>--- Terminal Management gets data about flights like departure- and landing time/gate and flight prices.&#xD;
+1. User logs into the system. Since this is sensitive information only specific user can access the system&#xD;
+2. System shows dashboard &#xD;
+3. User accesses the flight data provided by the financial management&#xD;
+4. Terminal Management System manages passengers check-in, security unites and flight information</body>
+        </ownedComment>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_n5jZ4DD4EeyemoxuiQ3Sug" name="Financial Worker"/>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_wkAokDD4EeyemoxuiQ3Sug" name="Control Management System"/>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_0LdQYDD4EeyemoxuiQ3Sug" name="Management"/>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_6qctEDD4EeyemoxuiQ3Sug" name="Customer Service"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_IuPX8DD5EeyemoxuiQ3Sug"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_RpGaIDD5EeyemoxuiQ3Sug"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Sy_aYDD5EeyemoxuiQ3Sug"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_T7hIsDD5EeyemoxuiQ3Sug"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_VXWNgDD5EeyemoxuiQ3Sug"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Zt1soDD5EeyemoxuiQ3Sug"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_c-T-4DD5EeyemoxuiQ3Sug"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_juuiwDD5EeyemoxuiQ3Sug"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_6d5GQDZzEey3Hpl2FatJrg"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_-jqo0DZzEey3Hpl2FatJrg"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_adpncDZ0Eey3Hpl2FatJrg"/>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_b18QEDZ0Eey3Hpl2FatJrg" name="Terminal Management System"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_hEagEDZ0Eey3Hpl2FatJrg"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_PC_RcEfMEeywuKMtWPoySw" name="Employee">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_PC_RcUfMEeywuKMtWPoySw" name="active">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_PC_RckfMEeywuKMtWPoySw" name="id">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_PC_Rc0fMEeywuKMtWPoySw" name="name">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_PC_RdEfMEeywuKMtWPoySw" name="surname">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_WS_UUEfMEeywuKMtWPoySw" name="active">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_dM7noEfMEeywuKMtWPoySw" name="id">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_g5kRcEfMEeywuKMtWPoySw" name="name">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_is2M8EfMEeywuKMtWPoySw" name="surname">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_52m90EfMEeywuKMtWPoySw" name="departmentId">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_B83TQEfNEeywuKMtWPoySw" name="Department" isAbstract="true">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_FuJzkEfNEeywuKMtWPoySw" name="id">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_HOEuMEfNEeywuKMtWPoySw" name="name">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_KRYHIEfNEeywuKMtWPoySw" name="employees">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EEList"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_VVQrUEfNEeywuKMtWPoySw" name="TicketManagement">
+      <generalization xmi:type="uml:Generalization" xmi:id="_AQCg4EfUEeywuKMtWPoySw" general="_B83TQEfNEeywuKMtWPoySw"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_XZQjYEfNEeywuKMtWPoySw" name="flights">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EEList"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_ixJosEfNEeywuKMtWPoySw" name="passengers">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EEList"/>
+      </ownedAttribute>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_DJqMkE1qEeyuRbUpc4Cr8w" name="registerFlight">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_GAa-UE1qEeyuRbUpc4Cr8w" name="flight" type="_85mGUEfPEeywuKMtWPoySw"/>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_G2iG8E1qEeyuRbUpc4Cr8w" name="unregisterFlight">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_IsMBAE1qEeyuRbUpc4Cr8w" type="_85mGUEfPEeywuKMtWPoySw"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="__4H-4EfNEeywuKMtWPoySw" name="FacilityManagement">
+      <generalization xmi:type="uml:Generalization" xmi:id="__efvMEfTEeywuKMtWPoySw" general="_B83TQEfNEeywuKMtWPoySw"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_ElVU4EfOEeywuKMtWPoySw" name="facilities">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EEList"/>
+      </ownedAttribute>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_yr4ykE1pEeyuRbUpc4Cr8w" name="registerFacility">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_3I0Q4E1pEeyuRbUpc4Cr8w" name="facility" type="_lh94kEfPEeywuKMtWPoySw"/>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_3kdEAE1pEeyuRbUpc4Cr8w" name="unregisterFacility">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_57B50E1pEeyuRbUpc4Cr8w" name="facility" type="_lh94kEfPEeywuKMtWPoySw"/>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_8vMDgE1pEeyuRbUpc4Cr8w" name="calculateFacilityRent"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_Op9bgEfOEeywuKMtWPoySw" name="MaintenanceManagement">
+      <generalization xmi:type="uml:Generalization" xmi:id="_9Cp-4EfTEeywuKMtWPoySw" general="_B83TQEfNEeywuKMtWPoySw"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_QZKvUEfOEeywuKMtWPoySw" name="vehicleFuelStock">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_TnxZUEfOEeywuKMtWPoySw" name="aircraftFuelStock">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
+      </ownedAttribute>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_bZNWQE1pEeyuRbUpc4Cr8w" name="reportMaintenanceDemand">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_mpND0E1pEeyuRbUpc4Cr8w" name="maintenanceId">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_nlJusE1pEeyuRbUpc4Cr8w" name="reportMaterialDemand">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_slyXAE1pEeyuRbUpc4Cr8w" name="materialId">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_tVn4gE1pEeyuRbUpc4Cr8w" name="reportEquipmentDemand">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_xGaCgE1pEeyuRbUpc4Cr8w" name="equipmentId">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_dnJMgEfOEeywuKMtWPoySw" name="HumanResourcesManagement">
+      <generalization xmi:type="uml:Generalization" xmi:id="_7NNgMEfTEeywuKMtWPoySw" general="_B83TQEfNEeywuKMtWPoySw"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_gfmAUEfOEeywuKMtWPoySw" name="employees">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EEList"/>
+      </ownedAttribute>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_AxOyEE1pEeyuRbUpc4Cr8w" name="registerEmployee">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_MKiMoE1pEeyuRbUpc4Cr8w" name="employee" type="_PC_RcEfMEeywuKMtWPoySw"/>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_NBbYYE1pEeyuRbUpc4Cr8w" name="unregisterEmployee">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_QVH9wE1pEeyuRbUpc4Cr8w" name="employee" type="_PC_RcEfMEeywuKMtWPoySw"/>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_RWLyIE1pEeyuRbUpc4Cr8w" name="calculateSalary">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_Wy22ME1pEeyuRbUpc4Cr8w" name="employee" type="_PC_RcEfMEeywuKMtWPoySw"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_py7z8EfOEeywuKMtWPoySw" name="Material">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_uwyOAEfOEeywuKMtWPoySw" name="id">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_yiSwwEfOEeywuKMtWPoySw" name="name">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_zz_pMEfOEeywuKMtWPoySw" name="stock">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_wCBHMEfgEeyRoPsTl90T3g" name="price">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_83JrwEfOEeywuKMtWPoySw" name="Equipment">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_AzlFEEfPEeywuKMtWPoySw" name="id">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_C9Mc8EfPEeywuKMtWPoySw" name="name">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_Ekd8wEfPEeywuKMtWPoySw" name="stock">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_GcWrcEfPEeywuKMtWPoySw" name="supplier">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_2Col0EfgEeyRoPsTl90T3g" name="price">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_QMnroEfPEeywuKMtWPoySw" name="Aircraft">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_TUuFAEfPEeywuKMtWPoySw" name="id">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_U6yD4EfPEeywuKMtWPoySw" name="inUse">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_eFSroEfPEeywuKMtWPoySw" name="category">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_gGj_0EfPEeywuKMtWPoySw" name="numOfSeats">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_lh94kEfPEeywuKMtWPoySw" name="Facility">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_nXzY0EfPEeywuKMtWPoySw" name="id">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_o9_6kEfPEeywuKMtWPoySw" name="address">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_qji8EEfPEeywuKMtWPoySw" name="rent">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_ukx84EfPEeywuKMtWPoySw" name="description">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xgW9MEfPEeywuKMtWPoySw" name="Ticket">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_zt5LwEfPEeywuKMtWPoySw" name="id">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_1DxZkEfPEeywuKMtWPoySw" name="flightId">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_3AascEfPEeywuKMtWPoySw" name="passengerLastName">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_5LBi0EfPEeywuKMtWPoySw" name="passengerFirstName">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_62RjsEfPEeywuKMtWPoySw" name="passportId">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_6K-7QEfgEeyRoPsTl90T3g" name="price">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_85mGUEfPEeywuKMtWPoySw" name="Flight">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_-jbK4EfPEeywuKMtWPoySw" name="id">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="__tg_cEfPEeywuKMtWPoySw" name="depatureTime">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_BeMS4EfQEeywuKMtWPoySw" name="arrivalTime">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_DBzasEfQEeywuKMtWPoySw" name="destinationAirportId">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_HxMiAEfQEeywuKMtWPoySw" name="destinationAirportName">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_K3_T0EfQEeywuKMtWPoySw" name="tickets">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EEList"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_O6L98EfQEeywuKMtWPoySw" name="Control Management System">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_d2GjoEfQEeywuKMtWPoySw" name="flights">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EEList"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_j9nUcEfQEeywuKMtWPoySw" name="aircrafts">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EEList"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_mJcS0EfQEeywuKMtWPoySw" name="facilities">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EEList"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_ro6zQEfQEeywuKMtWPoySw" name="Terminal Management System">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_s47poEfQEeywuKMtWPoySw" name="passengers">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EEList"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_wog5wEfQEeywuKMtWPoySw" name="baggage">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EEList"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_yTSZgEfQEeywuKMtWPoySw" name="flights">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EEList"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_TOqY8EfSEeywuKMtWPoySw"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Vght4EfSEeywuKMtWPoySw"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_WoKrYEfSEeywuKMtWPoySw"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_eZOz8EfSEeywuKMtWPoySw"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_i6eKgEfSEeywuKMtWPoySw"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_arFRwEfTEeywuKMtWPoySw"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_eBAEsEfTEeywuKMtWPoySw" memberEnd="_eBBS0kfTEeywuKMtWPoySw _eBB54kfTEeywuKMtWPoySw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_eBBS0EfTEeywuKMtWPoySw" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_eBBS0UfTEeywuKMtWPoySw" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_eBB54kfTEeywuKMtWPoySw" type="_PC_RcEfMEeywuKMtWPoySw" association="_eBAEsEfTEeywuKMtWPoySw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qcIIoEfTEeywuKMtWPoySw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qcWLEEfTEeywuKMtWPoySw" value="*"/>
+      </ownedEnd>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_eBBS0kfTEeywuKMtWPoySw" type="_B83TQEfNEeywuKMtWPoySw" aggregation="shared" association="_eBAEsEfTEeywuKMtWPoySw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_UcjdgEfUEeywuKMtWPoySw" memberEnd="_UckEkkfUEeywuKMtWPoySw _UckrokfUEeywuKMtWPoySw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_UckEkEfUEeywuKMtWPoySw" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_UckEkUfUEeywuKMtWPoySw" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_UckrokfUEeywuKMtWPoySw" type="_dnJMgEfOEeywuKMtWPoySw" aggregation="shared" association="_UcjdgEfUEeywuKMtWPoySw"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_UckEkkfUEeywuKMtWPoySw" type="_PC_RcEfMEeywuKMtWPoySw" association="_UcjdgEfUEeywuKMtWPoySw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UckroEfUEeywuKMtWPoySw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UckroUfUEeywuKMtWPoySw" value="*"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_ZeDWkEfWEeywuKMtWPoySw" memberEnd="_ZeD9okfWEeywuKMtWPoySw _ZeEkskfWEeywuKMtWPoySw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ZeD9oEfWEeywuKMtWPoySw" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ZeD9oUfWEeywuKMtWPoySw" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_ZeEkskfWEeywuKMtWPoySw" type="_Op9bgEfOEeywuKMtWPoySw" aggregation="shared" association="_ZeDWkEfWEeywuKMtWPoySw"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_ZeD9okfWEeywuKMtWPoySw" type="_py7z8EfOEeywuKMtWPoySw" association="_ZeDWkEfWEeywuKMtWPoySw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_gXsu8EfWEeywuKMtWPoySw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZeEksUfWEeywuKMtWPoySw" value="*"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_i9XJoEfWEeywuKMtWPoySw" memberEnd="_i9XwskfWEeywuKMtWPoySw _i9YXwkfWEeywuKMtWPoySw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_i9XwsEfWEeywuKMtWPoySw" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_i9XwsUfWEeywuKMtWPoySw" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_i9YXwkfWEeywuKMtWPoySw" type="_Op9bgEfOEeywuKMtWPoySw" aggregation="shared" association="_i9XJoEfWEeywuKMtWPoySw"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_i9XwskfWEeywuKMtWPoySw" type="_83JrwEfOEeywuKMtWPoySw" association="_i9XJoEfWEeywuKMtWPoySw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nF9WsEfWEeywuKMtWPoySw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_i9YXwUfWEeywuKMtWPoySw" value="*"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_ojGDEEfWEeywuKMtWPoySw" memberEnd="_ojHRMkfWEeywuKMtWPoySw _ojIfUkfWEeywuKMtWPoySw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ojHRMEfWEeywuKMtWPoySw" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ojHRMUfWEeywuKMtWPoySw" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_ojIfUkfWEeywuKMtWPoySw" type="_Op9bgEfOEeywuKMtWPoySw" aggregation="shared" association="_ojGDEEfWEeywuKMtWPoySw"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_ojHRMkfWEeywuKMtWPoySw" type="_QMnroEfPEeywuKMtWPoySw" association="_ojGDEEfWEeywuKMtWPoySw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ojIfUEfWEeywuKMtWPoySw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ojIfUUfWEeywuKMtWPoySw" value="*"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_xx7KIEfWEeywuKMtWPoySw" memberEnd="_xx8YQkfWEeywuKMtWPoySw _xyApsEfWEeywuKMtWPoySw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_xx8YQEfWEeywuKMtWPoySw" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_xx8YQUfWEeywuKMtWPoySw" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_xyApsEfWEeywuKMtWPoySw" type="__4H-4EfNEeywuKMtWPoySw" aggregation="shared" association="_xx7KIEfWEeywuKMtWPoySw"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_xx8YQkfWEeywuKMtWPoySw" type="_lh94kEfPEeywuKMtWPoySw" association="_xx7KIEfWEeywuKMtWPoySw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xx9mYEfWEeywuKMtWPoySw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xx_bkEfWEeywuKMtWPoySw" value="*"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_2BHHYEfWEeywuKMtWPoySw" memberEnd="_2BHuckfWEeywuKMtWPoySw _2BIVgkfWEeywuKMtWPoySw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_2BHucEfWEeywuKMtWPoySw" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_2BHucUfWEeywuKMtWPoySw" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_2BIVgkfWEeywuKMtWPoySw" type="_VVQrUEfNEeywuKMtWPoySw" aggregation="shared" association="_2BHHYEfWEeywuKMtWPoySw"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_2BHuckfWEeywuKMtWPoySw" type="_xgW9MEfPEeywuKMtWPoySw" association="_2BHHYEfWEeywuKMtWPoySw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2BIVgEfWEeywuKMtWPoySw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2BIVgUfWEeywuKMtWPoySw" value="*"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_6ZutcEfWEeywuKMtWPoySw" memberEnd="_6ZvUgkfWEeywuKMtWPoySw _6Zv7kUfWEeywuKMtWPoySw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_6ZvUgEfWEeywuKMtWPoySw" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_6ZvUgUfWEeywuKMtWPoySw" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_6Zv7kUfWEeywuKMtWPoySw" type="_VVQrUEfNEeywuKMtWPoySw" aggregation="shared" association="_6ZutcEfWEeywuKMtWPoySw"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_6ZvUgkfWEeywuKMtWPoySw" type="_85mGUEfPEeywuKMtWPoySw" association="_6ZutcEfWEeywuKMtWPoySw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6ZvUg0fWEeywuKMtWPoySw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6Zv7kEfWEeywuKMtWPoySw" value="*"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_ZJ_VoEfXEeywuKMtWPoySw" name="retrieve flight data" client="_VVQrUEfNEeywuKMtWPoySw" supplier="_XEcd8DD4EeyemoxuiQ3Sug"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_g9jYkEfXEeywuKMtWPoySw" name="retrieve facility data" client="__4H-4EfNEeywuKMtWPoySw" supplier="_XEcd8DD4EeyemoxuiQ3Sug"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_rgdWoEfXEeywuKMtWPoySw" name="retrieve maintenance data" client="_Op9bgEfOEeywuKMtWPoySw" supplier="_O6L98EfQEeywuKMtWPoySw"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_5TgPwEfXEeywuKMtWPoySw"/>
+    <packagedElement xmi:type="uml:Interaction" xmi:id="_K9LmUFIXEeyEto33dnxRYQ" name="Maintenance Report">
+      <lifeline xmi:type="uml:Lifeline" xmi:id="_qHklwFIXEeyEto33dnxRYQ" name="Financial Worker" coveredBy="_AVMegVIYEeyEto33dnxRYQ _9wGEgFIXEeyEto33dnxRYQ _9wGEgVIXEeyEto33dnxRYQ"/>
+      <lifeline xmi:type="uml:Lifeline" xmi:id="_zEVscFIXEeyEto33dnxRYQ" name="Database" coveredBy="_sVN3IVIZEeyEto33dnxRYQ _N7U9AVIYEeyEto33dnxRYQ _S_nEUFIaEeyEto33dnxRYQ _sVarcFIZEeyEto33dnxRYQ _sVY2QFIZEeyEto33dnxRYQ"/>
+      <lifeline xmi:type="uml:Lifeline" xmi:id="_2WI0YFIXEeyEto33dnxRYQ" name="Control Worker" coveredBy="_sVN3IFIZEeyEto33dnxRYQ _N7U9AVIYEeyEto33dnxRYQ _S_nEUVIaEeyEto33dnxRYQ _sVarcVIZEeyEto33dnxRYQ _6YvHIFIXEeyEto33dnxRYQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_AVMegVIYEeyEto33dnxRYQ" name="Message10SendEvent" covered="_qHklwFIXEeyEto33dnxRYQ" message="_AVMegFIYEeyEto33dnxRYQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_sVN3IFIZEeyEto33dnxRYQ" name="Message15SendEvent" covered="_2WI0YFIXEeyEto33dnxRYQ" message="_sVNQEFIZEeyEto33dnxRYQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_sVN3IVIZEeyEto33dnxRYQ" name="Message15ReceiveEvent" covered="_zEVscFIXEeyEto33dnxRYQ" message="_sVNQEFIZEeyEto33dnxRYQ"/>
+      <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_sVY2QFIZEeyEto33dnxRYQ" name="BehaviorExecutionSpecification18" covered="_zEVscFIXEeyEto33dnxRYQ" finish="_sVarcFIZEeyEto33dnxRYQ" start="_sVN3IVIZEeyEto33dnxRYQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_N7U9AVIYEeyEto33dnxRYQ" name="Message13ReceiveEvent" covered="_2WI0YFIXEeyEto33dnxRYQ _zEVscFIXEeyEto33dnxRYQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_S_nEUFIaEeyEto33dnxRYQ" name="Message22SendEvent" covered="_zEVscFIXEeyEto33dnxRYQ" message="_S_mdQFIaEeyEto33dnxRYQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_S_nEUVIaEeyEto33dnxRYQ" name="Message22ReceiveEvent" covered="_2WI0YFIXEeyEto33dnxRYQ" message="_S_mdQFIaEeyEto33dnxRYQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_sVarcFIZEeyEto33dnxRYQ" name="Message20SendEvent" covered="_zEVscFIXEeyEto33dnxRYQ" message="_sVaEYFIZEeyEto33dnxRYQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_sVarcVIZEeyEto33dnxRYQ" name="Message20ReceiveEvent" covered="_2WI0YFIXEeyEto33dnxRYQ" message="_sVaEYFIZEeyEto33dnxRYQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_9wGEgFIXEeyEto33dnxRYQ" name="Message7SendEvent" covered="_qHklwFIXEeyEto33dnxRYQ" message="_9wFdcFIXEeyEto33dnxRYQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_6YvHIFIXEeyEto33dnxRYQ" name="Message4SendEvent" covered="_2WI0YFIXEeyEto33dnxRYQ" message="_6YtR8FIXEeyEto33dnxRYQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_9wGEgVIXEeyEto33dnxRYQ" name="Message7ReceiveEvent" covered="_qHklwFIXEeyEto33dnxRYQ" message="_9wFdcFIXEeyEto33dnxRYQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_6YvuMFIXEeyEto33dnxRYQ" name="Message4ReceiveEvent" message="_6YtR8FIXEeyEto33dnxRYQ"/>
+      <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_VSYDEFIYEeyEto33dnxRYQ"/>
+      <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_VSYqIFIYEeyEto33dnxRYQ"/>
+      <message xmi:type="uml:Message" xmi:id="_6YtR8FIXEeyEto33dnxRYQ" name="Message4" messageSort="asynchCall" receiveEvent="_6YvuMFIXEeyEto33dnxRYQ" sendEvent="_6YvHIFIXEeyEto33dnxRYQ"/>
+      <message xmi:type="uml:Message" xmi:id="_9wFdcFIXEeyEto33dnxRYQ" name="asfd" messageSort="asynchCall" receiveEvent="_9wGEgVIXEeyEto33dnxRYQ" sendEvent="_9wGEgFIXEeyEto33dnxRYQ"/>
+      <message xmi:type="uml:Message" xmi:id="_AVMegFIYEeyEto33dnxRYQ" name="reportMaintenanceDemand" messageSort="asynchCall" sendEvent="_AVMegVIYEeyEto33dnxRYQ"/>
+      <message xmi:type="uml:Message" xmi:id="_sVNQEFIZEeyEto33dnxRYQ" name="checkMaintenanceStatus" receiveEvent="_sVN3IVIZEeyEto33dnxRYQ" sendEvent="_sVN3IFIZEeyEto33dnxRYQ"/>
+      <message xmi:type="uml:Message" xmi:id="_sVaEYFIZEeyEto33dnxRYQ" name="return data" messageSort="reply" receiveEvent="_sVarcVIZEeyEto33dnxRYQ" sendEvent="_sVarcFIZEeyEto33dnxRYQ"/>
+      <message xmi:type="uml:Message" xmi:id="_S_mdQFIaEeyEto33dnxRYQ" name="exception" messageSort="reply" receiveEvent="_S_nEUVIaEeyEto33dnxRYQ" sendEvent="_S_nEUFIaEeyEto33dnxRYQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Interaction" xmi:id="_qpS9UFIYEeyEto33dnxRYQ" name="Facility Registration">
+      <lifeline xmi:type="uml:Lifeline" xmi:id="_0d2noFIYEeyEto33dnxRYQ" name="Financial Worker" coveredBy="_5bsaoFIYEeyEto33dnxRYQ"/>
+      <lifeline xmi:type="uml:Lifeline" xmi:id="_158LIFIYEeyEto33dnxRYQ" name="Database" coveredBy="_qaah4VIaEeyEto33dnxRYQ _F9uF4FIbEeyEto33dnxRYQ _qaokUVIaEeyEto33dnxRYQ _WkANkVIZEeyEto33dnxRYQ _Z-6YwVIaEeyEto33dnxRYQ _WkO3EVIZEeyEto33dnxRYQ _WkNo8FIZEeyEto33dnxRYQ _qanWMFIaEeyEto33dnxRYQ"/>
+      <lifeline xmi:type="uml:Lifeline" xmi:id="_2zXtgFIYEeyEto33dnxRYQ" name="Control Worker" coveredBy="_WkANkFIZEeyEto33dnxRYQ _Z-6_0FIaEeyEto33dnxRYQ _WkPeIFIZEeyEto33dnxRYQ"/>
+      <lifeline xmi:type="uml:Lifeline" xmi:id="_eX81kFIaEeyEto33dnxRYQ" name="Facility Management" coveredBy="_5bsaoVIYEeyEto33dnxRYQ _qaah4FIaEeyEto33dnxRYQ _F9uF4VIbEeyEto33dnxRYQ _qaokUlIaEeyEto33dnxRYQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_5bsaoFIYEeyEto33dnxRYQ" name="Message4SendEvent" covered="_0d2noFIYEeyEto33dnxRYQ" message="_5brzkFIYEeyEto33dnxRYQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_5bsaoVIYEeyEto33dnxRYQ" name="Message4ReceiveEvent" covered="_eX81kFIaEeyEto33dnxRYQ" message="_5brzkFIYEeyEto33dnxRYQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_qaah4FIaEeyEto33dnxRYQ" name="Message18SendEvent" covered="_eX81kFIaEeyEto33dnxRYQ" message="_qaZ60FIaEeyEto33dnxRYQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_qaah4VIaEeyEto33dnxRYQ" name="Message18ReceiveEvent" covered="_158LIFIYEeyEto33dnxRYQ" message="_qaZ60FIaEeyEto33dnxRYQ"/>
+      <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_qanWMFIaEeyEto33dnxRYQ" name="BehaviorExecutionSpecification21" covered="_158LIFIYEeyEto33dnxRYQ" finish="_qaokUVIaEeyEto33dnxRYQ" start="_qaah4VIaEeyEto33dnxRYQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_F9uF4FIbEeyEto33dnxRYQ" name="Message25SendEvent" covered="_158LIFIYEeyEto33dnxRYQ" message="_F9te0FIbEeyEto33dnxRYQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_F9uF4VIbEeyEto33dnxRYQ" name="Message25ReceiveEvent" covered="_eX81kFIaEeyEto33dnxRYQ" message="_F9te0FIbEeyEto33dnxRYQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_qaokUVIaEeyEto33dnxRYQ" name="Message23SendEvent" covered="_158LIFIYEeyEto33dnxRYQ" message="_qaokUFIaEeyEto33dnxRYQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_qaokUlIaEeyEto33dnxRYQ" name="Message23ReceiveEvent" covered="_eX81kFIaEeyEto33dnxRYQ" message="_qaokUFIaEeyEto33dnxRYQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_WkANkFIZEeyEto33dnxRYQ" name="Message14SendEvent" covered="_2zXtgFIYEeyEto33dnxRYQ" message="_Wj_mgFIZEeyEto33dnxRYQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_WkANkVIZEeyEto33dnxRYQ" name="Message14ReceiveEvent" covered="_158LIFIYEeyEto33dnxRYQ" message="_Wj_mgFIZEeyEto33dnxRYQ"/>
+      <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_WkNo8FIZEeyEto33dnxRYQ" name="BehaviorExecutionSpecification17" covered="_158LIFIYEeyEto33dnxRYQ" finish="_WkO3EVIZEeyEto33dnxRYQ" start="_WkANkVIZEeyEto33dnxRYQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Z-6YwVIaEeyEto33dnxRYQ" name="Message14SendEvent" covered="_158LIFIYEeyEto33dnxRYQ" message="_Z-6YwFIaEeyEto33dnxRYQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Z-6_0FIaEeyEto33dnxRYQ" name="Message14ReceiveEvent" covered="_2zXtgFIYEeyEto33dnxRYQ" message="_Z-6YwFIaEeyEto33dnxRYQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_WkO3EVIZEeyEto33dnxRYQ" name="Message19SendEvent" covered="_158LIFIYEeyEto33dnxRYQ" message="_WkO3EFIZEeyEto33dnxRYQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_WkPeIFIZEeyEto33dnxRYQ" name="Message19ReceiveEvent" covered="_2zXtgFIYEeyEto33dnxRYQ" message="_WkO3EFIZEeyEto33dnxRYQ"/>
+      <message xmi:type="uml:Message" xmi:id="_5brzkFIYEeyEto33dnxRYQ" name="login" messageSort="asynchCall" receiveEvent="_5bsaoVIYEeyEto33dnxRYQ" sendEvent="_5bsaoFIYEeyEto33dnxRYQ"/>
+      <message xmi:type="uml:Message" xmi:id="_Wj_mgFIZEeyEto33dnxRYQ" name="checkFacilityData" receiveEvent="_WkANkVIZEeyEto33dnxRYQ" sendEvent="_WkANkFIZEeyEto33dnxRYQ"/>
+      <message xmi:type="uml:Message" xmi:id="_WkO3EFIZEeyEto33dnxRYQ" name="exception" messageSort="reply" receiveEvent="_WkPeIFIZEeyEto33dnxRYQ" sendEvent="_WkO3EVIZEeyEto33dnxRYQ"/>
+      <message xmi:type="uml:Message" xmi:id="_Z-6YwFIaEeyEto33dnxRYQ" name="return facility data" messageSort="reply" receiveEvent="_Z-6_0FIaEeyEto33dnxRYQ" sendEvent="_Z-6YwVIaEeyEto33dnxRYQ"/>
+      <message xmi:type="uml:Message" xmi:id="_qaZ60FIaEeyEto33dnxRYQ" name="registerFacility" receiveEvent="_qaah4VIaEeyEto33dnxRYQ" sendEvent="_qaah4FIaEeyEto33dnxRYQ"/>
+      <message xmi:type="uml:Message" xmi:id="_qaokUFIaEeyEto33dnxRYQ" name="exception" messageSort="reply" receiveEvent="_qaokUlIaEeyEto33dnxRYQ" sendEvent="_qaokUVIaEeyEto33dnxRYQ"/>
+      <message xmi:type="uml:Message" xmi:id="_F9te0FIbEeyEto33dnxRYQ" name="return success" messageSort="reply" receiveEvent="_F9uF4VIbEeyEto33dnxRYQ" sendEvent="_F9uF4FIbEeyEto33dnxRYQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Interaction" xmi:id="_PS2aEFKbEey9e7IyDdyAhw" name="Facility Information">
+      <lifeline xmi:type="uml:Lifeline" xmi:id="_ZkHOgFKbEey9e7IyDdyAhw" name="Financial Worker" coveredBy="_pggZwFKbEey9e7IyDdyAhw"/>
+      <lifeline xmi:type="uml:Lifeline" xmi:id="_bz6G4FKbEey9e7IyDdyAhw" name="Facility Management" coveredBy="_pghA0FKbEey9e7IyDdyAhw _1btAcFKbEey9e7IyDdyAhw _65jwQVKbEey9e7IyDdyAhw _1b84ElKbEey9e7IyDdyAhw"/>
+      <lifeline xmi:type="uml:Lifeline" xmi:id="_fX6ZIFKbEey9e7IyDdyAhw" name="Database" coveredBy="_1btAcVKbEey9e7IyDdyAhw _65jwQFKbEey9e7IyDdyAhw _1b84EVKbEey9e7IyDdyAhw _1b7C4FKbEey9e7IyDdyAhw"/>
+      <lifeline xmi:type="uml:Lifeline" xmi:id="_gsDhkFKbEey9e7IyDdyAhw" name="Control Worker"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_pggZwFKbEey9e7IyDdyAhw" name="Message5SendEvent" covered="_ZkHOgFKbEey9e7IyDdyAhw" message="_pgfysFKbEey9e7IyDdyAhw"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_pghA0FKbEey9e7IyDdyAhw" name="Message5ReceiveEvent" covered="_bz6G4FKbEey9e7IyDdyAhw" message="_pgfysFKbEey9e7IyDdyAhw"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_1btAcFKbEey9e7IyDdyAhw" name="Message8SendEvent" covered="_bz6G4FKbEey9e7IyDdyAhw" message="_1bsZYFKbEey9e7IyDdyAhw"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_1btAcVKbEey9e7IyDdyAhw" name="Message8ReceiveEvent" covered="_fX6ZIFKbEey9e7IyDdyAhw" message="_1bsZYFKbEey9e7IyDdyAhw"/>
+      <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_1b7C4FKbEey9e7IyDdyAhw" name="BehaviorExecutionSpecification11" covered="_fX6ZIFKbEey9e7IyDdyAhw" finish="_1b84EVKbEey9e7IyDdyAhw" start="_1btAcVKbEey9e7IyDdyAhw"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_65jwQFKbEey9e7IyDdyAhw" name="Message15SendEvent" covered="_fX6ZIFKbEey9e7IyDdyAhw" message="_65jJMFKbEey9e7IyDdyAhw"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_65jwQVKbEey9e7IyDdyAhw" name="Message15ReceiveEvent" covered="_bz6G4FKbEey9e7IyDdyAhw" message="_65jJMFKbEey9e7IyDdyAhw"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_1b84EVKbEey9e7IyDdyAhw" name="Message13SendEvent" covered="_fX6ZIFKbEey9e7IyDdyAhw" message="_1b84EFKbEey9e7IyDdyAhw"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_1b84ElKbEey9e7IyDdyAhw" name="Message13ReceiveEvent" covered="_bz6G4FKbEey9e7IyDdyAhw" message="_1b84EFKbEey9e7IyDdyAhw"/>
+      <message xmi:type="uml:Message" xmi:id="_pgfysFKbEey9e7IyDdyAhw" name="register facility" receiveEvent="_pghA0FKbEey9e7IyDdyAhw" sendEvent="_pggZwFKbEey9e7IyDdyAhw"/>
+      <message xmi:type="uml:Message" xmi:id="_1bsZYFKbEey9e7IyDdyAhw" name="update database" receiveEvent="_1btAcVKbEey9e7IyDdyAhw" sendEvent="_1btAcFKbEey9e7IyDdyAhw"/>
+      <message xmi:type="uml:Message" xmi:id="_1b84EFKbEey9e7IyDdyAhw" name="Message13" messageSort="reply" receiveEvent="_1b84ElKbEey9e7IyDdyAhw" sendEvent="_1b84EVKbEey9e7IyDdyAhw"/>
+      <message xmi:type="uml:Message" xmi:id="_65jJMFKbEey9e7IyDdyAhw" name="return success" messageSort="reply" receiveEvent="_65jwQVKbEey9e7IyDdyAhw" sendEvent="_65jwQFKbEey9e7IyDdyAhw"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_3pRMUDD-EeyBY5jOGTlNyA" name="consumes" client="_SYGRoCXWEeybxdv-5Uc1kw">
+    <supplier xmi:type="uml:Model" href="System_Group5.uml#_Wv3OACXUEeybxdv-5Uc1kw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_Oi2PUDEDEeykZr-uc4SHdw" name="provides">
+    <client xmi:type="uml:Model" href="System_Group5.uml#_Wv3OACXUEeybxdv-5Uc1kw"/>
+    <supplier xmi:type="uml:Model" href="SubSystem4.uml#_QsNXkCXWEeybxdv-5Uc1kw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_xbNVUDEDEeykZr-uc4SHdw" name="provides" client="_SYGRoCXWEeybxdv-5Uc1kw">
+    <supplier xmi:type="uml:Model" href="SubSystem3.uml#_Oaa7ICXWEeybxdv-5Uc1kw"/>
+  </packagedElement>
+</uml:Model>
