@@ -9,35 +9,33 @@ import java.util.Random;
 
 public class SecurityInformation {
 
-
     private static Integer informationId = 0;
     private String titleSecurity;
-
     private String descriptionSecurity;
-    private subsys.control.Usecase1_CheckSecurityInformation.SubsystemCategory subsystemCategory;
-    private RiskLevel riskLevel;   //4 different risklevels
-    private Timestamp timestamp;    // needed for the security protocol
+    private SubsystemCategory subsystemCategory;
+    private RiskLevel riskLevel;
+    private Timestamp timestamp;
     private static Hashtable<Integer, String> securityProtocol;
     private static boolean alarmOn;
     private final String securityProtocolFile = "securityProtocolFile.txt";
 
 
-    public SecurityInformation(subsys.control.Usecase1_CheckSecurityInformation.SubsystemCategory subsystemCategory, Worker worker) throws IOException {
+    public SecurityInformation(SubsystemCategory subsystemCategory, Worker worker) throws IOException {
         this.subsystemCategory = subsystemCategory;
-        this.informationId++;
+        informationId++;
         getSecurityInformation(subsystemCategory, worker, this);
         logToSecurityProtocol(informationId);
     }
 
 
-    public SecurityInformation getSecurityInformation(subsys.control.Usecase1_CheckSecurityInformation.SubsystemCategory subsystemCategory, Worker worker, SecurityInformation securityInformation) throws AccessDeniedException {
+    public void getSecurityInformation(SubsystemCategory subsystemCategory, Worker worker, SecurityInformation securityInformation) throws AccessDeniedException {
         if (!(worker instanceof subsys.control.Usecase1_CheckSecurityInformation.SecurityWorker || worker instanceof ControlWorker) || subsystemCategory == subsys.control.Usecase1_CheckSecurityInformation.SubsystemCategory.NONE) {
             throw new AccessDeniedException("You have not the rights to access the security information!");
         }
 
         securityInformation.subsystemCategory = subsystemCategory;
         securityInformation.titleSecurity = "Security information with the ID " + informationId
-                + "\nfor " + worker.name + " with the workerID: " + worker.workerId
+                + "\nfor " + worker.name + " with the workerID: " + Worker.workerId
                 + "\nregarding the subsystem category " + subsystemCategory;
         securityInformation.descriptionSecurity = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.";
         securityInformation.riskLevel = createRiskLevel();
@@ -50,8 +48,7 @@ public class SecurityInformation {
         securityInformation.timestamp = createTimestamp();
         String securityProtocolString = titleSecurity + "\nRiskLevel: " + riskLevel + "\nTimestamp" + securityInformation.timestamp;
         securityProtocol = new Hashtable<>();
-        securityInformation.securityProtocol.put(informationId, securityProtocolString);
-        return securityInformation;
+        securityProtocol.put(informationId, securityProtocolString);
 
     }
 
@@ -93,9 +90,7 @@ public class SecurityInformation {
 
     // after the check, the security check is logged in a security protocol
     public void logToSecurityProtocol(Integer key) throws IOException {
-
         StringBuilder sb = new StringBuilder();
-        //if is null
         sb.append(securityProtocol.get(key));
         sb.append(timestamp.toString());
         writeToFile(sb.toString());
@@ -124,7 +119,7 @@ public class SecurityInformation {
             Files.write(path, strToBytes, StandardOpenOption.APPEND);
 
         } catch (IOException e) {
-            System.err.print("Error occured trying to write to the file. Please try again");
+            System.err.print("Error occurred trying to write to the file. Please try again");
         }
     }
 
@@ -152,7 +147,7 @@ public class SecurityInformation {
         return titleSecurity;
     }
 
-    public subsys.control.Usecase1_CheckSecurityInformation.SubsystemCategory getSubsystemCategory() {
+    public SubsystemCategory getSubsystemCategory() {
         return subsystemCategory;
     }
     public Integer getInformationId() {

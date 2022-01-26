@@ -1,0 +1,149 @@
+Security information with the ID 1
+for Hans with the workerID: 1
+regarding the subsystem category CONTROLSYSTEM
+RiskLevel: CRITICAL
+Timestamp2022-01-25 20:46:02.0392022-01-25 20:46:02.039Security information with the ID 2
+for Hans with the workerID: 2
+regarding the subsystem category CONTROLSYSTEM
+RiskLevel: HIGH
+Timestamp2022-01-25 20:46:02.0632022-01-25 20:46:02.063null2022-01-25 20:46:02.063Security information with the ID 4
+for Hans with the workerID: 4
+regarding the subsystem category CONTROLSYSTEM
+RiskLevel: NORMAL
+Timestamp2022-01-25 20:46:02.0672022-01-25 20:46:02.067Security information with the ID 5
+for Hans with the workerID: 5
+regarding the subsystem category CONTROLSYSTEM
+RiskLevel: NORMAL
+Timestamp2022-01-25 20:46:02.0732022-01-25 20:46:02.073Security information with the ID 6
+for Hans with the workerID: 6
+regarding the subsystem category CONTROLSYSTEM
+RiskLevel: HIGH
+Timestamp2022-01-25 20:46:02.0752022-01-25 20:46:02.075Security information with the ID 8
+for Hans with the workerID: 8
+regarding the subsystem category CONTROLSYSTEM
+RiskLevel: LOW
+Timestamp2022-01-25 20:46:02.0782022-01-25 20:46:02.078Security information with the ID 9
+for Hans with the workerID: 9
+regarding the subsystem category CONTROLSYSTEM
+RiskLevel: HIGH
+Timestamp2022-01-25 20:46:02.0812022-01-25 20:46:02.081Security information with the ID 11
+for Hans with the workerID: 11
+regarding the subsystem category CONTROLSYSTEM
+RiskLevel: NORMAL
+Timestamp2022-01-25 20:46:02.0832022-01-25 20:46:02.083Security information with the ID 12
+for Hans with the workerID: 12
+regarding the subsystem category CONTROLSYSTEM
+RiskLevel: LOW
+Timestamp2022-01-25 20:46:02.0852022-01-25 20:46:02.085Security information with the ID 1
+for Hans with the workerID: 1
+regarding the subsystem category CONTROLSYSTEM
+RiskLevel: LOW
+Timestamp2022-01-26 00:24:46.3342022-01-26 00:24:46.334Security information with the ID 2
+for Hans with the workerID: 2
+regarding the subsystem category CONTROLSYSTEM
+RiskLevel: CRITICAL
+Timestamp2022-01-26 00:24:46.3582022-01-26 00:24:46.358null2022-01-26 00:24:46.358Security information with the ID 4
+for Hans with the workerID: 4
+regarding the subsystem category CONTROLSYSTEM
+RiskLevel: CRITICAL
+Timestamp2022-01-26 00:24:46.3622022-01-26 00:24:46.362Security information with the ID 5
+for Hans with the workerID: 5
+regarding the subsystem category CONTROLSYSTEM
+RiskLevel: NORMAL
+Timestamp2022-01-26 00:24:46.3632022-01-26 00:24:46.363Security information with the ID 6
+for Hans with the workerID: 6
+regarding the subsystem category CONTROLSYSTEM
+RiskLevel: CRITICAL
+Timestamp2022-01-26 00:24:46.3652022-01-26 00:24:46.365Security information with the ID 8
+for Hans with the workerID: 8
+regarding the subsystem category CONTROLSYSTEM
+RiskLevel: LOW
+Timestamp2022-01-26 00:24:46.3682022-01-26 00:24:46.368Security information with the ID 9
+for Hans with the workerID: 9
+regarding the subsystem category CONTROLSYSTEM
+RiskLevel: CRITICAL
+Timestamp2022-01-26 00:24:46.3712022-01-26 00:24:46.371Security information with the ID 11
+for Hans with the workerID: 11
+regarding the subsystem category CONTROLSYSTEM
+RiskLevel: NORMAL
+Timestamp2022-01-26 00:24:46.3762022-01-26 00:24:46.376Security information with the ID 12
+for Hans with the workerID: 12
+regarding the subsystem category CONTROLSYSTEM
+RiskLevel: CRITICAL
+Timestamp2022-01-26 00:24:46.3782022-01-26 00:24:46.378Security information with the ID 1
+for Hans with the workerID: 1
+regarding the subsystem category CONTROLSYSTEM
+RiskLevel: CRITICAL
+Timestamp2022-01-26 12:08:31.3892022-01-26 12:08:31.389Security information with the ID 2
+for Hans with the workerID: 2
+regarding the subsystem category CONTROLSYSTEM
+RiskLevel: CRITICAL
+Timestamp2022-01-26 12:08:31.4152022-01-26 12:08:31.415null2022-01-26 12:08:31.415Security information with the ID 4
+for Hans with the workerID: 4
+regarding the subsystem category CONTROLSYSTEM
+RiskLevel: LOW
+Timestamp2022-01-26 12:08:31.4192022-01-26 12:08:31.419Security information with the ID 5
+for Hans with the workerID: 5
+regarding the subsystem category CONTROLSYSTEM
+RiskLevel: NORMAL
+Timestamp2022-01-26 12:08:31.4192022-01-26 12:08:31.419Security information with the ID 6
+for Hans with the workerID: 6
+regarding the subsystem category CONTROLSYSTEM
+RiskLevel: CRITICAL
+Timestamp2022-01-26 12:08:31.4212022-01-26 12:08:31.421Security information with the ID 8
+for Hans with the workerID: 8
+regarding the subsystem category CONTROLSYSTEM
+RiskLevel: HIGH
+Timestamp2022-01-26 12:08:31.4252022-01-26 12:08:31.425Security information with the ID 9
+for Hans with the workerID: 9
+regarding the subsystem category CONTROLSYSTEM
+RiskLevel: HIGH
+Timestamp2022-01-26 12:08:31.4292022-01-26 12:08:31.429Security information with the ID 11
+for Hans with the workerID: 11
+regarding the subsystem category CONTROLSYSTEM
+RiskLevel: HIGH
+Timestamp2022-01-26 12:08:31.4312022-01-26 12:08:31.431Security information with the ID 12
+for Hans with the workerID: 12
+regarding the subsystem category CONTROLSYSTEM
+RiskLevel: NORMAL
+Timestamp2022-01-26 12:08:31.4332022-01-26 12:08:31.433Security information with the ID 1
+for Hans with the workerID: 1
+regarding the subsystem category CONTROLSYSTEM
+RiskLevel: NORMAL
+Timestamp2022-01-26 12:12:33.5152022-01-26 12:12:33.515Security information with the ID 1
+for Hans with the workerID: 1
+regarding the subsystem category CONTROLSYSTEM
+RiskLevel: HIGH
+Timestamp2022-01-26 12:42:37.272022-01-26 12:42:37.27Security information with the ID 2
+for Hans with the workerID: 2
+regarding the subsystem category CONTROLSYSTEM
+RiskLevel: CRITICAL
+Timestamp2022-01-26 12:42:37.2942022-01-26 12:42:37.294null2022-01-26 12:42:37.294Security information with the ID 4
+for Hans with the workerID: 4
+regarding the subsystem category CONTROLSYSTEM
+RiskLevel: CRITICAL
+Timestamp2022-01-26 12:42:37.2992022-01-26 12:42:37.299Security information with the ID 5
+for Hans with the workerID: 5
+regarding the subsystem category CONTROLSYSTEM
+RiskLevel: CRITICAL
+Timestamp2022-01-26 12:42:37.2992022-01-26 12:42:37.299Security information with the ID 6
+for Hans with the workerID: 6
+regarding the subsystem category CONTROLSYSTEM
+RiskLevel: LOW
+Timestamp2022-01-26 12:42:37.3012022-01-26 12:42:37.301Security information with the ID 8
+for Hans with the workerID: 8
+regarding the subsystem category CONTROLSYSTEM
+RiskLevel: NORMAL
+Timestamp2022-01-26 12:42:37.3042022-01-26 12:42:37.304Security information with the ID 9
+for Hans with the workerID: 9
+regarding the subsystem category CONTROLSYSTEM
+RiskLevel: HIGH
+Timestamp2022-01-26 12:42:37.3072022-01-26 12:42:37.307Security information with the ID 11
+for Hans with the workerID: 11
+regarding the subsystem category CONTROLSYSTEM
+RiskLevel: NORMAL
+Timestamp2022-01-26 12:42:37.3092022-01-26 12:42:37.309Security information with the ID 12
+for Hans with the workerID: 12
+regarding the subsystem category CONTROLSYSTEM
+RiskLevel: CRITICAL
+Timestamp2022-01-26 12:42:37.3112022-01-26 12:42:37.311

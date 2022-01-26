@@ -4,6 +4,10 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import subsys.control.Usecase1_CheckSecurityInformation.*;
+import subsys.landside.FuelController;
+import subsys.landside.FuelTransport;
+import subsys.landside.Location;
+import subsys.landside.VehicleDriver;
 
 import java.io.IOException;
 import java.nio.file.AccessDeniedException;
@@ -25,7 +29,6 @@ public class CheckSecurityInformationTest {
     }
 
 
-
     @Test
     public void getInformationIDs() throws IOException {
         int numb1 = secInfo.getInformationId();
@@ -36,10 +39,10 @@ public class CheckSecurityInformationTest {
     }
 
     @Test
-    public void testGetSecurityInformation() throws AccessDeniedException {
+    public void testGetSecurityInformation(){
         assertNotNull(secInfo);
         assertTrue(secInfo.getTitleSecurity().contains(worker1.getName()));
-        assertTrue(secInfo.getTitleSecurity().contains(String.valueOf(worker1.getWorkerId())));
+        assertTrue(secInfo.getTitleSecurity().contains(String.valueOf(Worker.getWorkerId())));
         assertTrue(secInfo.getDescriptionSecurity().contains("Lorem ipsum dolor sit amet"));
         assertTrue(SecurityInformation.getSecurityProtocol().containsKey(secInfo.getInformationId()));
         assertTrue(SecurityInformation.getSecurityProtocol().get(secInfo.getInformationId()).contains(secInfo.getRiskLevel().toString()));
@@ -49,36 +52,38 @@ public class CheckSecurityInformationTest {
     }
 
     @Test
+    public void testIfAlarmIsOn() {
+        secInfo.setRiskLevel(CRITICAL);
+        assertTrue(SecurityInformation.isAlarmOn());
+    }
+
+    @Test
+    public void testWorkerWitNoAccess() {
+        DummyWorker worker =new DummyWorker("A", "B", "C", "D");
+        Assertions.assertThrows(AccessDeniedException.class, () -> new SecurityInformation(SubsystemCategory.CONTROLSYSTEM, worker));
+    }
+    @Test
+    public void testWrongSubcategory()  {
+        SecurityWorker securityWorker =new SecurityWorker("Hans", "Maier", "Officer", "All", "all");
+        Assertions.assertThrows(AccessDeniedException.class, () -> new SecurityInformation(SubsystemCategory.NONE,securityWorker));
+    }
+
+    @Test
     public void testIfAlarmIsOff() {
         if (secInfo.getRiskLevel() == CRITICAL) {
             secInfo.setRiskLevel(RiskLevel.NORMAL);
         }
-        assertFalse(secInfo.isAlarmOn());
-    }
-
-    @Test
-    public void testIfAlarmIsOn() throws IOException {
-        secInfo.setAlarmOn();
-        assertTrue(secInfo.isAlarmOn());
+        assertFalse(SecurityInformation.isAlarmOn());
     }
 
     @Test
     public void testIfAlarmIsOn2() throws IOException {
-        secInfo.setRiskLevel(CRITICAL);
-        assertTrue(secInfo.isAlarmOn());
+        secInfo.setAlarmOn();
+        assertTrue(SecurityInformation.isAlarmOn());
     }
 
-    @Test
-    public void testWorkerWitNoAccess() throws IOException {
-        DummyWorker worker =new DummyWorker("A", "B", "C", "D");
-        Assertions.assertThrows(AccessDeniedException.class, () -> new SecurityInformation(SubsystemCategory.CONTROLSYSTEM, worker));
-    }
 
-    @Test
-    public void testWrongSubcategory() throws IOException {
-        SecurityWorker securityWorker =new SecurityWorker("Hans", "Maier", "Officer", "All", "all");
-        Assertions.assertThrows(AccessDeniedException.class, () -> new SecurityInformation(SubsystemCategory.NONE,securityWorker));
-    }
+
 
 
     @Test

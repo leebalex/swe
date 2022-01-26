@@ -20,6 +20,9 @@ class GetLandsideDataTest {
     void setUp() {
         this.dataStorage = new LandsideDataStorage();
         this.dataStorage.setLandsideData("TestData");
+        this.dataStorage.setLandsideData("TestData1");
+        this.dataStorage.setLandsideData("TestData2");
+        this.dataStorage.setLandsideData("TestData3");
         this.controller = new DataController(dataStorage);
     }
 
@@ -27,6 +30,12 @@ class GetLandsideDataTest {
     @DisplayName("Should return Landside Data")
     void testGetLandsideData() {
         assertEquals("TestData", controller.getLandsideData().get(0),
+                "The result should be the same");
+        assertEquals("TestData1", controller.getLandsideData().get(0),
+                "The result should be the same");
+        assertEquals("TestData2", controller.getLandsideData().get(0),
+                "The result should be the same");
+        assertEquals("TestData3", controller.getLandsideData().get(0),
                 "The result should be the same");
     }
 
