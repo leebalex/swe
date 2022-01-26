@@ -72,10 +72,12 @@ public class FileManager {
 		return true;
 	}
 	
-	public boolean writeEmployeeData(Employee employee) throws IOException {
-		BufferedWriter bw = new BufferedWriter(new FileWriter(DataType.EMPLOYEES.getPath(), true));
+	
+	
+	public boolean writeFlightData(Flight flight) throws IOException {
+		BufferedWriter bw = new BufferedWriter(new FileWriter(DataType.FLIGHT.getPath(), true));
 		try {
-			bw.write(employee.toCSVString());
+			bw.write(flight.toCSVString());
 		} catch (IOException e) {
 			e.printStackTrace();
 		} finally {
@@ -84,10 +86,10 @@ public class FileManager {
 		return true;
 	}
 	
-	public boolean writeFlightData(Flight flight) throws IOException {
-		BufferedWriter bw = new BufferedWriter(new FileWriter(DataType.FLIGHT.getPath(), true));
+	public boolean writeEmployeeData(Employee employee) throws IOException {
+		BufferedWriter bw = new BufferedWriter(new FileWriter(DataType.EMPLOYEES.getPath(), true));
 		try {
-			bw.write(flight.toCSVString());
+			bw.write(employee.toCSVString());
 		} catch (IOException e) {
 			e.printStackTrace();
 		} finally {
