@@ -7,10 +7,12 @@ import subsys.financial.management.humanressources.Employee;
 import subsys.financial.management.impl.FacilityManagementImpl;
 import subsys.financial.management.impl.HumanResourcesManagementImpl;
 import subsys.financial.management.impl.MaintenanceManagementImpl;
+import subsys.financial.management.impl.TicketManagementImpl;
 import subsys.financial.management.maintenance.Aircraft;
 import subsys.financial.management.maintenance.MaintenanceDataItem;
 import subsys.financial.management.maintenance.Material;
 import subsys.financial.management.maintenance.MaterialDataItem;
+import subsys.financial.management.ticket.Flight;
 import subsys.financial.utils.DataType;
 import subsys.financial.utils.FileManager;
 
@@ -29,6 +31,7 @@ class GetFinancialDataTest {
 	private FacilityManagementImpl fm;
 	private MaintenanceManagementImpl mm;
 	private HumanResourcesManagementImpl hr;
+	private TicketManagementImpl tm;
 
 	@BeforeAll
 	public static void setup() {
@@ -166,4 +169,27 @@ class GetFinancialDataTest {
 		employees = hr.readEmployeeData();
 		assertEquals(3, employees.size());
 	}	
+	
+	@Test
+	public void testRegisterFlight() throws IOException {
+		FileManager.resetData(DataType.FLIGHT);
+		tm = new TicketManagementImpl(4, "Ticket Management", null);
+		List<Flight> flights = new ArrayList<Flight>();
+		flights.add(new Flight(1, "2022-02-02 12:24:00", "2022-02-02 17:31:00", 118939, "VIE"));
+		flights.add(new Flight(2, "2022-02-03 13:18:00", "2022-02-03 15:12:00", 855444, "LAX"));
+		flights.add(new Flight(3, "2022-02-03 14:49:00", "2022-02-02 19:41:00", 844422, "LNZ"));
+		flights.add(new Flight(4, "2022-02-04 18:14:00", "2022-02-02 22:49:00", 118939, "SBG"));
+		try {
+			for (Flight f : flights) {
+				assertTrue(tm.registerFlight(f));
+			}
+		} catch (IllegalArgumentException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		
+		flights = tm.readFlightData();
+		assertEquals(4, flights.size());
+	}
 }

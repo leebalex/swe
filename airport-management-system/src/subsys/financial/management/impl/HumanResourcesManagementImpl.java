@@ -31,6 +31,7 @@ public class HumanResourcesManagementImpl extends Department implements HumanRes
 		return (List<Employee>) fm.readFinancialData(DataType.EMPLOYEES);
 	}
 	
+	@SuppressWarnings("unchecked")
 	@Override
 	public boolean registerEmployee(Employee employee) throws IllegalArgumentException, IOException {
 		if (employee == null) throw new IllegalArgumentException("employee must not be null");

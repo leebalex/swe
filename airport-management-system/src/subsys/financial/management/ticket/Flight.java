@@ -2,25 +2,25 @@ package subsys.financial.management.ticket;
 
 import java.util.List;
 
+import subsys.financial.utils.DataItem;
+
 /**
  * @author Alexander Leeb, k11702617
  */
-public class Flight {
+public class Flight extends DataItem {
 	
 	private int id;
 	private String departureTime;
 	private String arrivalTime;
 	private int destinationAirportId;
 	private String destinationAirportName;
-	private List<subsys.financial.management.ticket.Ticket> registeredTickets;
 	
-	public Flight(int id, String departureTime, String arrivalTime, int destinationAirportId, String destinationAirportName, List<subsys.financial.management.ticket.Ticket> registeredTickets) {
+	public Flight(int id, String departureTime, String arrivalTime, int destinationAirportId, String destinationAirportName) {
 		this.id = id;
 		this.departureTime = departureTime;
 		this.arrivalTime = arrivalTime;
 		this.destinationAirportId = destinationAirportId;
 		this.destinationAirportName = destinationAirportName;
-		this.registeredTickets = registeredTickets;
 	}
 
 	public int getId() {
@@ -43,10 +43,6 @@ public class Flight {
 		return destinationAirportName;
 	}
 
-	public List<subsys.financial.management.ticket.Ticket> getRegisteredTickets() {
-		return registeredTickets;
-	}
-
 	public void setId(int id) {
 		this.id = id;
 	}
@@ -66,8 +62,17 @@ public class Flight {
 	public void setDestinationAirportName(String destinationAirportName) {
 		this.destinationAirportName = destinationAirportName;
 	}
-
-	public void setRegisteredTickets(List<subsys.financial.management.ticket.Ticket> registeredTickets) {
-		this.registeredTickets = registeredTickets;
+	
+	@Override
+	public String toString() {
+		return "Flight [id=" + id + ", departureTime=" + departureTime + ", arrivalTime=" + arrivalTime
+				+ ", destinationAirportId=" + destinationAirportId + ", destinationAirportName="
+				+ destinationAirportName + "]";
 	}
+
+	@Override
+	public String toCSVString() {
+		return id + ";" + departureTime + ";" + arrivalTime + ";" + destinationAirportId + ";" + destinationAirportName + ";\n";
+	}
+	
 }

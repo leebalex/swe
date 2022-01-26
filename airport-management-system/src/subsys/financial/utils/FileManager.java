@@ -19,6 +19,7 @@ import subsys.financial.management.maintenance.Aircraft;
 import subsys.financial.management.maintenance.MaintenanceDataItem;
 import subsys.financial.management.maintenance.Material;
 import subsys.financial.management.maintenance.MaterialDataItem;
+import subsys.financial.management.ticket.Flight;
 
 /**
  * @author Alexander Leeb, k11702617
@@ -83,6 +84,18 @@ public class FileManager {
 		return true;
 	}
 	
+	public boolean writeFlightData(Flight flight) throws IOException {
+		BufferedWriter bw = new BufferedWriter(new FileWriter(DataType.FLIGHT.getPath(), true));
+		try {
+			bw.write(flight.toCSVString());
+		} catch (IOException e) {
+			e.printStackTrace();
+		} finally {
+			bw.close();
+		}
+		return true;
+	}
+	
 	public static boolean resetData(DataType dataType) throws IOException {
 		try {
 			Files.delete(Path.of(dataType.getPath()));
@@ -108,6 +121,9 @@ public class FileManager {
 		}
 		else if (type.equals(DataType.EMPLOYEES)) {
 			return new Employee(Integer.parseInt(values[0]), Boolean.parseBoolean(values[1]), values[2], values[3], values[4], Integer.parseInt(values[5]));
+		}
+		else if (type.equals(DataType.FLIGHT)) {
+			return new Flight(Integer.parseInt(values[0]), values[1], values[2], Integer.parseInt(values[3]), values[4]);
 		}
 		return null;
 	}
