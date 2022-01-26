@@ -1,5 +1,7 @@
 package control;
 
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import subsys.control.Usecase1_CheckSecurityInformation.*;
 
@@ -8,18 +10,21 @@ import java.nio.file.AccessDeniedException;
 
 import static org.junit.jupiter.api.Assertions.*;
 import static subsys.control.Usecase1_CheckSecurityInformation.RiskLevel.CRITICAL;
-
+/**
+ * @author Wolfgang Schedl, k00846738
+ */
 
 public class CheckSecurityInformationTest {
+    SecurityInformation secInfo;
+    SecurityWorker worker1;
 
-    SecurityWorker worker1 = new SecurityWorker("Hans", "Maier", "Officer", "All", "all");
-    SecurityInformation secInfo = new SecurityInformation(SubsystemCategory.CONTROLSYSTEM, worker1);
-
-    //@Rule
-    //public final ExpectedException exception = ExpectedException.none();
-
-    public CheckSecurityInformationTest() throws IOException {
+    @BeforeEach
+    void setUp() throws IOException {
+       worker1 = new SecurityWorker("Hans", "Maier", "Officer", "All", "all");
+       secInfo = new SecurityInformation(SubsystemCategory.CONTROLSYSTEM, worker1);
     }
+
+
 
     @Test
     public void getInformationIDs() throws IOException {
@@ -65,16 +70,14 @@ public class CheckSecurityInformationTest {
 
     @Test
     public void testWorkerWitNoAccess() throws IOException {
-        DummyWorker dummyWorker = new DummyWorker("A", "B", "C", "D");
-        //exception.expect(AccessDeniedException.class);
-        SecurityInformation secInfo = new SecurityInformation(SubsystemCategory.CONTROLSYSTEM, dummyWorker);
+        DummyWorker worker =new DummyWorker("A", "B", "C", "D");
+        Assertions.assertThrows(AccessDeniedException.class, () -> new SecurityInformation(SubsystemCategory.CONTROLSYSTEM, worker));
     }
 
     @Test
     public void testWrongSubcategory() throws IOException {
-        SecurityWorker worker1 = new SecurityWorker("Hans", "Maier", "Officer", "All", "all");
-        //exception.expect(AccessDeniedException.class);
-        SecurityInformation secInfo = new SecurityInformation(SubsystemCategory.NONE, worker1);
+        SecurityWorker securityWorker =new SecurityWorker("Hans", "Maier", "Officer", "All", "all");
+        Assertions.assertThrows(AccessDeniedException.class, () -> new SecurityInformation(SubsystemCategory.NONE,securityWorker));
     }
 
 
@@ -82,8 +85,7 @@ public class CheckSecurityInformationTest {
     public void testlogToSecurityProtocol() throws IOException {
         SecurityWorker worker1 = new SecurityWorker("Hans", "Maier", "Officer", "All", "all");
         secInfo.logToSecurityProtocol(1);
-        //exception.expect(IOException.class);
-        SecurityInformation secInfo = new SecurityInformation(SubsystemCategory.NONE, worker1);
+        Assertions.assertThrows(IOException.class, ()-> secInfo = new SecurityInformation(SubsystemCategory.NONE, worker1));
     }
 
 }

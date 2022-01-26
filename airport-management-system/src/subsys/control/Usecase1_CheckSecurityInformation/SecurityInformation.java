@@ -8,25 +8,14 @@ import java.util.Random;
 
 
 public class SecurityInformation {
-    public Integer getInformationId() {
-        return informationId;
-    }
+
 
     private static Integer informationId = 0;
     private String titleSecurity;
 
-    public String getTitleSecurity() {
-        return titleSecurity;
-    }
-
-    public subsys.control.Usecase1_CheckSecurityInformation.SubsystemCategory getSubsystemCategory() {
-        return subsystemCategory;
-    }
-
     private String descriptionSecurity;
     private subsys.control.Usecase1_CheckSecurityInformation.SubsystemCategory subsystemCategory;
     private RiskLevel riskLevel;   //4 different risklevels
-
     private Timestamp timestamp;    // needed for the security protocol
     private static Hashtable<Integer, String> securityProtocol;
     private static boolean alarmOn;
@@ -47,7 +36,6 @@ public class SecurityInformation {
         }
 
         securityInformation.subsystemCategory = subsystemCategory;
-
         securityInformation.titleSecurity = "Security information with the ID " + informationId
                 + "\nfor " + worker.name + " with the workerID: " + worker.workerId
                 + "\nregarding the subsystem category " + subsystemCategory;
@@ -144,11 +132,9 @@ public class SecurityInformation {
         return alarmOn;
     }
 
-
     public String getDescriptionSecurity() {
         return descriptionSecurity;
     }
-
 
     public Timestamp getTimestamp() {
         return timestamp;
@@ -160,5 +146,16 @@ public class SecurityInformation {
 
     public String getSecurityProtocolFile() {
         return securityProtocolFile;
+    }
+
+    public String getTitleSecurity() {
+        return titleSecurity;
+    }
+
+    public subsys.control.Usecase1_CheckSecurityInformation.SubsystemCategory getSubsystemCategory() {
+        return subsystemCategory;
+    }
+    public Integer getInformationId() {
+        return informationId;
     }
 }

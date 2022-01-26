@@ -1,5 +1,7 @@
 package control;
 
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import subsys.control.Usecase1_CheckSecurityInformation.*;
 import subsys.control.Usecase2_CheckMaintenance.Maintenance;
@@ -13,16 +15,21 @@ import java.io.IOException;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+/**
+ * @author Wolfgang Schedl, k00846738
+ */
 
 public class MaintenanceTest {
-    ControlWorker worker1 = new ControlWorker("Hans", "Maier", "Officer", "All", "all", "Maintenance");
-    Maintenance maintenance1 = new Maintenance(SubsystemCategory.CONTROLSYSTEM, worker1);
 
-    //@Rule
-    //public final ExpectedException exception = ExpectedException.none();
+    Maintenance maintenance1;
+    ControlWorker worker1;
 
-    public MaintenanceTest() throws AccessDeniedException {
+    @BeforeEach
+    void setUp() throws IOException {
+       worker1 = new ControlWorker("Hans", "Maier", "Officer", "All", "all", "Maintenance");
+    maintenance1 = new Maintenance(SubsystemCategory.CONTROLSYSTEM, worker1);
     }
+
 
     @Test
     public void getMaintenanceIds() throws AccessDeniedException {
@@ -35,8 +42,7 @@ public class MaintenanceTest {
     @Test
     public void testIfAccessDeniedForSecurityWorker() throws AccessDeniedException {
         SecurityWorker worker1 = new SecurityWorker("Hans", "Maier", "Officer", "All", "all");
-        //exception.expect(AccessDeniedException.class);
-        Maintenance maintenance1 = new Maintenance(SubsystemCategory.CONTROLSYSTEM, worker1);
+        Assertions.assertThrows(AccessDeniedException.class, ()-> new Maintenance(SubsystemCategory.CONTROLSYSTEM, worker1));
     }
 
     @Test
@@ -53,15 +59,13 @@ public class MaintenanceTest {
     @Test
     public void testWorkerWitNoAccess() throws IOException {
         DummyWorker dummyWorker = new DummyWorker("A", "B", "C", "D");
-        //exception.expect(AccessDeniedException.class);
-        SecurityInformation secInfo = new SecurityInformation(SubsystemCategory.CONTROLSYSTEM, dummyWorker);
+        Assertions.assertThrows(AccessDeniedException.class, ()-> new SecurityInformation(SubsystemCategory.CONTROLSYSTEM, dummyWorker));
     }
 
     @Test
     public void testWrongSubcategory() throws IOException {
         SecurityWorker worker1 = new SecurityWorker("Hans", "Maier", "Officer", "All", "all");
-        //exception.expect(AccessDeniedException.class);
-        SecurityInformation secInfo = new SecurityInformation(SubsystemCategory.NONE, worker1);
+        Assertions.assertThrows(AccessDeniedException.class, ()-> new SecurityInformation(SubsystemCategory.NONE, worker1));
     }
 
 

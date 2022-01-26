@@ -1,16 +1,7 @@
 package financial;
 
-import static org.junit.Assert.assertTrue;
-import static org.junit.jupiter.api.Assertions.*;
-
-import java.io.IOException;
-import java.sql.Date;
-import java.util.ArrayList;
-import java.util.List;
-
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
-
 import subsys.financial.management.facility.FacilityDataItem;
 import subsys.financial.management.humanressources.Employee;
 import subsys.financial.management.impl.FacilityManagementImpl;
@@ -22,6 +13,13 @@ import subsys.financial.management.maintenance.Material;
 import subsys.financial.management.maintenance.MaterialDataItem;
 import subsys.financial.utils.DataType;
 import subsys.financial.utils.FileManager;
+
+import java.io.IOException;
+import java.sql.Date;
+import java.util.ArrayList;
+import java.util.List;
+
+import static org.junit.jupiter.api.Assertions.*;
 
 /**
  * @author Alexander Leeb, k1172617

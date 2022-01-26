@@ -27,7 +27,7 @@ public class FuelAirplaneTest {
     }
 
     @Test
-    @DisplayName("Should move the fuelTruck to the right location")
+    @DisplayName("Move Fuel Truck to the right Location")
     void fuelAirplane() {
         assertEquals(true, controller.sendFuelTruck(new Location(2,2)),
                 "Should be successful and return true");

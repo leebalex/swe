@@ -13,8 +13,10 @@ public class LandsideManagementSystem {
     private final List<Worker> workers;
     private final List<SecurityInformation> securityInformations;
     private final List<ParkingSpot> parkingSpots;
+    private final LandsideDataStorage storage;
 
     public LandsideManagementSystem() {
+        this.storage = new LandsideDataStorage();
         this.vehicles = new ArrayList<>();
         this.workers = new ArrayList<>();
         this.securityInformations = new ArrayList<>();
